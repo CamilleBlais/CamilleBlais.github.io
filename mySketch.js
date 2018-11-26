@@ -5,5 +5,5 @@ function setup() {
 }
 
 function draw() {
-rect(mouseX, mouseY, 20, 20);
+rect(100,100,100,100);
 }
