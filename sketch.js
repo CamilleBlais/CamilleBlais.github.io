@@ -5,6 +5,7 @@ function setup() {
 }
 
 function draw() {
+	fill('red');
 rect(100,100,100,100);
 	
 	
