@@ -5,5 +5,7 @@ function setup() {
 }
 
 function draw() {
-rect(100,100,100,100);
+	
+fill(80);
+rect(0,1200,windowWitdh,800);
 }
