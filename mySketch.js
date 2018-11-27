@@ -26,15 +26,25 @@ void draw() {
 }
 */
 
-var x = 100;
+var x = windowWidth/2;
 var y = 0;
 
 
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-	background('black');
+	background(255,255,248);
 
+
+}
+
+
+function draw() {
+	strokeWeight(3);
+	stroke(51,51,105);
+	
+	for(i=0,i<20,i++)
+	line(x+i,y+i,x,y+15);
 
 }
 
