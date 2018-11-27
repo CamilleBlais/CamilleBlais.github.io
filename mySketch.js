@@ -35,5 +35,5 @@ function setup() {
 function draw() {
 	
 fill(80);
-rect(0,1200,windowWitdh,800);
+rect(0,700,windowWitdh,800);
 }
