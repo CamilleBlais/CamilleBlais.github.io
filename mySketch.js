@@ -8,6 +8,6 @@ function draw() {
 	strokeWeight(15);
 	stroke(51,51,105);
 	fill('red');
-	rect(100,100,100,100);
+	rect(0,800,1000,100);
 	
 }
