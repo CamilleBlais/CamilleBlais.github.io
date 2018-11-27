@@ -34,7 +34,7 @@ var y = 0;
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(255,255,248);
-
+	frameRate(5);
 
 }
 
