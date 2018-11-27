@@ -5,7 +5,7 @@ createCanvas(windowWidth, windowHeight);
 
 
 function draw() {
-	strokeWeight(2);
+	strokeWeight(0.1);
 	stroke(0);
 	fill(55);
 	rect(0,1100,2800,300);
@@ -23,8 +23,9 @@ function draw() {
 	rect(1350,800,300,300);
 	rect(1650,800,300,300);
 	rect(1950,700,250,400);
-	rect(1200,700,230,400);
-	rect(1430,670,230,370);
+	rect(2200,700,230,400);
+	rect(2430,670,230,370);
+	rect(2660,670,230,370);
 	
 	
 }
