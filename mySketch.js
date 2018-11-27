@@ -1,13 +1,15 @@
 function setup(){
 createCanvas(windowWidth, windowHeight);
-	background(15);
+	background(255,255,248);
 }
 
 
 function draw() {
-	strokeWeight(15);
-	stroke(51,51,105);
-	fill('red');
-	rect(0,800,1000,100);
+	strokeWeight(2);
+	stroke(0);
+	fill(55);
+	rect(0,1300,2500,300);
+	fill(35);
+	rect(0,1350,2500,200);
 	
 }
