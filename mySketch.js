@@ -40,7 +40,7 @@ function setup() {
 
 
 function draw() {
-	strokeWeight(3);
+	strokeWeight(15);
 	stroke(51,51,105);
 	line(x,y,x,y+15);
 	
