@@ -42,16 +42,8 @@ function setup() {
 function draw() {
 	strokeWeight(3);
 	stroke(51,51,105);
+	line(x,y,x,y+15);
 	
-	for(i=0,i<20,i++)
-	line(x+i,y+i,x,y+15);
-
-}
-
-
-function draw() {
-	strokeWeight(50);
-	stroke(51,51,105);
-	line(x,y,x,y+50);
+	y = y+1;
 
 }
