@@ -47,16 +47,28 @@ function draw() {
 
 	///// briques
 	
-	stroke(230);
+		stroke(180);
 	strokeWeight(1);
 	
 	line(BriqueX, BriqueY, BriqueX + 80, BriqueY);
-	line(BriqueX-10, BriqueY+10, BriqueX +70, BriqueY +10);
-	line(BriqueX+10,BriqueY+20, BriqueX + 70, BriqueY +20);
-	line(BriqueX+20, BriqueY+30, BriqueX+50, BriqueY +30);
-	
-	line(BriqueX+10, BriqueY-5, BriqueX+10, BriqueY+30);
-	line(BriqueX+30, BriqueY-10, BriqueX+30, BriqueY+40);
-	line(BriqueX+50, BriqueY-10, BriqueX+50, BriqueY+30);
+	line(BriqueX-5, BriqueY+8, BriqueX +70, BriqueY +8);
+	line(BriqueX+10,BriqueY+16, BriqueX + 70, BriqueY +16);
+	line(BriqueX+10, BriqueY+24, BriqueX+60, BriqueY +24);
+	noFill();
+	rect(BriqueX,BriqueY, 16, 8);
+	rect(BriqueX+16,BriqueY, 16, 8);
+	rect(BriqueX+32,BriqueY, 16, 8);
+	rect(BriqueX+48,BriqueY, 16, 8);
+	rect(BriqueX+64,BriqueY, 16, 8);
+	rect(BriqueX+8, BriqueY+8, 16, 8);
+	rect(BriqueX+24, BriqueY+8, 16, 8);
+	rect(BriqueX+40, BriqueY+8, 16, 8);
+	rect(BriqueX,BriqueY+16, 16, 8);
+	rect(BriqueX+16,BriqueY+16, 16, 8);
+	rect(BriqueX+32,BriqueY+16, 16, 8);
+	rect(BriqueX+48,BriqueY+16, 16, 8);
+	rect(BriqueX+8, BriqueY+24, 16, 8);
+	rect(BriqueX+24, BriqueY+24, 16, 8);
+	rect(BriqueX+40, BriqueY+24, 16, 8);
 	
 }
