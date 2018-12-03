@@ -1,3 +1,7 @@
+var BriqueX = 100;
+var BriqueY = 100;
+
+
 function setup(){
 createCanvas(windowWidth, windowHeight);
 	background(255,255,248);
@@ -16,10 +20,13 @@ function draw() {
 	
 	fill(63, 17, 4);
 	rect(-100,720,300,380);
-	fill(76, 53, 42);
+	fill(134, 114, 89);
 	rect(200,730,280,370);
+	
 	fill(131, 52, 0);
 	rect(480,700,300,400);
+	
+	
 	fill(141, 114, 78);
 	rect(780,700,300,400);
 	
@@ -28,7 +35,8 @@ function draw() {
 	
 	fill(70, 20, 0);
 	rect(1360,700,300,400);
-	rect(1660,700,330,400);
+	fill(134, 114, 89);
+	rect(1660,720,330,380);
 	
 	fill(141, 114, 78);
 	rect(1990,700,290,400);
@@ -37,5 +45,18 @@ function draw() {
 	fill(120, 45, 16);
 	rect(2570,730,280,370);
 
+	///// briques
+	
+	stroke(230);
+	strokeWeight(1);
+	
+	line(BriqueX, BriqueY, BriqueX + 80, BriqueY);
+	line(BriqueX-10, BriqueY+10, BriqueX +70, BriqueY +10);
+	line(BriqueX+10,BriqueY+20, BriqueX + 70, BriqueY +20);
+	line(BriqueX+20, BriqueY+30, BriqueX+50, BriqueY +30);
+	
+	line(BriqueX+10, BriqueY-5, BriqueX+10, BriqueY+30);
+	line(BriqueX+30, BriqueY-10, BriqueX+30, BriqueY+40);
+	line(BriqueX+50, BriqueY-10, BriqueX+50, BriqueY+30);
 	
 }
