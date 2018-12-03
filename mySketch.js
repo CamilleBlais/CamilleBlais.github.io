@@ -1,5 +1,5 @@
-var BriqueX = 200;
-var BriqueY = 800;
+var BriqueX = 0;
+var BriqueY = 0;
 
 
 function setup(){
@@ -45,9 +45,11 @@ function draw() {
 	fill(120, 45, 16);
 	rect(2570,730,280,370);
 
-	///// briques
+	///////////////////////////////////////////// briques
 	
-		stroke(180);
+	BriqueX = 210
+	BriqueY= 760
+	stroke(180);
 	strokeWeight(1);
 	
 	line(BriqueX, BriqueY, BriqueX + 80, BriqueY);
