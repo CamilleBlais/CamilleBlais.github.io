@@ -13,13 +13,15 @@ createCanvas(windowWidth, windowHeight);
 
 function draw() {
 	
-	///////////////////////////////////////////////rue
-	strokeWeight(0.1);
-	stroke(0);
-	fill(55);
+	nostroke();	
+	fill(117, 96, 73);
 	rect(-100,1100,3000,400);
-	fill(35);
+	fill(48, 39, 29);
 	rect(-100,1150,3000,300);
+	
+	strokeWeight(1);
+	stroke(0);
+
 	
 	/////////////////////////////////// maisons
 	
@@ -194,6 +196,11 @@ function draw() {
 	rect(BriqueX2+8, BriqueY2+16, 16,8);
 	rect(BriqueX2+24, BriqueY2+16, 16,8);
 	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
+	
+	////////////////////////////////////////////////////// portes et fenêtres 
+	
+	
 	
 	
 }
