@@ -1,5 +1,5 @@
-var BriqueX = 100;
-var BriqueY = 100;
+var BriqueX = 200;
+var BriqueY = 800;
 
 
 function setup(){
