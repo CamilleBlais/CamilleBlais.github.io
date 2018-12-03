@@ -47,8 +47,8 @@ function draw() {
 
 	///////////////////////////////////////////// briques
 	
-	BriqueX = 210
-	BriqueY= 760
+	BriqueX = 210;
+	BriqueY= 760;
 	stroke(180);
 	strokeWeight(1);
 	
@@ -72,5 +72,28 @@ function draw() {
 	rect(BriqueX+8, BriqueY+24, 16, 8);
 	rect(BriqueX+24, BriqueY+24, 16, 8);
 	rect(BriqueX+40, BriqueY+24, 16, 8);
+	
+	BriqueX2 = 0;
+	BriqueY2 = 750;
+	stroke(90);
+	strokeWeight(1);
+	
+	line(BriqueX2, BriqueY2, BriqueX2 + 90, BriqueY2);
+	line(BriqueX2-15, BriqueY2+8, BriqueX2 +70, BriqueY2 +8);
+	line(BriqueX2+10,BriqueY2+16, BriqueX2 + 80, BriqueY2 +16);
+	line(BriqueX2, BriqueY2+24, BriqueX2+60, BriqueY2 +24);
+	rect(BriqueX2-8, BriqueY2, 16,8);
+	rect(BriqueX2+8, BriqueY2, 16,8);
+	rect(BriqueX2+24, BriqueY2, 16,8);
+	rect(BriqueX2+40, BriqueY2, 16,8);
+	rect(BriqueX2+56, BriqueY2, 16,8);
+	rect(BriqueX2, BriqueY2+8, 16,8);
+	rect(BriqueX2+16, BriqueY2+8, 16,8);
+	rect(BriqueX2+32, BriqueY2+8, 16,8);
+	rect(BriqueX2+48, BriqueY2+8, 16,8);
+	rect(BriqueX2+64, BriqueY2+8, 16,8);
+	rect(BriqueX2+8, BriqueY2+16, 16,8);
+	rect(BriqueX2+24, BriqueY2+16, 16,8);
+	rect(BriqueX2+40, BriqueY2+16, 16,8);
 	
 }
