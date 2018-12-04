@@ -4,7 +4,7 @@ var BriqueX2 = 0;
 var BriqueY2 = 0;
 
 function setup(){
-createCanvas(windowWidth, windowHeight);
+createCanvas(2850, 1300);
 	background(255,255,248);
 }
 
