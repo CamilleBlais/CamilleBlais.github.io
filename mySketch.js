@@ -5,7 +5,7 @@ var BriqueY2 = 0;
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
 function setup(){
-createCanvas(2850, 1300);
+createCanvas(2850, 1600);
 	background(255,255,248);
 
 $const.tlong = -71.10; // longitude
@@ -32,7 +32,7 @@ function draw() {
 	fill(118, 106, 88);
 	rect(-100,1230,3000,60);
 	fill(32, 23, 17);
-	rect(-100,1290,3000,300);
+	rect(-100,1290,3000,310);
 	
 	
 
@@ -46,7 +46,7 @@ function draw() {
 	
 	//// briques foncés
 	BriqueX2 = 0;
-	BriqueY2 = 750;
+	BriqueY2 = 850;
 	stroke(70);
 	strokeWeight(1);
 	
@@ -69,7 +69,7 @@ function draw() {
 	rect(BriqueX2+40, BriqueY2+16, 16,8);
 	
 	BriqueX2 = 100;
-	BriqueY2 = 850;
+	BriqueY2 = 950;
 	stroke(70);
 	strokeWeight(1);
 	
@@ -90,6 +90,32 @@ function draw() {
 	rect(BriqueX2+8, BriqueY2+16, 16,8);
 	rect(BriqueX2+24, BriqueY2+16, 16,8);
 	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
+	BriqueX2 = 0;
+	BriqueY2 = 1100;
+	stroke(70);
+	strokeWeight(1);
+	
+	line(BriqueX2, BriqueY2, BriqueX2 + 90, BriqueY2);
+	line(BriqueX2-15, BriqueY2+8, BriqueX2 +70, BriqueY2 +8);
+	line(BriqueX2+10,BriqueY2+16, BriqueX2 + 80, BriqueY2 +16);
+	line(BriqueX2, BriqueY2+24, BriqueX2+60, BriqueY2 +24);
+	rect(BriqueX2-8, BriqueY2, 16,8);
+	rect(BriqueX2+8, BriqueY2, 16,8);
+	rect(BriqueX2+24, BriqueY2, 16,8);
+	rect(BriqueX2+40, BriqueY2, 16,8);
+	rect(BriqueX2+56, BriqueY2, 16,8);
+	rect(BriqueX2, BriqueY2+8, 16,8);
+	rect(BriqueX2+16, BriqueY2+8, 16,8);
+	rect(BriqueX2+32, BriqueY2+8, 16,8);
+	rect(BriqueX2+48, BriqueY2+8, 16,8);
+	rect(BriqueX2+64, BriqueY2+8, 16,8);
+	rect(BriqueX2+8, BriqueY2+16, 16,8);
+	rect(BriqueX2+24, BriqueY2+16, 16,8);
+	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
+	// centre maison 1 = 50 en x. Sol en y = 1200, 1 er étage 1070 et deuxieme 945. toit =  820.  
+	
 	
 	////////////////////////////////////////////////////////////////// maison #2 
 	
