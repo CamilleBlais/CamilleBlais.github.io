@@ -14,6 +14,7 @@ function setup(){
   background(255,255,248);
 
   xmlDoc = parser.parseFromString(x.responseText,"text/xml");
+  console.log(xmlDoc);
   entries=xmlDoc.getElementsByTagName("entry");
   console.log(entries);
   for (i=0;i<=entries.length;i++)
