@@ -2,18 +2,18 @@ var BriqueX = 0;
 var BriqueY = 0;
 var BriqueX2 = 0;
 var BriqueY2 = 0;
-var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
+//var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
-var x = new XMLHttpRequest();
+/*var x = new XMLHttpRequest();
 x.open("GET", "https://meteo.gc.ca/rss/city/qc-147_f.xml", true);
 var parser = new DOMParser();
-var xmlDoc;
+var xmlDoc;*/
 
 function setup(){
   createCanvas(2850, 1600);
   background(255,255,248);
 
-  x.onreadystatechange = function () {
+ /* x.onreadystatechange = function () {
     if (x.readyState == 4 && x.status == 200)
     {
       var xmlDoc = x.responseXML;
@@ -47,7 +47,7 @@ function setup(){
 
   $processor.calc (date, body);
 
-  console.log(body.position);
+  console.log(body.position);*/
 }
 
 
