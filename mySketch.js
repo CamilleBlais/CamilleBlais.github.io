@@ -881,6 +881,55 @@ function draw() {
 	rect(BriqueX+24, BriqueY+24, 16, 8);
 	rect(BriqueX+40, BriqueY+24, 16, 8);
 	
+	BriqueX2 = 2160;
+	BriqueY2 = 840;
+	stroke(170);
+	strokeWeight(1);
+	
+	line(BriqueX2, BriqueY2, BriqueX2 + 90, BriqueY2);
+	line(BriqueX2-15, BriqueY2+8, BriqueX2 +70, BriqueY2 +8);
+	line(BriqueX2+10,BriqueY2+16, BriqueX2 + 80, BriqueY2 +16);
+	line(BriqueX2, BriqueY2+24, BriqueX2+60, BriqueY2 +24);
+	rect(BriqueX2-8, BriqueY2, 16,8);
+	rect(BriqueX2+8, BriqueY2, 16,8);
+	rect(BriqueX2+24, BriqueY2, 16,8);
+	rect(BriqueX2+40, BriqueY2, 16,8);
+	rect(BriqueX2+56, BriqueY2, 16,8);
+	rect(BriqueX2, BriqueY2+8, 16,8);
+	rect(BriqueX2+16, BriqueY2+8, 16,8);
+	rect(BriqueX2+32, BriqueY2+8, 16,8);
+	rect(BriqueX2+48, BriqueY2+8, 16,8);
+	rect(BriqueX2+64, BriqueY2+8, 16,8);
+	rect(BriqueX2+8, BriqueY2+16, 16,8);
+	rect(BriqueX2+24, BriqueY2+16, 16,8);
+	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
+	BriqueX = 2210;
+	BriqueY= 980;
+	stroke(180);
+	strokeWeight(1);
+	
+	line(BriqueX, BriqueY, BriqueX + 80, BriqueY);
+	line(BriqueX-5, BriqueY+8, BriqueX +70, BriqueY +8);
+	line(BriqueX+10,BriqueY+16, BriqueX + 70, BriqueY +16);
+	line(BriqueX+10, BriqueY+24, BriqueX+60, BriqueY +24);
+	noFill();
+	rect(BriqueX,BriqueY, 16, 8);
+	rect(BriqueX+16,BriqueY, 16, 8);
+	rect(BriqueX+32,BriqueY, 16, 8);
+	rect(BriqueX+48,BriqueY, 16, 8);
+	rect(BriqueX+64,BriqueY, 16, 8);
+	rect(BriqueX+8, BriqueY+8, 16, 8);
+	rect(BriqueX+24, BriqueY+8, 16, 8);
+	rect(BriqueX+40, BriqueY+8, 16, 8);
+	rect(BriqueX,BriqueY+16, 16, 8);
+	rect(BriqueX+16,BriqueY+16, 16, 8);
+	rect(BriqueX+32,BriqueY+16, 16, 8);
+	rect(BriqueX+48,BriqueY+16, 16, 8);
+	rect(BriqueX+8, BriqueY+24, 16, 8);
+	rect(BriqueX+24, BriqueY+24, 16, 8);
+	rect(BriqueX+40, BriqueY+24, 16, 8);
+	
 	// centre maison 8 = 2135 en x. Sol en y = 1200  
 	var porteX = 2135;  //mettre le centre de la maison
 	var porteY =1200;  //mettre le rez de chaussée de la maison   
