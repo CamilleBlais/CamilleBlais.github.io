@@ -13,7 +13,7 @@ function setup(){
   createCanvas(2850, 1600);
   background(255,255,248);
 
-  xmlDoc = parser.parseFromString(x.responseText,"text/xml");
+  xmlDoc = x.responseXML;
   console.log(xmlDoc);
   entries=xmlDoc.getElementsByTagName("entry");
   console.log(entries);
