@@ -12,6 +12,7 @@ var xmlDoc;*/
 function setup(){
   createCanvas(2850, 1600);
   background(255,255,248);
+}
 
  /* x.onreadystatechange = function () {
     if (x.readyState == 4 && x.status == 200)
@@ -48,7 +49,7 @@ function setup(){
   $processor.calc (date, body);
 
   console.log(body.position);*/
-}
+
 
 
 function draw() {
