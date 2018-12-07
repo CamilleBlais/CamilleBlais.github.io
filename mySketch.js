@@ -74,7 +74,7 @@ function draw() {
 	
 	//// briques foncés
 	BriqueX2 = 0;
-	BriqueY2 = 750;
+	BriqueY2 = 830;
 	stroke(70);
 	strokeWeight(1);
 	
@@ -741,7 +741,7 @@ function draw() {
 	rect(1080,830,280,370);	
 	
 	BriqueX2 = 1100;
-	BriqueY2 = 800;
+	BriqueY2 = 840;
 	stroke(70);
 	strokeWeight(1);
 	
@@ -771,7 +771,7 @@ function draw() {
 	rect(1360,800,300,400);	
 	
 	BriqueX2 = 1400;
-	BriqueY2 = 710;
+	BriqueY2 = 820;
 	stroke(70);
 	strokeWeight(1);
 	
@@ -793,8 +793,8 @@ function draw() {
 	rect(BriqueX2+24, BriqueY2+16, 16,8);
 	rect(BriqueX2+40, BriqueY2+16, 16,8);
 	
-	BriqueX2 = 1420;
-	BriqueY2 = 850;
+	BriqueX2 = 1460;
+	BriqueY2 = 950;
 	stroke(70);
 	strokeWeight(1);
 	
@@ -831,6 +831,55 @@ function draw() {
 	stroke(0);
 	fill(141, 114, 78);
 	rect(1990,800,290,400);
+	
+	BriqueX2 = 2060;
+	BriqueY2 = 815;
+	stroke(170);
+	strokeWeight(1);
+	
+	line(BriqueX2, BriqueY2, BriqueX2 + 90, BriqueY2);
+	line(BriqueX2-15, BriqueY2+8, BriqueX2 +70, BriqueY2 +8);
+	line(BriqueX2+10,BriqueY2+16, BriqueX2 + 80, BriqueY2 +16);
+	line(BriqueX2, BriqueY2+24, BriqueX2+60, BriqueY2 +24);
+	rect(BriqueX2-8, BriqueY2, 16,8);
+	rect(BriqueX2+8, BriqueY2, 16,8);
+	rect(BriqueX2+24, BriqueY2, 16,8);
+	rect(BriqueX2+40, BriqueY2, 16,8);
+	rect(BriqueX2+56, BriqueY2, 16,8);
+	rect(BriqueX2, BriqueY2+8, 16,8);
+	rect(BriqueX2+16, BriqueY2+8, 16,8);
+	rect(BriqueX2+32, BriqueY2+8, 16,8);
+	rect(BriqueX2+48, BriqueY2+8, 16,8);
+	rect(BriqueX2+64, BriqueY2+8, 16,8);
+	rect(BriqueX2+8, BriqueY2+16, 16,8);
+	rect(BriqueX2+24, BriqueY2+16, 16,8);
+	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
+	BriqueX = 2200;
+	BriqueY= 1120;
+	stroke(180);
+	strokeWeight(1);
+	
+	line(BriqueX, BriqueY, BriqueX + 80, BriqueY);
+	line(BriqueX-5, BriqueY+8, BriqueX +70, BriqueY +8);
+	line(BriqueX+10,BriqueY+16, BriqueX + 70, BriqueY +16);
+	line(BriqueX+10, BriqueY+24, BriqueX+60, BriqueY +24);
+	noFill();
+	rect(BriqueX,BriqueY, 16, 8);
+	rect(BriqueX+16,BriqueY, 16, 8);
+	rect(BriqueX+32,BriqueY, 16, 8);
+	rect(BriqueX+48,BriqueY, 16, 8);
+	rect(BriqueX+64,BriqueY, 16, 8);
+	rect(BriqueX+8, BriqueY+8, 16, 8);
+	rect(BriqueX+24, BriqueY+8, 16, 8);
+	rect(BriqueX+40, BriqueY+8, 16, 8);
+	rect(BriqueX,BriqueY+16, 16, 8);
+	rect(BriqueX+16,BriqueY+16, 16, 8);
+	rect(BriqueX+32,BriqueY+16, 16, 8);
+	rect(BriqueX+48,BriqueY+16, 16, 8);
+	rect(BriqueX+8, BriqueY+24, 16, 8);
+	rect(BriqueX+24, BriqueY+24, 16, 8);
+	rect(BriqueX+40, BriqueY+24, 16, 8);
 	
 	// centre maison 8 = 2135 en x. Sol en y = 1200  
 	var porteX = 2135;  //mettre le centre de la maison
