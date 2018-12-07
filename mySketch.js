@@ -882,84 +882,84 @@ function draw() {
 	line(porteX+67, porteY-62, porteX+40, porteY-62); //droite
 	
 	
-  
-	noStroke();
+  	noStroke();
 	fill(135,85,85);//////////////////////////// les longues escaliers
-	rect(porteX-148, porteY-5, 50, 4); 
-	rect(porteX-148, porteY-13, 50, 4);
-	rect(porteX-148, porteY-20, 50, 4);
-	rect(porteX-148, porteY-28, 50, 4);
-	rect(porteX-148, porteY-37, 50, 4);
-	rect(porteX-148, porteY-45, 50, 4);
+	rect(porteX+98, porteY-5, 50, 4); 
+	rect(porteX+98, porteY-13, 50, 4);
+	rect(porteX+98, porteY-20, 50, 4);
+	rect(porteX+98, porteY-28, 50, 4);
+	rect(porteX+98, porteY-37, 50, 4);
+	rect(porteX+98, porteY-45, 50, 4);
 	strokeWeight(4);
 	stroke(135,85,85);
-	line(porteX-145, porteY-54, porteX-100,  porteY-53);
-	line(porteX-143, porteY-64, porteX-100,  porteY-63);
-	line(porteX-141, porteY-73, porteX-99,  porteY-72);
-	line(porteX-138, porteY-83, porteX-99,  porteY-80);
-	line(porteX-134, porteY-94, porteX-98,  porteY-89);
-	line(porteX-134, porteY-96, porteX-97,  porteY-89);
-	line(porteX-128, porteY-106, porteX-96,  porteY-100);
-	line(porteX-127, porteY-109, porteX-96,  porteY-100);
-	line(porteX-119, porteY-120, porteX-95,  porteY-109);
-	line(porteX-121, porteY-117, porteX-94,  porteY-109);
-	line(porteX-109, porteY-129, porteX-94,  porteY-119);
-	line(porteX-106, porteY-129, porteX-92,  porteY-119);
-	line(porteX-97, porteY-139, porteX-85,  porteY-126);
-	line(porteX-95, porteY-139, porteX-85,  porteY-126);
-	line(porteX-93, porteY-139, porteX-85,  porteY-126);
-	line(porteX-81, porteY-143, porteX-79,  porteY-129);
-	line(porteX-83, porteY-143, porteX-79,  porteY-129);
-	line(porteX-79, porteY-143, porteX-79,  porteY-129);
-	line(porteX-72, porteY-147, porteX-72,  porteY-132);
-	noStroke();//////////////////////////// rampes des longues escaliersss
+	line(porteX+145, porteY-54, porteX+100,  porteY-53);
+	line(porteX+143, porteY-64, porteX+100,  porteY-63);
+	line(porteX+141, porteY-73, porteX+99,  porteY-72);
+	line(porteX+138, porteY-83, porteX+99,  porteY-80);
+	line(porteX+134, porteY-94, porteX+98,  porteY-89);
+	line(porteX+134, porteY-96, porteX+97,  porteY-89);
+	line(porteX+128, porteY-106, porteX+96,  porteY-100);
+	line(porteX+127, porteY-109, porteX+96,  porteY-100);
+	line(porteX+119, porteY-120, porteX+95,  porteY-109);
+	line(porteX+121, porteY-117, porteX+94,  porteY-109);
+	line(porteX+109, porteY-129, porteX+94,  porteY-119);
+	line(porteX+106, porteY-129, porteX+92,  porteY-119);
+	line(porteX+97, porteY-139, porteX+85,  porteY-126);
+	line(porteX+95, porteY-139, porteX+85,  porteY-126);
+	line(porteX+93, porteY-139, porteX+85,  porteY-126);
+	line(porteX+81, porteY-143, porteX+79,  porteY-129);
+	line(porteX+83, porteY-143, porteX+79,  porteY-129);
+	line(porteX+79, porteY-143, porteX+79,  porteY-129);
+	line(porteX+72, porteY-147, porteX+72,  porteY-132);
+	noStroke();/////////////////////////// rampes des longues escaliersss
 	fill(25);
-	rect(porteX-149, porteY-33, 2, 28);
-	rect(porteX-149, porteY-56, 2, 28);
-	rect(porteX-149, porteY-73, 2, 28);
-	rect(porteX-146, porteY-82, 2, 28);
-	rect(porteX-144, porteY-92, 2, 28);
-	rect(porteX-141, porteY-101, 2, 28);
-	rect(porteX-138, porteY-111, 2, 28);
-	rect(porteX-134, porteY-124, 2, 28);
-	rect(porteX-128, porteY-135, 2, 28);
-	rect(porteX-120, porteY-148, 2, 28);
-	rect(porteX-114, porteY-153, 2, 28);
-	rect(porteX-108, porteY-158, 2, 28);
-	rect(porteX-102, porteY-164, 2, 28);
-	rect(porteX-96, porteY-167, 2, 28);
-	rect(porteX-89, porteY-170, 2, 28);
-	rect(porteX-82, porteY-172, 2, 28);
-	rect(porteX-77, porteY-172, 2, 28);
-	rect(porteX-72, porteY-174, 2, 28);// dernier bout de rampe de gauche
-	rect(porteX-98, porteY-33, 2, 28);
-	rect(porteX-98, porteY-82, 2, 28);
-	rect(porteX-98, porteY-60, 2, 28);
-	rect(porteX-98, porteY-100, 2, 28);
-	rect(porteX-98, porteY-117, 2, 28);
-	rect(porteX-97, porteY-117, 2, 28);
-	rect(porteX-96, porteY-125, 2, 28);
-	rect(porteX-94, porteY-137, 2, 28);
-	rect(porteX-92, porteY-147, 2, 28);
-	rect(porteX-87, porteY-149, 2, 28);
-	rect(porteX-83, porteY-153, 2, 28);
-	rect(porteX-79, porteY-155, 2, 28);
-	rect(porteX-73, porteY-158, 2, 28);
+	rect(porteX+147, porteY-33, 2, 28);
+	rect(porteX+147, porteY-56, 2, 28);
+	rect(porteX+147, porteY-73, 2, 28);
+	rect(porteX+144, porteY-82, 2, 28);
+	rect(porteX+142, porteY-92, 2, 28);
+	rect(porteX+139, porteY-101, 2, 28);
+	rect(porteX+136, porteY-111, 2, 28);
+	rect(porteX+132, porteY-124, 2, 28);
+	rect(porteX+126, porteY-135, 2, 28);
+	rect(porteX+118, porteY-148, 2, 28);
+	rect(porteX+112, porteY-153, 2, 28);
+	rect(porteX+106, porteY-158, 2, 28);
+	rect(porteX+100, porteY-164, 2, 28);
+	rect(porteX+94, porteY-167, 2, 28);
+	rect(porteX+87, porteY-170, 2, 28);
+	rect(porteX+80, porteY-172, 2, 28);
+	rect(porteX+75, porteY-172, 2, 28);
+	rect(porteX+70, porteY-174, 2, 28);// dernier bout de rampe de gauche
+	rect(porteX+96, porteY-33, 2, 28);
+	rect(porteX+96, porteY-82, 2, 28);
+	rect(porteX+96, porteY-60, 2, 28);
+	rect(porteX+96, porteY-100, 2, 28);
+	rect(porteX+96, porteY-117, 2, 28);
+	rect(porteX+95, porteY-117, 2, 28);
+	rect(porteX+94, porteY-125, 2, 28);
+	rect(porteX+92, porteY-137, 2, 28);
+	rect(porteX+90, porteY-147, 2, 28);
+	rect(porteX+85, porteY-149, 2, 28);
+	rect(porteX+81, porteY-153, 2, 28);
+	rect(porteX+77, porteY-155, 2, 28);
+	rect(porteX+71, porteY-158, 2, 28);
 	strokeWeight(3);
 	stroke(25);
-	line(porteX-149, porteY-33, porteX-148, porteY-54);
-	line(porteX-148, porteY-54, porteX-142, porteY-91)
-	line(porteX-142, porteY-91, porteX-130, porteY-130);
-	line(porteX-130, porteY-130,porteX-115, porteY-153);
-	line(porteX-115, porteY-153,porteX-100, porteY-163);
-	line(porteX-100, porteY-163,porteX-80, porteY-170);
-	line(porteX-80, porteY-170,porteX-70, porteY-171);
-	line(porteX-95, porteY-115,porteX-93, porteY-130);
-	line(porteX-93, porteY-130,porteX-88, porteY-145);
-	line(porteX-88, porteY-145, porteX-82, porteY-150);
-	line(porteX-82, porteY-150, porteX-75, porteY-155);
-	line(porteX-75, porteY-155, porteX-70, porteY-157);
-	
+	line(porteX+149, porteY-33, porteX+148, porteY-54);
+	line(porteX+148, porteY-54, porteX+142, porteY-91)
+	line(porteX+142, porteY-91, porteX+130, porteY-130);
+	line(porteX+130, porteY-130,porteX+115, porteY-153);
+	line(porteX+115, porteY-153,porteX+100, porteY-163);
+	line(porteX+100, porteY-163,porteX+80, porteY-170);
+	line(porteX+80, porteY-170,porteX+70, porteY-171);
+	line(porteX+95, porteY-115,porteX+93, porteY-130);
+	line(porteX+93, porteY-130,porteX+88, porteY-145);
+	line(porteX+88, porteY-145, porteX+82, porteY-150);
+	line(porteX+82, porteY-150, porteX+75, porteY-155);
+	line(porteX+75, porteY-155, porteX+70, porteY-157);
+	noStroke();
+
 	
 	
 	strokeWeight(1);
