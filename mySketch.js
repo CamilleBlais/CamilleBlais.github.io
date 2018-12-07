@@ -13,7 +13,14 @@ function setup(){
   createCanvas(2850, 1600);
   background(255,255,248);
 
-  xmlDoc = x.responseXML;
+  x.onreadystatechange = function () {
+    if (x.readyState == 4 && x.status == 200)
+    {
+      var xmlDoc = x.responseXML;
+    }
+  };
+  x.send(null);
+	
   console.log(xmlDoc);
   entries=xmlDoc.getElementsByTagName("entry");
   console.log(entries);
