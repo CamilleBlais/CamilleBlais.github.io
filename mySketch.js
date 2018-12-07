@@ -74,7 +74,7 @@ function draw() {
 	
 	//// briques foncés
 	BriqueX2 = 0;
-	BriqueY2 = 860;
+	BriqueY2 = 750;
 	stroke(70);
 	strokeWeight(1);
 	
@@ -411,7 +411,8 @@ function draw() {
 	rect(BriqueX+8, BriqueY+24, 16, 8);
 	rect(BriqueX+24, BriqueY+24, 16, 8);
 	rect(BriqueX+40, BriqueY+24, 16, 8);
-	
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////// maison #3 
 	strokeWeight(1);
 	stroke(0);
@@ -419,7 +420,7 @@ function draw() {
 	rect(480,800,300,400);
 	
 	BriqueX = 680;
-	BriqueY= 800;
+	BriqueY= 830;
 	stroke(180);
 	strokeWeight(1);
 	
@@ -445,7 +446,7 @@ function draw() {
 	rect(BriqueX+40, BriqueY+24, 16, 8);
 	
 	BriqueX = 650;
-	BriqueY= 1130;
+	BriqueY= 1950;
 	stroke(180);
 	strokeWeight(1);
 	
@@ -470,8 +471,8 @@ function draw() {
 	rect(BriqueX+24, BriqueY+24, 16, 8);
 	rect(BriqueX+40, BriqueY+24, 16, 8);
 	
-	BriqueX = 500;
-	BriqueY= 950;
+	BriqueX = 530;
+	BriqueY= 940;
 	stroke(180);
 	strokeWeight(1);
 	
