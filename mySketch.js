@@ -5,13 +5,16 @@ var BriqueY2 = 0;
 //var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
 /*var x = new XMLHttpRequest();
-x.open("GET", "https://meteo.gc.ca/rss/city/qc-147_f.xml", true);
-var parser = new DOMParser();
+x.open("GET", "https://meteo.gc.ca/rss/city/qc-147_f.xml", true);Wvar parser = new DOMParser();
 var xmlDoc;*/
 
 function setup(){
   createCanvas(2850, 1600);
-  background(255,255,248);
+  background(255,255,235);
+  noFill();
+  stroke(35, 15, 0);
+  strokeWeight(8);
+  rect(2850, 1600);
 }
 
  /* x.onreadystatechange = function () {
