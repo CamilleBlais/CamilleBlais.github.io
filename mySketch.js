@@ -9,12 +9,12 @@ x.open("GET", "https://meteo.gc.ca/rss/city/qc-147_f.xml", true);Wvar parser = n
 var xmlDoc;*/
 
 function setup(){
-  createCanvas(2850, 1600);
+  createCanvas(2850, 1608);
   background(255,255,235);
   noFill();
   stroke(35, 15, 0);
   strokeWeight(8);
-  rect(2850, 1600);
+  rect(0, 0,2842, 1600);
 }
 
  /* x.onreadystatechange = function () {
