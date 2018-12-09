@@ -825,7 +825,7 @@ function draw() {
 	stroke(0);
 	fill(131, 52, 0);
 	rect(480,800,300,400);
-	fill(0);
+	fill(25);
 	rect(600,790,60,10);
 	rect(482,795,296,10);
 	
@@ -856,7 +856,7 @@ function draw() {
 	rect(BriqueX+40, BriqueY+24, 16, 8);
 	
 	BriqueX = 680;
-	BriqueY= 800;
+	BriqueY= 810;
 	stroke(180);
 	strokeWeight(1);
 	
@@ -1234,10 +1234,13 @@ function draw() {
 	stroke(0);
 	fill(70, 20, 0);
 	rect(1360,800,300,400);	
+	noStroke();
+	fill(50, 10, 0);
 	rect(1360,790,300,15);
-	rect(1300,785,180,8);
+	rect(1360,785,180,8);
 	fill(0);
-	rect(1300,780,180,5);
+	rect(1360,780,180,5);
+	
 	
 	noFill();
 	BriqueX2 = 1400;
@@ -1581,8 +1584,8 @@ function draw() {
 	fill(141, 114, 78);
 	rect(1990,800,290,400);
 	
+	noStroke();
 	var porteX = 2135; 
-	var porteY =1200;
 	rect(porteX-140,780,20,25);
 	rect(porteX+120,780,20,25);
 	rect(porteX-50,795,100,8);
@@ -1591,8 +1594,8 @@ function draw() {
 	rect(porteX-20,780,40,8);
 	rect(porteX-10,775,20,8);
 	fill(15);
-	rect(porteX-140,777,22,4);
-	rect(porteX+120,777,22,4);
+	rect(porteX-141,777,22,4);
+	rect(porteX+119,777,22,4);
 	rect(porteX-12,772,24,3);
 	
 	
@@ -1756,7 +1759,7 @@ function draw() {
 	rect(porteX-30, porteY-115,23,45);    /// fenetre dans la 1ere porte
 	rect(porteX+7,porteY-115,23,45);
 	strokeWeight(6);
-	stroke(80,35,35);
+	stroke(135);
 	rect(porteX-120, porteY-120, 40,55); /////////////////// premieres fenetres a gauche//droite 1er niveau
 	rect(porteX+80,porteY-120,40,55);
 	strokeWeight(1)
@@ -1983,6 +1986,113 @@ function draw() {
 	fill(141, 114, 78);
 	rect(2280,800,290,400);
 	
+	noStroke();
+	var porteX = 2425; 
+	rect(porteX-140,780,20,25);
+	rect(porteX+120,780,20,25);
+	rect(porteX-50,795,100,8);
+	rect(porteX-40,790,80,8);
+	rect(porteX-30,785,60,8);
+	rect(porteX-20,780,40,8);
+	rect(porteX-10,775,20,8);
+	fill(15);
+	rect(porteX-141,777,22,4);
+	rect(porteX+119,777,22,4);
+	rect(porteX-12,772,24,3);
+	
+	noFill();
+	BriqueX2 = 2360;
+	BriqueY2 = 815;
+	stroke(170);
+	strokeWeight(1);
+	
+	line(BriqueX2, BriqueY2, BriqueX2 + 90, BriqueY2);
+	line(BriqueX2-15, BriqueY2+8, BriqueX2 +70, BriqueY2 +8);
+	line(BriqueX2+10,BriqueY2+16, BriqueX2 + 80, BriqueY2 +16);
+	line(BriqueX2, BriqueY2+24, BriqueX2+60, BriqueY2 +24);
+	rect(BriqueX2-8, BriqueY2, 16,8);
+	rect(BriqueX2+8, BriqueY2, 16,8);
+	rect(BriqueX2+24, BriqueY2, 16,8);
+	rect(BriqueX2+40, BriqueY2, 16,8);
+	rect(BriqueX2+56, BriqueY2, 16,8);
+	rect(BriqueX2, BriqueY2+8, 16,8);
+	rect(BriqueX2+16, BriqueY2+8, 16,8);
+	rect(BriqueX2+32, BriqueY2+8, 16,8);
+	rect(BriqueX2+48, BriqueY2+8, 16,8);
+	rect(BriqueX2+64, BriqueY2+8, 16,8);
+	rect(BriqueX2+8, BriqueY2+16, 16,8);
+	rect(BriqueX2+24, BriqueY2+16, 16,8);
+	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
+	BriqueX2 = 2300;
+	BriqueY2 = 1105;
+	stroke(170);
+	strokeWeight(1);
+	
+	line(BriqueX2, BriqueY2, BriqueX2 + 90, BriqueY2);
+	line(BriqueX2-15, BriqueY2+8, BriqueX2 +70, BriqueY2 +8);
+	line(BriqueX2+10,BriqueY2+16, BriqueX2 + 80, BriqueY2 +16);
+	line(BriqueX2, BriqueY2+24, BriqueX2+60, BriqueY2 +24);
+	rect(BriqueX2-8, BriqueY2, 16,8);
+	rect(BriqueX2+8, BriqueY2, 16,8);
+	rect(BriqueX2+24, BriqueY2, 16,8);
+	rect(BriqueX2+40, BriqueY2, 16,8);
+	rect(BriqueX2+56, BriqueY2, 16,8);
+	rect(BriqueX2, BriqueY2+8, 16,8);
+	rect(BriqueX2+16, BriqueY2+8, 16,8);
+	rect(BriqueX2+32, BriqueY2+8, 16,8);
+	rect(BriqueX2+48, BriqueY2+8, 16,8);
+	rect(BriqueX2+64, BriqueY2+8, 16,8);
+	rect(BriqueX2+8, BriqueY2+16, 16,8);
+	rect(BriqueX2+24, BriqueY2+16, 16,8);
+	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
+	BriqueX2 = 2500;
+	BriqueY2 = 1105;
+	stroke(170);
+	strokeWeight(1);
+	
+	line(BriqueX2, BriqueY2, BriqueX2 + 90, BriqueY2);
+	line(BriqueX2-15, BriqueY2+8, BriqueX2 +70, BriqueY2 +8);
+	line(BriqueX2+10,BriqueY2+16, BriqueX2 + 80, BriqueY2 +16);
+	line(BriqueX2, BriqueY2+24, BriqueX2+60, BriqueY2 +24);
+	rect(BriqueX2-8, BriqueY2, 16,8);
+	rect(BriqueX2+8, BriqueY2, 16,8);
+	rect(BriqueX2+24, BriqueY2, 16,8);
+	rect(BriqueX2+40, BriqueY2, 16,8);
+	rect(BriqueX2+56, BriqueY2, 16,8);
+	rect(BriqueX2, BriqueY2+8, 16,8);
+	rect(BriqueX2+16, BriqueY2+8, 16,8);
+	rect(BriqueX2+32, BriqueY2+8, 16,8);
+	rect(BriqueX2+48, BriqueY2+8, 16,8);
+	rect(BriqueX2+64, BriqueY2+8, 16,8);
+	rect(BriqueX2+8, BriqueY2+16, 16,8);
+	rect(BriqueX2+24, BriqueY2+16, 16,8);
+	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
+	BriqueX2 = 2500;
+	BriqueY2 = 905;
+	stroke(170);
+	strokeWeight(1);
+	
+	line(BriqueX2, BriqueY2, BriqueX2 + 90, BriqueY2);
+	line(BriqueX2-15, BriqueY2+8, BriqueX2 +70, BriqueY2 +8);
+	line(BriqueX2+10,BriqueY2+16, BriqueX2 + 80, BriqueY2 +16);
+	line(BriqueX2, BriqueY2+24, BriqueX2+60, BriqueY2 +24);
+	rect(BriqueX2-8, BriqueY2, 16,8);
+	rect(BriqueX2+8, BriqueY2, 16,8);
+	rect(BriqueX2+24, BriqueY2, 16,8);
+	rect(BriqueX2+40, BriqueY2, 16,8);
+	rect(BriqueX2+56, BriqueY2, 16,8);
+	rect(BriqueX2, BriqueY2+8, 16,8);
+	rect(BriqueX2+16, BriqueY2+8, 16,8);
+	rect(BriqueX2+32, BriqueY2+8, 16,8);
+	rect(BriqueX2+48, BriqueY2+8, 16,8);
+	rect(BriqueX2+64, BriqueY2+8, 16,8);
+	rect(BriqueX2+8, BriqueY2+16, 16,8);
+	rect(BriqueX2+24, BriqueY2+16, 16,8);
+	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
 	// centre maison 9 = 2425 en x. Sol en y = 1200 
 	var porteX = 2425;  //mettre le centre de la maison
 	var porteY =1200;  //mettre le rez de chaussée de la maison   
@@ -1998,7 +2108,7 @@ function draw() {
 	rect(porteX-30, porteY-115,23,45);    /// fenetre dans la 1ere porte
 	rect(porteX+7,porteY-115,23,45);
 	strokeWeight(6);
-	stroke(80,35,35);
+	stroke(35);
 	rect(porteX-120, porteY-120, 40,55); /////////////////// premieres fenetres a gauche//droite 1er niveau
 	rect(porteX+80,porteY-120,40,55);
 	strokeWeight(1)
@@ -2227,7 +2337,10 @@ function draw() {
 	stroke(0);
 	fill(120, 45, 16);
 	rect(2570,830,280,370);
+	fill(25);
+	rect(2568,825,276,5);
 	
+	noFill();
 	BriqueX = 2610;
 	BriqueY= 960;
 	stroke(180);
