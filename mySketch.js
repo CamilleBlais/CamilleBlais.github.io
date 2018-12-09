@@ -1946,11 +1946,297 @@ var porteX = 930;  //mettre le centre de la maison
 	line(porteX-69, porteY-263, porteX+69, porteY-263);
 	line(porteX-70, porteY-290, porteX+70, porteY-290);
 	
-	////////////////////////////////////////////////////////////////// maison #7
+	////////////////////////////////////////////////////////////////// maison #7/// maison #7/// maison #7/// mison #7
+	/// maison #7/// maison #7/// maison #7/// maison #7/// maison #7
+	/// maison #7////// maison #7 maison #7/// maison #7/// maison #7/// maison #7////// maison #7 maison #7/// maison #7
+	/// maison #7/// maison #7/// maison #7/// maison #7
+	
 	strokeWeight(1);
 	stroke(0);
 	fill(134, 114, 89);
 	rect(1660,820,330,380);
+	fill(20);
+	rect(1660,815,330,5);
+	
+	translate(-25,0);
+	
+	noFill();
+	BriqueX = 1695;
+	BriqueY= 835;
+	stroke(180);
+	strokeWeight(1);
+	
+	line(BriqueX, BriqueY, BriqueX + 80, BriqueY);
+	line(BriqueX-5, BriqueY+8, BriqueX +70, BriqueY +8);
+	line(BriqueX+10,BriqueY+16, BriqueX + 70, BriqueY +16);
+	line(BriqueX+10, BriqueY+24, BriqueX+60, BriqueY +24);
+	noFill();
+	rect(BriqueX,BriqueY, 16, 8);
+	rect(BriqueX+16,BriqueY, 16, 8);
+	rect(BriqueX+32,BriqueY, 16, 8);
+	rect(BriqueX+48,BriqueY, 16, 8);
+	rect(BriqueX+64,BriqueY, 16, 8);
+	rect(BriqueX+8, BriqueY+8, 16, 8);
+	rect(BriqueX+24, BriqueY+8, 16, 8);
+	rect(BriqueX+40, BriqueY+8, 16, 8);
+	rect(BriqueX,BriqueY+16, 16, 8);
+	rect(BriqueX+16,BriqueY+16, 16, 8);
+	rect(BriqueX+32,BriqueY+16, 16, 8);
+	rect(BriqueX+48,BriqueY+16, 16, 8);
+	rect(BriqueX+8, BriqueY+24, 16, 8);
+	rect(BriqueX+24, BriqueY+24, 16, 8);
+	rect(BriqueX+40, BriqueY+24, 16, 8);
+	
+	BriqueX = 1895;
+	BriqueY= 935;
+	stroke(180);
+	strokeWeight(1);
+	
+	line(BriqueX, BriqueY, BriqueX + 80, BriqueY);
+	line(BriqueX-5, BriqueY+8, BriqueX +70, BriqueY +8);
+	line(BriqueX+10,BriqueY+16, BriqueX + 70, BriqueY +16);
+	line(BriqueX+10, BriqueY+24, BriqueX+60, BriqueY +24);
+	noFill();
+	rect(BriqueX,BriqueY, 16, 8);
+	rect(BriqueX+16,BriqueY, 16, 8);
+	rect(BriqueX+32,BriqueY, 16, 8);
+	rect(BriqueX+48,BriqueY, 16, 8);
+	rect(BriqueX+64,BriqueY, 16, 8);
+	rect(BriqueX+8, BriqueY+8, 16, 8);
+	rect(BriqueX+24, BriqueY+8, 16, 8);
+	rect(BriqueX+40, BriqueY+8, 16, 8);
+	rect(BriqueX,BriqueY+16, 16, 8);
+	rect(BriqueX+16,BriqueY+16, 16, 8);
+	rect(BriqueX+32,BriqueY+16, 16, 8);
+	rect(BriqueX+48,BriqueY+16, 16, 8);
+	rect(BriqueX+8, BriqueY+24, 16, 8);
+	rect(BriqueX+24, BriqueY+24, 16, 8);
+	rect(BriqueX+40, BriqueY+24, 16, 8);
+	
+	BriqueX = 1695;
+	BriqueY= 1035;
+	stroke(180);
+	strokeWeight(1);
+	
+	line(BriqueX, BriqueY, BriqueX + 80, BriqueY);
+	line(BriqueX-5, BriqueY+8, BriqueX +70, BriqueY +8);
+	line(BriqueX+10,BriqueY+16, BriqueX + 70, BriqueY +16);
+	line(BriqueX+10, BriqueY+24, BriqueX+60, BriqueY +24);
+	noFill();
+	rect(BriqueX,BriqueY, 16, 8);
+	rect(BriqueX+16,BriqueY, 16, 8);
+	rect(BriqueX+32,BriqueY, 16, 8);
+	rect(BriqueX+48,BriqueY, 16, 8);
+	rect(BriqueX+64,BriqueY, 16, 8);
+	rect(BriqueX+8, BriqueY+8, 16, 8);
+	rect(BriqueX+24, BriqueY+8, 16, 8);
+	rect(BriqueX+40, BriqueY+8, 16, 8);
+	rect(BriqueX,BriqueY+16, 16, 8);
+	rect(BriqueX+16,BriqueY+16, 16, 8);
+	rect(BriqueX+32,BriqueY+16, 16, 8);
+	rect(BriqueX+48,BriqueY+16, 16, 8);
+	rect(BriqueX+8, BriqueY+24, 16, 8);
+	rect(BriqueX+24, BriqueY+24, 16, 8);
+	rect(BriqueX+40, BriqueY+24, 16, 8);
+	
+	var porteX = 1825;  //mettre le centre de la maison
+	var porteY =1200;  //mettre le rez de chaussée de la maison   
+	noStroke();
+	fill(245,245,235);   //1ere porte
+	translate(-20,0);
+	rect(porteX-35, porteY-120,72,85);
+	rect(porteX+66, porteY-120, 34, 85);
+	strokeWeight(3);
+	stroke(120);
+	line(porteX, porteY-120,porteX, porteY-35);
+	line(porteX-4, porteY-68, porteX-4, porteY-63);
+	line(porteX+4, porteY-68, porteX+4, porteY-63);
+	fill(35,35,65);
+	rect(porteX-30, porteY-115,23,45);    /// fenetre dans la 1ere porte
+	rect(porteX+7,porteY-115,23,45);
+	rect(porteX+71,porteY-115,23,45);
+	translate(+20,0);
+	strokeWeight(6);
+	stroke(15);
+	rect(porteX-120, porteY-120, 40,55); /////////////////// premieres fenetres a gauche//droite 1er niveau
+	rect(porteX+120,porteY-120,40,55);
+	strokeWeight(1)
+	stroke(0);
+	fill(210,200,200);
+	rect(porteX-65, porteY-33, 160, 3); ////////////////////////// // 1er patio 
+	fill(55,35,35);
+	rect(porteX-65, porteY-30, 160, 12);
+	fill(55);
+	rect(porteX-65, porteY-18, 160, 16);
+	
+	fill(135,85,85);
+	rect(porteX-30, porteY-28, 60, 5);   // 1er escaliers
+	rect(porteX-30, porteY-19, 60, 5);
+	rect(porteX-30, porteY-9, 60, 5);
+	strokeWeight(3);
+	stroke(25);
+	line(porteX-31, porteY-30, porteX-32, porteY);  //rampes 1er escalier
+	line(porteX+31, porteY-30, porteX+32, porteY);
+	line(porteX-66, porteY-60, porteX-66, porteY-32); //rampes 1er patio de gauche
+	line(porteX-60, porteY-60, porteX-60, porteY-32);
+	line(porteX-54, porteY-60, porteX-54, porteY-32);
+	line(porteX-48, porteY-60, porteX-48, porteY-32);
+	line(porteX-42, porteY-62, porteX-42, porteY-32);
+	line(porteX+96, porteY-62, porteX+96, porteY-32);
+	line(porteX+90, porteY-62, porteX+90, porteY-32);
+	line(porteX+84, porteY-62, porteX+84, porteY-32);
+	line(porteX+78, porteY-62, porteX+78, porteY-32);
+	line(porteX+72, porteY-62, porteX+72, porteY-32);
+	line(porteX+66, porteY-60, porteX+66, porteY-32); //rampes 1er patio de droite
+	line(porteX+60, porteY-60, porteX+60, porteY-32);
+	line(porteX+54, porteY-60, porteX+54, porteY-32);
+	line(porteX+48, porteY-60, porteX+48, porteY-32);
+	line(porteX+42, porteY-62, porteX+42, porteY-32);
+	
+	strokeWeight(4)
+	line(porteX-67, porteY-62, porteX-40, porteY-62); //gauche
+	line(porteX+98, porteY-62, porteX+40, porteY-62); //droite
+	
+
+	strokeWeight(4);
+	stroke(135,85,85);
+	strokeWeight(1);
+	stroke(120);
+	fill(245,245,235); 						/// les 2 portes du deuxieme patios
+	rect(porteX-60, porteY-230, 34,80);
+	rect(porteX-17, porteY-230, 34, 80);
+	rect(porteX+46, porteY-230, 34, 80);
+	strokeWeight(2);
+	fill(35,35,65);					//// fenetre des 3  deuxieme portes 
+	rect(porteX-55, porteY-227, 24, 45);
+	rect(porteX-12, porteY-227, 24, 45);
+	rect(porteX+51, porteY-227, 24, 45);
+	strokeWeight(6);
+	stroke(15);
+	rect(porteX-130, porteY-240, 55,60); /////////////////// deuxieme fenetres a gauche//droite 2er niveau
+	rect(porteX+105,porteY-240,55,60);
+	line(porteX-103,porteY-240, porteX-103, porteY-185);
+	line(porteX+132,porteY-240, porteX+132, porteY-185);
+	
+
+	
+	stroke(0);
+	strokeWeight(1);
+	fill(55,35,35);        /////// 2eme patio 
+	rect(porteX-65, porteY-140, 230, 10);
+	rect(porteX-68, porteY-150,236, 10);
+	strokeWeight(3);					////////// rampes pour 2eme patio
+	stroke(15);
+	line(porteX-69, porteY-179, porteX-69, porteY-149);
+	line(porteX-63, porteY-179, porteX-63, porteY-149);
+	line(porteX-57, porteY-179, porteX-57, porteY-149);
+	line(porteX-51, porteY-179, porteX-51, porteY-149);
+	line(porteX-45, porteY-179, porteX-45, porteY-149);
+	line(porteX-39, porteY-179, porteX-39, porteY-149);
+	line(porteX-33, porteY-179, porteX-33, porteY-149);
+	line(porteX-27, porteY-179, porteX-27, porteY-149);
+	line(porteX-21, porteY-179, porteX-21, porteY-149);
+	line(porteX-15, porteY-179, porteX-15, porteY-149);
+	line(porteX-9, porteY-179, porteX-9, porteY-149);
+	line(porteX-3, porteY-179, porteX-3, porteY-149);
+	line(porteX, porteY-179, porteX, porteY-149); // centre des rampes du 2eme patio
+	line(porteX+171, porteY-179, porteX+171, porteY-149);
+	line(porteX+165, porteY-179, porteX+165, porteY-149);
+	line(porteX+159, porteY-179, porteX+159, porteY-2);
+	
+	line(porteX+111, porteY-179, porteX+111, porteY-2);
+	line(porteX+105, porteY-179, porteX+105, porteY-149);
+	line(porteX+99, porteY-179, porteX+99, porteY-149);
+	line(porteX+93, porteY-179, porteX+93, porteY-149);
+	line(porteX+87, porteY-179, porteX+87, porteY-149);
+	line(porteX+81, porteY-179, porteX+81, porteY-149);
+	line(porteX+75, porteY-179, porteX+75, porteY-149);
+	line(porteX+69, porteY-179, porteX+69, porteY-149); 
+	line(porteX+63, porteY-179, porteX+63, porteY-149);
+	line(porteX+57, porteY-179, porteX+57, porteY-149);
+	line(porteX+51, porteY-179, porteX+51, porteY-149);
+	line(porteX+45, porteY-179, porteX+45, porteY-149);
+	line(porteX+39, porteY-179, porteX+39, porteY-149);
+	line(porteX+33, porteY-179, porteX+33, porteY-149);
+	line(porteX+27, porteY-179, porteX+27, porteY-149);
+	line(porteX+21, porteY-179, porteX+21, porteY-149);
+	line(porteX+15, porteY-179, porteX+15, porteY-149);
+	line(porteX+9, porteY-179, porteX+9, porteY-149);
+	line(porteX+3, porteY-179, porteX+3, porteY-149);
+	strokeWeight(2);			
+	line(porteX-69, porteY-153, porteX+171, porteY-153);
+	line(porteX-70, porteY-180, porteX+172, porteY-180);
+	fill(55,35,35);       						/////// 3eme patio 
+	rect(porteX-65, porteY-260, 130, 10);
+	rect(porteX-68, porteY-250,136, 10);
+	strokeWeight(6);
+	stroke(15);
+	fill(35,35,65);	
+	rect(porteX-130, porteY-340, 55,60); /////////////////// 3eme fenetres a gauche//droite du 3er niveau
+	rect(porteX+105,porteY-340,55,60);
+	line(porteX-103,porteY-340, porteX-103, porteY-285);
+	line(porteX+132,porteY-340, porteX+132, porteY-285);
+	strokeWeight(1);
+	stroke(120);
+	fill(245,245,235); 					/// les 2 portes du troisieme patios
+	rect(porteX-50, porteY-340, 34,80);
+	rect(porteX+15, porteY-340, 34, 80);
+	strokeWeight(2);
+	fill(35,35,65);						//// fenetre des 3eme portes 
+	rect(porteX-45, porteY-337, 24, 45);
+	rect(porteX+21, porteY-337, 24, 45);
+	strokeWeight(3);					////////// rampes pour 3eme patio
+	stroke(15);
+	line(porteX-69, porteY-289, porteX-69, porteY-259);
+	line(porteX-63, porteY-289, porteX-63, porteY-259);
+	line(porteX-57, porteY-289, porteX-57, porteY-259);
+	line(porteX-51, porteY-289, porteX-51, porteY-259);
+	line(porteX-45, porteY-289, porteX-45, porteY-259);
+	line(porteX-39, porteY-289, porteX-39, porteY-259);
+	line(porteX-33, porteY-289, porteX-33, porteY-259);
+	line(porteX-27, porteY-289, porteX-27, porteY-259);
+	line(porteX-21, porteY-289, porteX-21, porteY-259);
+	line(porteX-15, porteY-289, porteX-15, porteY-259);
+	line(porteX-9, porteY-289, porteX-9, porteY-259);
+	line(porteX-3, porteY-289, porteX-3, porteY-259);
+	line(porteX, porteY-289, porteX, porteY-259); // centre des rampes du 3eme patio
+	line(porteX+69, porteY-289, porteX+69, porteY-259); 
+	line(porteX+63, porteY-289, porteX+63, porteY-259);
+	line(porteX+57, porteY-289, porteX+57, porteY-259);
+	line(porteX+51, porteY-289, porteX+51, porteY-259);
+	line(porteX+45, porteY-289, porteX+45, porteY-259);
+	line(porteX+39, porteY-289, porteX+39, porteY-259);
+	line(porteX+33, porteY-289, porteX+33, porteY-259);
+	line(porteX+27, porteY-289, porteX+27, porteY-259);
+	line(porteX+21, porteY-289, porteX+21, porteY-259);
+	line(porteX+15, porteY-289, porteX+15, porteY-259);
+	line(porteX+9, porteY-289, porteX+9, porteY-259);
+	line(porteX+3, porteY-289, porteX+3, porteY-259);
+		strokeWeight(2);			
+	line(porteX-69, porteY-263, porteX+69, porteY-263);
+	line(porteX-70, porteY-290, porteX+70, porteY-290);
+	
+		
+	noStroke();
+	fill(35,5,5);//////////////////////////// les longues escaliers
+	rect(porteX+110, porteY-5, 50, 4); 
+	rect(porteX+110, porteY-13, 50, 4);
+	rect(porteX+110, porteY-20, 50, 4);
+	rect(porteX+110, porteY-28, 50, 4);
+	rect(porteX+110, porteY-37, 50, 4);
+	rect(porteX+110, porteY-45, 50, 4);
+	rect(porteX+110, porteY-53, 50, 4);
+	rect(porteX+110, porteY-61, 50, 4);
+	rect(porteX+110, porteY-69, 50, 4);
+	rect(porteX+110, porteY-77, 50, 4);
+	rect(porteX+110, porteY-85, 50, 4);
+	rect(porteX+110, porteY-94, 50, 4);
+	rect(porteX+110, porteY-103, 50, 4);
+	rect(porteX+110, porteY-113, 50, 4);
+	rect(porteX+110, porteY-121, 50, 4);
+	rect(porteX+110, porteY-129, 50, 4);
+	rect(porteX+110, porteY-137, 50, 4);
+	rect(porteX+110, porteY-145, 50, 4);
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////
