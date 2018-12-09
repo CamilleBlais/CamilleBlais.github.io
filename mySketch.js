@@ -54,7 +54,8 @@ function setup(){
 
 function draw() {
 	
-	/////////////////////////rue	
+	/////////////////////////rue
+	strokeWeight(1);
 	fill(91, 88, 79);
 	rect(-100,1200,3000,30);
 	fill(118, 106, 88);
@@ -1417,6 +1418,6 @@ function draw() {
   	stroke(35, 15, 0);
   	stroke(0);
   	strokeWeight(8);
-  	rect(5,0,2866, 1600);
+  	rect(5,0,2850, 1600);
 	
 }
