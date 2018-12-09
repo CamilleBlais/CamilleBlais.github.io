@@ -9,7 +9,7 @@ x.open("GET", "https://meteo.gc.ca/rss/city/qc-147_f.xml", true);Wvar parser = n
 var xmlDoc;*/
 
 function setup(){
-  createCanvas(2866, 1608);
+  createCanvas(2850, 1600);
   background(255,255,235);
  
 }
@@ -71,6 +71,15 @@ function draw() {
 	stroke(0);
 	fill(63, 17, 4);
 	rect(-100,820,300,380);
+	noStroke();
+	rect(-100,800,300,20);
+	rect(0,780,100,20);
+	fill(25);
+	rect(-100,815,100,5);
+	rect(100,815,100,5);
+	rect(0,775,100,5);
+	fill(10);
+	rect(0,770,100,5);
 	
 	
 	//// briques foncés
@@ -1413,12 +1422,5 @@ function draw() {
 	fill(120, 45, 16);
 	rect(2570,830,280,370);
 
-	///////////////////////////////////// FENETRE DE BASE
-	noFill();
-  	stroke(0);
-  	strokeWeight(4);
-  	rect(5,6,2850, 1594);
-	stroke(35, 15, 0);
-	strokeWeight(8);
-	rect(13,14,2837, 1584);
+
 }
