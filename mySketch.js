@@ -2,6 +2,8 @@ var BriqueX = 0;
 var BriqueY = 0;
 var BriqueX2 = 0;
 var BriqueY2 = 0;
+
+
 //var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
 /*var x = new XMLHttpRequest();
@@ -83,6 +85,31 @@ function draw() {
 	
 	
 	//// briques foncés
+	noFill();
+	
+	BriqueX2 = 0;
+	BriqueY2 = 800;
+	stroke(70);
+	strokeWeight(1);
+	
+	line(BriqueX2, BriqueY2, BriqueX2 + 90, BriqueY2);
+	line(BriqueX2-15, BriqueY2+8, BriqueX2 +70, BriqueY2 +8);
+	line(BriqueX2+10,BriqueY2+16, BriqueX2 + 80, BriqueY2 +16);
+	line(BriqueX2, BriqueY2+24, BriqueX2+60, BriqueY2 +24);
+	rect(BriqueX2-8, BriqueY2, 16,8);
+	rect(BriqueX2+8, BriqueY2, 16,8);
+	rect(BriqueX2+24, BriqueY2, 16,8);
+	rect(BriqueX2+40, BriqueY2, 16,8);
+	rect(BriqueX2+56, BriqueY2, 16,8);
+	rect(BriqueX2, BriqueY2+8, 16,8);
+	rect(BriqueX2+16, BriqueY2+8, 16,8);
+	rect(BriqueX2+32, BriqueY2+8, 16,8);
+	rect(BriqueX2+48, BriqueY2+8, 16,8);
+	rect(BriqueX2+64, BriqueY2+8, 16,8);
+	rect(BriqueX2+8, BriqueY2+16, 16,8);
+	rect(BriqueX2+24, BriqueY2+16, 16,8);
+	rect(BriqueX2+40, BriqueY2+16, 16,8);
+	
 	BriqueX2 = 0;
 	BriqueY2 = 830;
 	stroke(70);
@@ -152,7 +179,7 @@ function draw() {
 	rect(BriqueX2+24, BriqueY2+16, 16,8);
 	rect(BriqueX2+40, BriqueY2+16, 16,8);
 	
-	// centre maison 1 = 50 en x. Sol en y = 1200, 1 er étage 1070 et deuxieme 945. toit =  820.  
+	// centre maison 1 = 50 en x. Sol en y = 1200 
 	var porteX = 50;  //mettre le centre de la maison
 	var porteY =1200;  //mettre le rez de chaussée de la maison   
 	noStroke();
@@ -385,9 +412,9 @@ function draw() {
 	line(porteX-69, porteY-263, porteX+69, porteY-263);
 	line(porteX-70, porteY-290, porteX+70, porteY-290);
 	
-	////////////////////////////////////////////////////////////////////////////////////////////////////////
-	//////////////////////////////////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////// maison #2 
+	//////maison #2 ////////////////////////////////////////////////////////////////////////////////maison #2 //////////////////
+	/////////////////////////////////////maison #2 ///////////////////////////maison #2 //////////////////////////////////////
+	///////////maison #2 ////////maison #2 /////////////////////////////////////////////// maison #2 
 	
 	strokeWeight(1);
 	stroke(0);
@@ -421,6 +448,8 @@ function draw() {
 	rect(BriqueX+8, BriqueY+24, 16, 8);
 	rect(BriqueX+24, BriqueY+24, 16, 8);
 	rect(BriqueX+40, BriqueY+24, 16, 8);
+	
+
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////// maison #3 
