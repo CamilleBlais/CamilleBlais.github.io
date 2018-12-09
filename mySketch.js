@@ -2249,7 +2249,7 @@ var porteX = 930;  //mettre le centre de la maison
 	rect(1990,800,290,400);
 	
 	noStroke();
-	var porteX = 2135; 
+	var porteX = 2425; 
 	rect(porteX-140,780,20,25);
 	rect(porteX+120,780,20,25);
 	rect(porteX-50,795,100,8);
@@ -2258,15 +2258,18 @@ var porteX = 930;  //mettre le centre de la maison
 	rect(porteX-20,780,40,8);
 	rect(porteX-10,775,20,8);
 	fill(15);
-	rect(porteX-141,777,22,4);
-	rect(porteX+119,777,22,4);
-	rect(porteX-12,772,24,3);
+	rect(porteX-141,777,22,5);
+	rect(porteX+119,777,22,5);
+	rect(porteX-12,772,24,5);
 	stroke(15);
 	strokeWeight(3);
 	line(porteX-141,780,porteX-141,799);
 	line(porteX-119,780, porteX-119, 799);
 	line(porteX+141,780,porteX+141,799);
 	line(porteX+119,780,porteX+119,799);
+	strokeWeight(5);
+	line(porteX-52,800,porteX-11,777);
+	line(porteX+52,800,porteX+11,777);
 	
 	
 	noFill();
@@ -2666,9 +2669,9 @@ var porteX = 930;  //mettre le centre de la maison
 	rect(porteX-20,780,40,8);
 	rect(porteX-10,775,20,8);
 	fill(15);
-	rect(porteX-141,777,22,4);
-	rect(porteX+119,777,22,4);
-	rect(porteX-12,772,24,3);
+	rect(porteX-141,777,22,5);
+	rect(porteX+119,777,22,5);
+	rect(porteX-12,772,24,5);
 	stroke(15);
 	strokeWeight(3);
 	line(porteX-141,780,porteX-141,799);
@@ -2676,8 +2679,8 @@ var porteX = 930;  //mettre le centre de la maison
 	line(porteX+141,780,porteX+141,799);
 	line(porteX+119,780,porteX+119,799);
 	strokeWeight(5);
-	line(porteX-52,794,porteX-11,776);
-	line(porteX+52,794,porteX+11,776);
+	line(porteX-52,800,porteX-11,777);
+	line(porteX+52,800,porteX+11,777);
 	
 	noFill();
 	BriqueX2 = 2360;
