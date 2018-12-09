@@ -2011,6 +2011,9 @@ function draw() {
 	line(porteX-119,780, porteX-119, 799);
 	line(porteX+141,780,porteX+141,799);
 	line(porteX+119,780,porteX+119,799);
+	strokeWeight(5);
+	line(porteX-52,794,porteX-11,776);
+	line(porteX+52,794,porteX+11,776);
 	
 	noFill();
 	BriqueX2 = 2360;
