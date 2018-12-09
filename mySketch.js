@@ -12,9 +12,10 @@ function setup(){
   createCanvas(2850, 1608);
   background(255,255,235);
   noFill();
-  stroke(35, 15, 0);
+  //stroke(35, 15, 0);
+  stroke(0);
   strokeWeight(8);
-  rect(0, 0,2842, 1600);
+  rect(0,0,242, 600);
 }
 
  /* x.onreadystatechange = function () {
