@@ -11,11 +11,7 @@ var xmlDoc;*/
 function setup(){
   createCanvas(2850, 1608);
   background(255,255,235);
-  noFill();
-  //stroke(35, 15, 0);
-  stroke(0);
-  strokeWeight(8);
-  rect(0,0,242, 600);
+ 
 }
 
  /* x.onreadystatechange = function () {
@@ -1416,6 +1412,11 @@ function draw() {
 	fill(120, 45, 16);
 	rect(2570,830,280,370);
 
-
+	///////////////////////////////////// FENETRE DE BASE
+	noFill();
+  	stroke(35, 15, 0);
+  	stroke(0);
+  	strokeWeight(8);
+  	rect(0,0,2855, 1600);
 	
 }
