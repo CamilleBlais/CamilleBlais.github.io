@@ -1237,9 +1237,9 @@ function draw() {
 	noStroke();
 	fill(50, 10, 0);
 	rect(1360,790,300,15);
-	rect(1360,785,180,8);
+	rect(1460,785,100,8);
 	fill(0);
-	rect(1360,780,180,5);
+	rect(1460,780,100,5);
 	
 	
 	noFill();
@@ -1597,6 +1597,12 @@ function draw() {
 	rect(porteX-141,777,22,4);
 	rect(porteX+119,777,22,4);
 	rect(porteX-12,772,24,3);
+	stroke(15);
+	strokeWeight(3);
+	line(porteX-141,780,porteX-141,799);
+	line(porteX-119,780, porteX-119, 799);
+	line(porteX+141,780,porteX+141,799);
+	line(porteX+119,780,porteX+119,799);
 	
 	
 	noFill();
@@ -1759,7 +1765,7 @@ function draw() {
 	rect(porteX-30, porteY-115,23,45);    /// fenetre dans la 1ere porte
 	rect(porteX+7,porteY-115,23,45);
 	strokeWeight(6);
-	stroke(135);
+	stroke(90);
 	rect(porteX-120, porteY-120, 40,55); /////////////////// premieres fenetres a gauche//droite 1er niveau
 	rect(porteX+80,porteY-120,40,55);
 	strokeWeight(1)
@@ -1999,6 +2005,12 @@ function draw() {
 	rect(porteX-141,777,22,4);
 	rect(porteX+119,777,22,4);
 	rect(porteX-12,772,24,3);
+	stroke(15);
+	strokeWeight(3);
+	line(porteX-141,780,porteX-141,799);
+	line(porteX-119,780, porteX-119, 799);
+	line(porteX+141,780,porteX+141,799);
+	line(porteX+119,780,porteX+119,799);
 	
 	noFill();
 	BriqueX2 = 2360;
@@ -2338,7 +2350,7 @@ function draw() {
 	fill(120, 45, 16);
 	rect(2570,830,280,370);
 	fill(25);
-	rect(2568,825,276,5);
+	rect(2574,825,272,5);
 	
 	noFill();
 	BriqueX = 2610;
