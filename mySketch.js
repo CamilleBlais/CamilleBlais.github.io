@@ -26,7 +26,10 @@ function setup(){
     if (err !== null) {
       alert('Ça marche pas!! ' + err);
     } else {
-      console.log('Temperature: ' + data.main.temp);
+      temperature = data.main.temp;
+      lever = data.sys.sunrise;
+            console.log(lever);
+
     }
   }); 
 }
