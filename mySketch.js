@@ -26,7 +26,7 @@ function setup(){
     if (err !== null) {
       alert('Ça marche pas!! ' + err);
     } else {
-      alert('Data: ' + data);
+      console.log('Data: ' + data);
     }
   }); 
 }
