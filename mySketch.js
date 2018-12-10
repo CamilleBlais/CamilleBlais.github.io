@@ -38,6 +38,8 @@ function setup(){
 
 function draw() {
 	
+	translate(0,150);
+	
 	/////////////////////////rue
 	strokeWeight(1);
 	fill(91, 88, 79);
