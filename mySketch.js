@@ -3,54 +3,33 @@ var BriqueY = 0;
 var BriqueX2 = 0;
 var BriqueY2 = 0;
 
-
-//var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
-
-/*var x = new XMLHttpRequest();
-x.open("GET", "https://meteo.gc.ca/rss/city/qc-147_f.xml", true);Wvar parser = new DOMParser();
-var xmlDoc;*/
+var getJSON = function(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
 
 function setup(){
   createCanvas(2850, 1600);
   background(255,255,235);
- 
+  getJSON('http://api.openweathermap.org/data/2.5/weather?q=Montreal,ca&APPID=c24766a030fea56b0f4b66352b1ecff0',
+  function(err, data) {
+    if (err !== null) {
+      alert('Ça marche pas!! ' + err);
+    } else {
+      alert('Data: ' + data);
+    }
+  }); 
 }
-
- /* x.onreadystatechange = function () {
-    if (x.readyState == 4 && x.status == 200)
-    {
-      var xmlDoc = x.responseXML;
-    }
-  };
-  x.send(null);
-	
-  console.log(xmlDoc);
-  entries=xmlDoc.getElementsByTagName("entry");
-  console.log(entries);
-  for (i=0;i<=entries.length;i++)
-  {
-    category=entries[i].getElementsByTagName("category")[0];
-    title = category.parentNode.getElementsByTagName('title')[0].childNodes[0].nodeValue
-
-    if (category.getAttribute('term')=='Conditions actuelles'){
-      console.log('Yes: '+title);
-    }
-    else {
-      console.log('No: '+title);
-    }
-  }
-
-  $const.tlong = -71.10; // longitude
-  $const.glat = 42.37; // latitude
-
-  $processor.init ();
-
-  // sun, mercury, venus, moon, mars, jupiter, saturn, uranus, neptune, pluto, chiron, sirius
-  var body = $moshier.body.sun;
-
-  $processor.calc (date, body);
-
-  console.log(body.position);*/
 
 
 
