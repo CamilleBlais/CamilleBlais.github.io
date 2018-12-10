@@ -26,7 +26,7 @@ function setup(){
     if (err !== null) {
       alert('Ça marche pas!! ' + err);
     } else {
-      console.log('Data: ' + data);
+      console.log('Temperature: ' + data.main.temp);
     }
   }); 
 }
