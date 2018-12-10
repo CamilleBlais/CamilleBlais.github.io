@@ -19,7 +19,7 @@ var getJSON = function(url, callback) {
 };
 
 function setup(){
-  createCanvas(2850, windowHeight);
+  createCanvas(windowWidth, 1600);
   background(255,255,235);
   getJSON('https://api.openweathermap.org/data/2.5/weather?q=Montreal,ca&APPID=c24766a030fea56b0f4b66352b1ecff0',
   function(err, data) {
