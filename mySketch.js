@@ -3689,7 +3689,7 @@ var porteX = 930;  //mettre le centre de la maison
 	////////////////////arbres //////////////////////////////////////////////////arbres ////////////////////////////
 	
 	var arbreX = 200;
-	var arbreY = 1080;
+	var arbreY = 1280;
 	strokeWeight(3);
 	stroke(55, 35, 15); /////////// petites branches 
 	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
