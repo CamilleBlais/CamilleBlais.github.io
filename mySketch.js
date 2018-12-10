@@ -2530,7 +2530,7 @@ var porteX = 930;  //mettre le centre de la maison
 	rect(1990,800,290,400);
 	
 	noStroke();
-	var porteX = 2210; 
+	var porteX = 2135; 
 	rect(porteX-140,780,20,25);
 	rect(porteX+120,780,20,25);
 	rect(porteX-50,795,100,8);
