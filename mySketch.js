@@ -72,12 +72,12 @@ function draw() {
 	
 	/////////////////////// ruee
 	strokeWeight(1);
-	fill(81, 78, 89);
+	fill(108, 96, 78);
 	rect(-100,1200,3000,30);
 	fill(118, 106, 88);
 	rect(-100,1230,3000,60);
 	fill(32, 23, 17);
-	rect(-100,1290,3000,210);
+	rect(-100,1290,3000,250);
 	
 
 	///////////////////////////////////////////////////////////////////// maison #1 
@@ -4652,7 +4652,7 @@ var porteX = 930;  //mettre le centre de la maison
 	
 	
 	var lampeX = 665;
-	translate(0,+100);
+	translate(0,+50);
 	fill(70);
 	strokeWeight(1);
 	stroke(10);
@@ -4674,6 +4674,6 @@ var porteX = 930;  //mettre le centre de la maison
 	line(lampeX-6,1377,lampeX+5,1377);
 	fill(180,180,170,150);
 	ellipse(lampeX,1384,12,12);
-	translate(0,-100);
+	translate(0,-50);
 	
 }
