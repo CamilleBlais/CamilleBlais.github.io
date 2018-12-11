@@ -3683,6 +3683,67 @@ var porteX = 930;  //mettre le centre de la maison
 	line(porteX-70, porteY-290, porteX+70, porteY-290);
 	
 	
+	
+	///lampadaires///////lampadaires///////lampadaires///////lampadaires////
+	///lampadaires///////lampadaires///////lampadaires///////lampadaires///////lampadaires///////lampadaires////
+	///lampadaires///////lampadaires///////lampadaires///////lampadaires////
+	
+	
+	
+	var lampeX = 500;
+	noStroke();
+	fill(15);
+	rect(lampeX-4, 1100, 8, 100);
+	ellipse(lampeX,1195,12,6);
+	ellipse(lampeX,1200,18,8);
+	ellipse(lampeX,1110,12,6);
+	ellipse(lampeX,1105,18,8);
+	strokeWeight(1);
+	stroke(15);
+	line(lampeX-6,1087,lampeX+5,1087);
+	fill(180,180,170,50);
+	ellipse(lampeX,1094,12,12);
+	
+	
+	////////// toutes les mottons de terre en ordre de gauche a droite
+	
+	var terreX = 0;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,45,30);
+	ellipse(terreX+8,1203,15,10);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	var terreX = 110;
+	fill(45, 39, 25);
+	noStroke();
+	rect(terreX,1200,95,30);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	var terreX = 270;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,65,30);
+	ellipse(terreX+8,1203,15,10);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	var terreX = 330;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,65,30);
+	ellipse(terreX+38,1201,12,8);
+	
+	var terreX = 380;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,45,30);
+	ellipse(terreX+38,1201,12,8);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
 	//////////arbres //////////////////////////////////////arbres //////////////////////////////////////arbres ////////////
 	//arbres //////////////////////////////////////arbres ////////////////////////////
 	//////////arbres //////////////////////////////////////arbres ////////////////////////////
@@ -3707,7 +3768,7 @@ var porteX = 930;  //mettre le centre de la maison
 	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
 	stroke(10);
 	strokeWeight(2);
-	fill(65, 50, 45);
+	fill(55, 50, 45);
 	beginShape();                 ////tapis de terre    
 	vertex(arbreX-38, arbreY+7);
 	vertex(arbreX-32, arbreY-18);
@@ -3804,7 +3865,7 @@ var porteX = 930;  //mettre le centre de la maison
 	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
 	stroke(10);
 	strokeWeight(2);
-	fill(65, 50, 45);
+	fill(55, 50, 45);
 	beginShape();                 ////tapis de terre    
 	vertex(arbreX-38, arbreY+7);
 	vertex(arbreX-32, arbreY-18);
@@ -3901,7 +3962,7 @@ var porteX = 930;  //mettre le centre de la maison
 	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
 	stroke(10);
 	strokeWeight(2);
-	fill(65, 50, 45);
+	fill(55, 50, 45);
 	beginShape();                 ////tapis de terre    
 	vertex(arbreX-38, arbreY+7);
 	vertex(arbreX-32, arbreY-18);
@@ -4001,7 +4062,7 @@ var porteX = 930;  //mettre le centre de la maison
 	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
 	stroke(10);
 	strokeWeight(2);
-	fill(65, 50, 45);
+	fill(55, 50, 45);
 	beginShape();                 ////tapis de terre    
 	vertex(arbreX-38, arbreY+7);
 	vertex(arbreX-32, arbreY-18);
@@ -4099,7 +4160,7 @@ var porteX = 930;  //mettre le centre de la maison
 	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
 	stroke(10);
 	strokeWeight(2);
-	fill(65, 50, 45);
+	fill(55, 50, 45);
 	beginShape();                 ////tapis de terre    
 	vertex(arbreX-38, arbreY+7);
 	vertex(arbreX-32, arbreY-18);
@@ -4173,28 +4234,5 @@ var porteX = 930;  //mettre le centre de la maison
 	vertex(arbreX+12, arbreY-120);
 	endShape(CLOSE);
 	
-	////////// toutes les mottons de terre en ordre de gauche a droite
 	
-	var terreX = -20;
-	fill(49, 41, 32);
-	noStroke();
-	rect(terreX,1200,45,30);
-	ellipse(terreX+8,1203,15,10);
-	ellipse(terreX+25,1201,15,10);
-	ellipse(terreX+38,1201,12,8);
-	
-	var terreX = 100;
-	fill(40, 39, 25);
-	noStroke();
-	rect(terreX,1200,95,30);
-	ellipse(terreX+25,1201,15,10);
-	ellipse(terreX+38,1201,12,8);
-	
-	var terreX = 260;
-	fill(49, 41, 32);
-	noStroke();
-	rect(terreX,1200,65,30);
-	ellipse(terreX+8,1203,15,10);
-	ellipse(terreX+25,1201,15,10);
-	ellipse(terreX+38,1201,12,8);
 }
