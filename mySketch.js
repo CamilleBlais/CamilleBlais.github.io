@@ -50,10 +50,10 @@ function draw() {
 	rect(600,755,300,100);
 	fill(45,40,33,230);
 	rect(1233,740,330,100);
-	fill(78,62,60,250);
-	rect(1580,750,330,100);
+	//fill(78,62,60,250);
+	//rect(1580,750,330,100);
 	fill(45,40,33,230);
-	rect(2220,715,300,100);
+	rect(2220,735,300,100);
 	
 	stroke(5,240);
 	strokeWeight(5);
@@ -69,7 +69,7 @@ function draw() {
 	fill(88, 75, 55,240);
 	rect(1900,755,300,100);
 	fill(38, 23, 2,240);
-	rect(2200,735,300,100);
+	rect(2200,750,300,100);
 	fill(88, 75, 55,240);
 	rect(2500,745,300,100);
 	
@@ -80,8 +80,9 @@ function draw() {
 	fill(118, 106, 88);
 	rect(-100,1230,3000,60);
 	fill(32, 23, 17);
-	rect(-100,1290,3000,250);
-	
+	rect(-100,1290,3000,245);
+	fill(118, 106, 88);
+	rect(-100,1475,3000,25);
 
 	///////////////////////////////////////////////////////////////////// maison #1 
 	//rectangles de base
@@ -4465,7 +4466,7 @@ var porteX = 930;  //mettre le centre de la maison
 	///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES 
 	
 	var arbreX = 390;
-	var arbreY = 1620;
+	var arbreY = 1600;
 	strokeWeight(3);
 	stroke(55, 35, 15); /////////// petites branches 
 	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
@@ -4481,33 +4482,9 @@ var porteX = 930;  //mettre le centre de la maison
 	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
 	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
 	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	stroke(10);
-	strokeWeight(2);
-	fill(55, 50, 45);
-	beginShape();                 ////tapis de terre    
-	vertex(arbreX-38, arbreY+7);
-	vertex(arbreX-32, arbreY-18);
-	vertex(arbreX+32, arbreY-18);
-	vertex(arbreX+38, arbreY+7);
-	endShape(CLOSE);
 	noStroke();
 	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 145);
-	beginShape();						//////////////// racines
-	vertex(arbreX, arbreY-5);
-	vertex(arbreX-8, arbreY+5);
-	vertex(arbreX-7, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX-6, arbreY-6);
-	vertex(arbreX-17, arbreY+6);
-	vertex(arbreX-13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX, arbreY-6);
-	vertex(arbreX+17, arbreY+4);
-	vertex(arbreX+13, arbreY-5);
-	endShape(CLOSE);
+	rect(arbreX-12, arbreY-150, 24, 50);
 	beginShape();   ////////// branche droite
 	vertex(arbreX+5, arbreY-150);
 	vertex(arbreX+10, arbreY-175);
