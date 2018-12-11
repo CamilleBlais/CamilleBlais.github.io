@@ -38,6 +38,18 @@ function setup(){
 
 function draw() {
 	/////////////// la perspective 
+	stroke(15,200);
+	strokeWeight(5);	
+	fill(28,20,13,200);
+	rect(0,755,300,100);
+	rect(290,760,310,100);
+	rect(600,755,300,100);
+	fill(28, 23, 12,200);
+	rect(1230,740,330,100);
+	fill(28,20,13,200);
+	rect(1580,750,330,100);
+	rect(2220,710,300,100);
+	rect(2520,725,300,100);
 	
 	fill(25,10,5,240);
 	stroke(5,240);
@@ -3842,10 +3854,10 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+38,1201,12,8);
 	
 	//17
-	var terreX = 2450;
+	var terreX = 2455;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,100,30);
+	rect(terreX,1200,120,30);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
