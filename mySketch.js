@@ -38,25 +38,33 @@ function setup(){
 
 function draw() {
 	/////////////// la perspective 
-	stroke(20,200);
-	strokeWeight(3);	
-	fill(70,62,63,200);
+	
+	stroke(15,240);
+	strokeWeight(5);	
+	fill(68, 55, 35,240);
 	rect(0,755,300,100);
+	fill(68,52,50,230);
 	rect(290,760,310,100);
 	rect(600,755,300,100);
-	fill(68,60,63,200);
+	fill(45,40,33,230);
+	rect(1230,740,330,100);
+	fill(45,40,33,230);
 	rect(1580,750,330,100);
+	fill(68, 55, 35,240);
+	rect(2220,710,300,100);
+	fill(45,40,33,230);
 	rect(2520,725,300,100);
+
 	
-	fill(25,10,5,240);
 	stroke(5,240);
 	strokeWeight(5);
+	fill(50,35,30,240);
 	rect(0,775,300,100);
 	rect(300,780,310,100);
 	fill(68, 53, 32,240);
 	rect(610,775,300,100);
 	rect(920,780,300,100);
-	fill(25,10,5,240);
+	fill(50,35,30,240);
 	rect(1230,755,330,100);
 	rect(1560,775,330,100);
 	fill(15,10,5,240);
@@ -64,19 +72,6 @@ function draw() {
 	fill(38, 23, 2,240);
 	rect(2200,735,300,100);
 	rect(2500,745,300,100);
-	
-	
-	/////////////////////////rue
-	stroke(10);
-	strokeWeight(1);
-	fill(91, 78, 65);
-	rect(-100,1200,3000,30);
-	fill(118, 106, 88);
-	rect(-100,1230,3000,60);
-	fill(32, 23, 17);
-	rect(-100,1290,3000,230);
-	
-	
 	
 
 	///////////////////////////////////////////////////////////////////// maison #1 
@@ -4651,7 +4646,7 @@ var porteX = 930;  //mettre le centre de la maison
 	
 	
 	var lampeX = 665;
-	translate(0,-100);
+	translate(0,+100);
 	fill(70);
 	strokeWeight(1);
 	stroke(10);
@@ -4673,6 +4668,6 @@ var porteX = 930;  //mettre le centre de la maison
 	line(lampeX-6,1377,lampeX+5,1377);
 	fill(180,180,170,150);
 	ellipse(lampeX,1384,12,12);
-	translate(0,+100);
+	translate(0,-100);
 	
 }
