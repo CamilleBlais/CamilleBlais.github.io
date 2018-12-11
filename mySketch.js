@@ -3717,7 +3717,7 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	//3
+	//4
 	var terreX = 397;
 	fill(49, 41, 32);
 	noStroke();
@@ -3725,7 +3725,7 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+28,1201,12,8);
 	ellipse(terreX+48,1201,12,8);
 	
-	//4
+	//5
 	var terreX = 555;
 	fill(49, 41, 32);
 	noStroke();
@@ -3734,47 +3734,47 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	//5
-	var terreX = 680;
+	//6
+	var terreX = 685;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,230,30);
+	rect(terreX,1200,235,30);
 	ellipse(terreX+58,1201,12,8);
 	ellipse(terreX+65,1201,15,10);
 	ellipse(terreX+98,1201,12,8);
 	
-	//6
-	var terreX = 965;
+	//7
+	var terreX = 970;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,70,30);
+	rect(terreX,1200,65,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	//7
-	var terreX = 1045;
+	//8
+	var terreX = 1105;
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,55,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	//8
-	var terreX = 1150;
+	//9
+	var terreX = 1230;
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,85,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	//9                         /// le petit
-	var terreX = 1285;
+	//10                         /// le petit
+	var terreX = 1250;
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,10,30);
 	
-	//10
-	var terreX = 1345;
+	//11
+	var terreX = 1425;
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,65,30);
