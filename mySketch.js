@@ -74,9 +74,8 @@ function draw() {
 	fill(118, 106, 88);
 	rect(-100,1230,3000,60);
 	fill(32, 23, 17);
-	rect(-100,1290,3000,210);
-	fill(118, 106, 88);
-	rect(-100,1450,3000,50);
+	rect(-100,1290,3000,230);
+	
 	
 	
 
@@ -4462,7 +4461,7 @@ var porteX = 930;  //mettre le centre de la maison
 	///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES 
 	
 	var arbreX = 350;
-	var arbreY = 1490;
+	var arbreY = 1620;
 	strokeWeight(3);
 	stroke(55, 35, 15); /////////// petites branches 
 	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
@@ -4555,7 +4554,7 @@ var porteX = 930;  //mettre le centre de la maison
 	endShape(CLOSE);
 	
 	var arbreX = 650;
-	var arbreY = 1490;
+	var arbreY = 1620;
 	strokeWeight(3);
 	stroke(55, 35, 15); /////////// petites branches 
 	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
@@ -4651,7 +4650,7 @@ var porteX = 930;  //mettre le centre de la maison
 	//////// LAMPADAIRE CACHÉS POUR MOBILES//////// LAMPADAIRE CACHÉS POUR MOBILES//////// LAMPADAIRE CACHÉS POUR MOBILES
 	
 	
-	var lampeX = 10;
+	var lampeX = 50;
 	fill(70);
 	strokeWeight(1);
 	stroke(10);
