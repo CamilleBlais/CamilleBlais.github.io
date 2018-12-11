@@ -4628,7 +4628,7 @@ var porteX = 930;  //mettre le centre de la maison
 	
 	
 	var lampeX = 665;
-	translate(0,+50);
+	
 	fill(70);
 	strokeWeight(1);
 	stroke(10);
@@ -4650,6 +4650,6 @@ var porteX = 930;  //mettre le centre de la maison
 	line(lampeX-6,1398,lampeX+5,1398);
 	fill(180,180,170,150);
 	ellipse(lampeX,1405,12,12);
-	translate(0,-50);
+	
 	
 }
