@@ -40,6 +40,7 @@ function draw() {
 	
 	
 	/////////////////////////rue
+	stroke(10);
 	strokeWeight(1);
 	fill(91, 78, 65);
 	rect(-100,1200,3000,30);
@@ -3699,6 +3700,7 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
+	//2
 	var terreX = 110;
 	fill(45, 39, 25);
 	noStroke();
@@ -3706,6 +3708,7 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
+	//3
 	var terreX = 270;
 	fill(49, 41, 32);
 	noStroke();
@@ -3714,6 +3717,7 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
+	//3
 	var terreX = 397;
 	fill(49, 41, 32);
 	noStroke();
@@ -3721,6 +3725,7 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+28,1201,12,8);
 	ellipse(terreX+48,1201,12,8);
 	
+	//4
 	var terreX = 555;
 	fill(49, 41, 32);
 	noStroke();
@@ -3729,6 +3734,7 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
+	//5
 	var terreX = 680;
 	fill(49, 41, 32);
 	noStroke();
@@ -3737,24 +3743,41 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+65,1201,15,10);
 	ellipse(terreX+98,1201,12,8);
 	
-	var terreX = 960;
+	//6
+	var terreX = 965;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,65,30);
+	rect(terreX,1200,70,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	var terreX = 1025;
+	//7
+	var terreX = 1045;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,65,30);
+	rect(terreX,1200,55,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	var terreX = 1090;
+	//8
+	var terreX = 1150;
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,85,30);
+	ellipse(terreX+8,1203,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	//9                         /// le petit
+	var terreX = 1285;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,10,30);
+	
+	//10
+	var terreX = 1345;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,65,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
@@ -3768,7 +3791,6 @@ var porteX = 930;  //mettre le centre de la maison
 	
 	
 	var lampeX = 500;
-	
 	fill(70);
 	strokeWeight(1);
 	stroke(10);
@@ -3778,7 +3800,6 @@ var porteX = 930;  //mettre le centre de la maison
 	vertex(lampeX+10, 1275);
 	vertex(lampeX-10,1275);
 	endShape(CLOSE);
-	
 	noStroke();	
 	fill(15);
 	rect(lampeX-4, 1180, 8, 100);
@@ -3793,6 +3814,15 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(lampeX,1174,12,12);
 	
 	var lampeX = 1100;
+	fill(70);
+	strokeWeight(1);
+	stroke(10);
+	beginShape();     ////tapis de ciment    
+	vertex(lampeX-12,1289);
+	vertex(lampeX+12,1289);
+	vertex(lampeX+10, 1275);
+	vertex(lampeX-10,1275);
+	endShape(CLOSE);
 	noStroke();
 	fill(15);
 	rect(lampeX-4, 1180, 8, 100);
@@ -3803,10 +3833,19 @@ var porteX = 930;  //mettre le centre de la maison
 	strokeWeight(1);
 	stroke(15);
 	line(lampeX-6,1167,lampeX+5,1167);
-	fill(180,180,170,120);
+	fill(180,180,170,150);
 	ellipse(lampeX,1174,12,12);
 	
 	var lampeX = 1700;
+	fill(70);
+	strokeWeight(1);
+	stroke(10);
+	beginShape();     ////tapis de ciment    
+	vertex(lampeX-12,1289);
+	vertex(lampeX+12,1289);
+	vertex(lampeX+10, 1275);
+	vertex(lampeX-10,1275);
+	endShape(CLOSE);
 	noStroke();
 	fill(15);
 	rect(lampeX-4, 1180, 8, 100);
@@ -3817,10 +3856,19 @@ var porteX = 930;  //mettre le centre de la maison
 	strokeWeight(1);
 	stroke(15);
 	line(lampeX-6,1167,lampeX+5,1167);
-	fill(180,180,170,120);
+	fill(180,180,170,150);
 	ellipse(lampeX,1174,12,12);
 	
 	var lampeX = 2300;
+	fill(70);
+	strokeWeight(1);
+	stroke(10);
+	beginShape();     ////tapis de ciment    
+	vertex(lampeX-12,1289);
+	vertex(lampeX+12,1289);
+	vertex(lampeX+10, 1275);
+	vertex(lampeX-10,1275);
+	endShape(CLOSE);
 	noStroke();
 	fill(15);
 	rect(lampeX-4, 1180, 8, 100);
@@ -3831,7 +3879,7 @@ var porteX = 930;  //mettre le centre de la maison
 	strokeWeight(1);
 	stroke(15);
 	line(lampeX-6,1167,lampeX+5,1167);
-	fill(180,180,170,120);
+	fill(180,180,170,150);
 	ellipse(lampeX,1174,12,12);
 	
 	
