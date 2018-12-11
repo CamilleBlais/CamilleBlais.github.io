@@ -38,17 +38,14 @@ function setup(){
 
 function draw() {
 	/////////////// la perspective 
-	stroke(15,200);
-	strokeWeight(5);	
-	fill(28,20,13,200);
+	stroke(20,200);
+	strokeWeight(3);	
+	fill(70,62,63,200);
 	rect(0,755,300,100);
 	rect(290,760,310,100);
 	rect(600,755,300,100);
-	fill(28, 23, 12,200);
-	rect(1230,740,330,100);
-	fill(28,20,13,200);
+	fill(68,60,63,200);
 	rect(1580,750,330,100);
-	rect(2220,710,300,100);
 	rect(2520,725,300,100);
 	
 	fill(25,10,5,240);
