@@ -48,10 +48,10 @@ function draw() {
 	fill(78,62,60,245);
 	rect(290,760,310,100);
 	rect(600,755,300,100);
-	fill(45,40,33,230);
-	rect(1233,740,330,100);
-	//fill(78,62,60,250);
-	//rect(1580,750,330,100);
+	//fill(45,40,33,230);
+	//rect(1233,740,330,100);
+	fill(78,62,60,250);
+	rect(1580,750,330,100);
 	fill(45,40,33,230);
 	rect(2220,735,300,100);
 	
@@ -80,9 +80,9 @@ function draw() {
 	fill(118, 106, 88);
 	rect(-100,1230,3000,60);
 	fill(32, 23, 17);
-	rect(-100,1290,3000,245);
+	rect(-100,1290,3000,240);
 	fill(118, 106, 88);
-	rect(-100,1475,3000,25);
+	rect(-100,1500,3000,30);
 
 	///////////////////////////////////////////////////////////////////// maison #1 
 	//rectangles de base
@@ -4466,7 +4466,7 @@ var porteX = 930;  //mettre le centre de la maison
 	///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES 
 	
 	var arbreX = 390;
-	var arbreY = 1600;
+	var arbreY = 1620;
 	strokeWeight(3);
 	stroke(55, 35, 15); /////////// petites branches 
 	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
@@ -4484,7 +4484,7 @@ var porteX = 930;  //mettre le centre de la maison
 	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
 	noStroke();
 	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 50);
+	rect(arbreX-12, arbreY-150, 24, 55);
 	beginShape();   ////////// branche droite
 	vertex(arbreX+5, arbreY-150);
 	vertex(arbreX+10, arbreY-175);
@@ -4534,7 +4534,7 @@ var porteX = 930;  //mettre le centre de la maison
 	vertex(arbreX+12, arbreY-120);
 	endShape(CLOSE);
 	
-	var arbreX = 20;
+	var arbreX = 1000;
 	var arbreY = 1620;
 	strokeWeight(3);
 	stroke(55, 35, 15); /////////// petites branches 
@@ -4551,33 +4551,9 @@ var porteX = 930;  //mettre le centre de la maison
 	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
 	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
 	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	stroke(10);
-	strokeWeight(2);
-	fill(55, 50, 45);
-	beginShape();                 ////tapis de terre    
-	vertex(arbreX-38, arbreY+7);
-	vertex(arbreX-32, arbreY-18);
-	vertex(arbreX+32, arbreY-18);
-	vertex(arbreX+38, arbreY+7);
-	endShape(CLOSE);
 	noStroke();
 	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 145);
-	beginShape();						//////////////// racines
-	vertex(arbreX, arbreY-5);
-	vertex(arbreX-8, arbreY+5);
-	vertex(arbreX-7, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX-6, arbreY-6);
-	vertex(arbreX-17, arbreY+6);
-	vertex(arbreX-13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX, arbreY-6);
-	vertex(arbreX+17, arbreY+4);
-	vertex(arbreX+13, arbreY-5);
-	endShape(CLOSE);
+	rect(arbreX-12, arbreY-150, 24, 55);
 	beginShape();   ////////// branche droite
 	vertex(arbreX+5, arbreY-150);
 	vertex(arbreX+10, arbreY-175);
@@ -4637,23 +4613,23 @@ var porteX = 930;  //mettre le centre de la maison
 	strokeWeight(1);
 	stroke(10);
 	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1499);
-	vertex(lampeX+12,1499);
-	vertex(lampeX+10,1489);
-	vertex(lampeX-10,1485);
+	vertex(lampeX-12,1520);
+	vertex(lampeX+12,1520);
+	vertex(lampeX+10,1510);
+	vertex(lampeX-10,1506);
 	endShape(CLOSE);
 	noStroke();
 	fill(15);
-	rect(lampeX-4, 1390, 8, 100);
-	ellipse(lampeX,1485,12,6);
-	ellipse(lampeX,1490,18,8);
-	ellipse(lampeX,1400,12,6);
-	ellipse(lampeX,1395,18,8);
+	rect(lampeX-4, 1411, 8, 100);
+	ellipse(lampeX,1506,12,6);
+	ellipse(lampeX,1511,18,8);
+	ellipse(lampeX,1421,12,6);
+	ellipse(lampeX,1416,18,8);
 	strokeWeight(1);
 	stroke(15);
-	line(lampeX-6,1377,lampeX+5,1377);
+	line(lampeX-6,1398,lampeX+5,1398);
 	fill(180,180,170,150);
-	ellipse(lampeX,1384,12,12);
+	ellipse(lampeX,1405,12,12);
 	translate(0,-50);
 	
 }
