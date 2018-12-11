@@ -2560,9 +2560,9 @@ var porteX = 930;  //mettre le centre de la maison
 	line(porteX-119,780, porteX-119, 799);
 	line(porteX+141,780,porteX+141,799);
 	line(porteX+119,780,porteX+119,799);
-	strokeWeight(5);
-	line(porteX-52,800,porteX-11,777);
-	line(porteX+52,800,porteX+11,777);
+	strokeWeight(7);
+	line(porteX-52,799,porteX-11,776);
+	line(porteX+52,799,porteX+11,776);
 	
 	
 	noFill();
@@ -2971,9 +2971,9 @@ var porteX = 930;  //mettre le centre de la maison
 	line(porteX-119,780, porteX-119, 799);
 	line(porteX+141,780,porteX+141,799);
 	line(porteX+119,780,porteX+119,799);
-	strokeWeight(5);
-	line(porteX-52,800,porteX-11,777);
-	line(porteX+52,800,porteX+11,777);
+	strokeWeight(7);
+	line(porteX-52,799,porteX-11,776);
+	line(porteX+52,799,porteX+11,776);
 	
 	noFill();
 	BriqueX2 = 2360;
@@ -4460,7 +4460,7 @@ var porteX = 930;  //mettre le centre de la maison
 	///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES 
 	///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES 
 	
-	var arbreX = 350;
+	var arbreX = 390;
 	var arbreY = 1620;
 	strokeWeight(3);
 	stroke(55, 35, 15); /////////// petites branches 
@@ -4553,7 +4553,7 @@ var porteX = 930;  //mettre le centre de la maison
 	vertex(arbreX+12, arbreY-120);
 	endShape(CLOSE);
 	
-	var arbreX = 650;
+	var arbreX = 20;
 	var arbreY = 1620;
 	strokeWeight(3);
 	stroke(55, 35, 15); /////////// petites branches 
@@ -4650,7 +4650,8 @@ var porteX = 930;  //mettre le centre de la maison
 	//////// LAMPADAIRE CACHÉS POUR MOBILES//////// LAMPADAIRE CACHÉS POUR MOBILES//////// LAMPADAIRE CACHÉS POUR MOBILES
 	
 	
-	var lampeX = 50;
+	var lampeX = 665;
+	translate(0,-100);
 	fill(70);
 	strokeWeight(1);
 	stroke(10);
@@ -4672,5 +4673,6 @@ var porteX = 930;  //mettre le centre de la maison
 	line(lampeX-6,1377,lampeX+5,1377);
 	fill(180,180,170,150);
 	ellipse(lampeX,1384,12,12);
+	translate(0,+100);
 	
 }
