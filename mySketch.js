@@ -39,18 +39,22 @@ function setup(){
 function draw() {
 	/////////////// la perspective 
 	
-	fill(48);
-	stroke(45);
+	fill(25,10,5,240);
+	stroke(5);
 	strokeWeight(5);
-	rect(0,750,300,100);
-	rect(300,730,310,100);
-	rect(610,755,300,100);
-	rect(920,710,300,100);
-	rect(1230,730,330,100);
-	rect(1560,750,330,100);
-	rect(1900,730,300,100);
-	rect(2200,710,300,100);
-	rect(2500,725,300,100);
+	rect(0,770,300,100);
+	rect(300,750,310,100);
+	fill(68, 53, 32,240);
+	rect(610,775,300,100);
+	rect(920,730,300,100);
+	fill(25,10,5,240);
+	rect(1230,750,330,100);
+	rect(1560,770,330,100);
+	fill(15,10,5,240);
+	rect(1900,750,300,100);
+	fill(38, 23, 2,240);
+	rect(2200,730,300,100);
+	rect(2500,745,300,100);
 	
 	
 	/////////////////////////rue
@@ -3806,7 +3810,7 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+108,1201,12,8);
 	
 	//13
-	var terreX = 1845;
+	var terreX = 1855;
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,65,30);
@@ -3814,18 +3818,34 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+38,1201,12,8);
 	
 	//14
-	var terreX = 1960;
+	var terreX = 1980;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,85,30);
+	rect(terreX,1200,105,30);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
 	//15
-	var terreX = 2095;
+	var terreX = 2160;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,70,30);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	//16
+	var terreX = 2340;
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,55,30);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	//17
+	var terreX = 2400;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,100,30);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
