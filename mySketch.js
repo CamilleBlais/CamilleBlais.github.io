@@ -76,13 +76,13 @@ function draw() {
 	/////////////////////// ruee
 	strokeWeight(1);
 	fill(108, 96, 78);
-	rect(-100,1200,3000,30);
+	rect(-100,1200,2950,30);
 	fill(118, 106, 88);
-	rect(-100,1230,3000,60);
+	rect(-100,1230,2950,60);
 	fill(32, 23, 17);
-	rect(-100,1290,3000,240);
+	rect(-100,1290,2950,230);
 	fill(118, 106, 88);
-	rect(-100,1500,3000,25);
+	rect(-100,1500,2950,25);
 
 	///////////////////////////////////////////////////////////////////// maison #1 
 	//rectangles de base
@@ -3860,9 +3860,29 @@ var porteX = 930;  //mettre le centre de la maison
 	var terreX = 2455;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,120,30);
+	rect(terreX,1200,105,30);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
+	
+	//18
+	var terreX = 2620;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,45,30);
+	ellipse(terreX+8,1203,15,10);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	//19
+	var terreX = 2715;
+	fill(49, 41, 32);
+	noStroke();
+	rect(terreX,1200,235,30);
+	ellipse(terreX+8,1203,15,10);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	
 	
 	
 	
