@@ -81,7 +81,7 @@ function draw() {
 	fill(38, 23, 2,240);
 	rect(2200,750,300,100);
 	fill(88, 75, 55,240);
-	rect(2500,745,300,100);
+	rect(2500,777,300,100);
 	
 	/////////////////////// ruee
 	strokeWeight(1);
@@ -3887,7 +3887,7 @@ var porteX = 930;  //mettre le centre de la maison
 	var terreX = 2715;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,235,30);
+	rect(terreX,1200,180,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
