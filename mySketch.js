@@ -41,7 +41,7 @@ function draw() {
 	
 	/////////////////////////rue
 	strokeWeight(1);
-	fill(91, 88, 79);
+	fill(81, 78, 89);
 	rect(-100,1200,3000,30);
 	fill(118, 106, 88);
 	rect(-100,1230,3000,60);
@@ -3691,18 +3691,19 @@ var porteX = 930;  //mettre le centre de la maison
 	
 	
 	var lampeX = 500;
+	var lampeY= 1280
 	noStroke();
 	fill(15);
-	rect(lampeX-4, 1100, 8, 100);
-	ellipse(lampeX,1195,12,6);
-	ellipse(lampeX,1200,18,8);
-	ellipse(lampeX,1110,12,6);
-	ellipse(lampeX,1105,18,8);
+	rect(lampeX-4, 1180, 8, 100);
+	ellipse(lampeX,1275,12,6);
+	ellipse(lampeX,1280,18,8);
+	ellipse(lampeX,1190,12,6);
+	ellipse(lampeX,1185,18,8);
 	strokeWeight(1);
 	stroke(15);
-	line(lampeX-6,1087,lampeX+5,1087);
+	line(lampeX-6,1167,lampeX+5,1167);
 	fill(180,180,170,50);
-	ellipse(lampeX,1094,12,12);
+	ellipse(lampeX,1174,12,12);
 	
 	
 	////////// toutes les mottons de terre en ordre de gauche a droite
@@ -3718,7 +3719,7 @@ var porteX = 930;  //mettre le centre de la maison
 	var terreX = 110;
 	fill(45, 39, 25);
 	noStroke();
-	rect(terreX,1200,95,30);
+	rect(terreX,1200,120,30);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
@@ -3730,13 +3731,13 @@ var porteX = 930;  //mettre le centre de la maison
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	var terreX = 330;
+	var terreX = 400;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,65,30);
+	rect(terreX,1200,55,30);
 	ellipse(terreX+38,1201,12,8);
 	
-	var terreX = 380;
+	var terreX = 510;
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,45,30);
