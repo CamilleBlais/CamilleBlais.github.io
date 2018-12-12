@@ -43,7 +43,13 @@ function setup(){
 	coucher = data.sys.sunset;
            //console.log(coucher);
 	    
-	    
+    }
+  }); 
+}
+
+
+
+function draw() {
 	///////////////////////////////////////////// calcule du lever du soleil
 	var D1 = (lever / 86400);
 	var D2 = floor(D1);
@@ -102,15 +108,6 @@ function setup(){
 	var Time = (hr*60*60) + (mn*60) + sc
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
-	  
-    }
-  }); 
-}
-
-
-
-function draw() {
-	
 	/////////////////////////// LE SOLEIL 
 	
 	sunX = map(Time,TimeSunrise,TimeMidi,2500,1500);
