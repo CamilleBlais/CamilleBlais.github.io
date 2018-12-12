@@ -3887,7 +3887,7 @@ var porteX = 930;  //mettre le centre de la maison
 	var terreX = 2715;
 	fill(49, 41, 32);
 	noStroke();
-	rect(terreX,1200,180,30);
+	rect(terreX,1200,160,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
