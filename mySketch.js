@@ -50,7 +50,7 @@ function setup(){
 
 
 function draw() {
-	///////////////////////////////////////////// calcule du lever du soleil
+	/*///////////////////////////////////////////// calcule du lever du soleil
 	var D1 = (lever / 86400);
 	var D2 = floor(D1);
 	var D3 = (D1 - D2);
@@ -120,7 +120,7 @@ function draw() {
 	fill(255, 246, 188);
 	ellipse(sunX, sunY, 80,80);
 	fill(255, 246, 188);
-  	ellipse(sunX2, sunY2, 80,80);
+  	ellipse(sunX2, sunY2, 80,80);*/
 	
 	
 	/////////////// la perspective 
