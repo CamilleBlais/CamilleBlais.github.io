@@ -52,7 +52,7 @@ function setup(){
 function draw() {
 	
 	///////////////////////////////////////////// calcule du lever du soleil
-	var D1 = (lever/ 86400);
+	var D1 = (data.sys.sunrise/ 86400);
 	var D2 = floor(D1);
 	var D3 = (D1 - D2);
 	var H1 = (D3*86400);
@@ -76,7 +76,7 @@ function draw() {
 	///////////////////////////////////////////// calcule du coucher du soleil
 	    
 	// D (comme day) = C // H (comme hour) = F // M (comme minute) = E // S comme secondes = G //
-	var C1 = (coucher/86400);
+	var C1 = (data.sys.sunset/86400);
 	var C2 = floor(C1);
 	var C3 = (C1 - C2);
 	
