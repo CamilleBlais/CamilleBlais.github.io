@@ -2,6 +2,9 @@ var BriqueX = 0;
 var BriqueY = 0;
 var BriqueX2 = 0;
 var BriqueY2 = 0;
+var temperature = 0;
+var lever = 0;
+var coucher = 0;
 
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
@@ -38,14 +41,16 @@ function setup(){
     if (err !== null) {
       alert('Ça marche pas!! ' + err);
     } else {
-      var temperature = data.main.temp;
-      var lever = data.sys.sunrise;
-	var coucher = data.sys.sunset;
-           console.log(lever);
+      temperature = data.main.temp;
+      lever = data.sys.sunrise;
+      coucher = data.sys.sunset;
+      console.log(lever);
+    }
+  }); 
+}
 	
-   	function draw() {
-	
-	
+function draw() {
+
 	///////////////////////////////////////////// calcule du lever du soleil
 	var D1 = (lever/ 86400);
 	var D2 = floor(D1);
@@ -5037,7 +5042,5 @@ var porteX = 930;  //mettre le centre de la maison
 	
 }
 	    
-	     }
-  }); 
-}
+	    
 
