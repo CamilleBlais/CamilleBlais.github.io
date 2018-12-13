@@ -39,8 +39,8 @@ function setup(){
       alert('Ça marche pas!! ' + err);
     } else {
       var temperature = data.main.temp;
-      lever = data.sys.sunrise;
-	coucher = data.sys.sunset;
+      var lever = data.sys.sunrise;
+	var coucher = data.sys.sunset;
            //console.log(coucher);
 	    
     }
