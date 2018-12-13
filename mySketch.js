@@ -43,16 +43,8 @@ function setup(){
 	var coucher = data.sys.sunset;
            console.log(lever);
 	
-    }
-  }); 
-}
-
-
-
-function draw() {
+   	function draw() {
 	
-	var lever = data.sys.sunrise;
-	var coucher = data.sys.sunset;
 	
 	///////////////////////////////////////////// calcule du lever du soleil
 	var D1 = (lever/ 86400);
@@ -5043,6 +5035,9 @@ var porteX = 930;  //mettre le centre de la maison
 	fill(180,180,170,150);
 	ellipse(lampeX,1405,12,12);
 	
-	
-	
 }
+	    
+	     }
+  }); 
+}
+
