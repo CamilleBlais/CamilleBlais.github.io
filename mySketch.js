@@ -41,7 +41,7 @@ function setup(){
       var temperature = data.main.temp;
       var lever = data.sys.sunrise;
 	var coucher = data.sys.sunset;
-           //console.log(coucher);
+           console.log(lever);
 	    
     }
   }); 
