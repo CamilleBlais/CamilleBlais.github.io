@@ -51,8 +51,8 @@ function setup(){
 
 function draw() {
 	
-	var lever = 1544704014
-	var coucher = 1544790014
+	var lever = data.sys.sunrise;
+	var coucher = data.sys.sunset;
 	
 	///////////////////////////////////////////// calcule du lever du soleil
 	var D1 = (lever/ 86400);
