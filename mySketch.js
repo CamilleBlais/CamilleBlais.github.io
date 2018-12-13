@@ -50,18 +50,18 @@ function setup(){
 
 
 function draw() {
-	/*///////////////////////////////////////////// calcule du lever du soleil
+	
+	///////////////////////////////////////////// calcule du lever du soleil
 	var D1 = (lever / 86400);
 	var D2 = floor(D1);
 	var D3 = (D1 - D2);
-	//print(D3);
 	var H1 = (D3*86400);
 	var H2 = (H1/3600);
 	var H3 = floor(H2);
 	
 	var M1 = (H2 - H3);
 	var H4 = (H2 - M1 - 5);
-	var H5 = H4*3600     		//nombre de secondes en termes d'heures
+	var H5 = (H4*3600);     		//nombre de secondes en termes d'heures
 	
 	var M2 = (M1*60);
 	var M3 = floor(M2);
@@ -71,12 +71,12 @@ function draw() {
 	var S3 = floor(S2);  // nombre de secondes toutes nues
 	var M4 = (M3*60);  // nombres de secondes en termes de minutes
 	
-	var TimeSunrise = S3 + M4 + H5 ;
+	var TimeSunrise = (S3 + M4 + H5);
 	    
 	///////////////////////////////////////////// calcule du coucher du soleil
 	    
 	// D (comme day) = C // H (comme hour) = F // M (comme minute) = E // S comme secondes = G //
-	var C1 = (coucher / 86400);
+	var C1 = (coucher/86400);
 	var C2 = floor(C1);
 	var C3 = (C1 - C2);
 	
@@ -86,7 +86,7 @@ function draw() {
 	
 	var E1 = (F2 - F3);
 	var F4 = (F2 - E1 - 5);
-	var F5 = F4*3600  //nombre de secondes en termes d'heures
+	var F5 = (F4*3600)  //nombre de secondes en termes d'heures
 	
 	var E2 = (E1*60);
 	var E3 = floor(E2);
@@ -96,7 +96,7 @@ function draw() {
 	var G3 = floor(G2);  // nombre de secondes toutes nues
 	var E4 = (E3*60);  // nombres de secondes en termes de minutes
 	
-	var TimeSunset = G3 + E4 + F5 ;
+	var TimeSunset = (G3 + E4 + F5);
 	    
 	    
 	///////////////////////////////////Définition du temps
@@ -105,22 +105,24 @@ function draw() {
 	var m = month();
 	var mn = minute();
 	var sc = second();
-	var Time = (hr*60*60) + (mn*60) + sc
+	
+	var Realtime = ((hr*3600) + (mn*60) + sc)
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
+	
 	/////////////////////////// LE SOLEIL 
 	
-	sunX = map(Time,TimeSunrise,TimeMidi,2500,1500);
-	sunY = map(Time,TimeSunrise, TimeMidi, 800,200);
+	sunX = map(Realtime,TimeSunrise,TimeMidi,2500,1500);
+	sunY = map(Realtime,TimeSunrise, TimeMidi, 800,200);
 	
- 	sunX2 = map(Time,TimeMidi, TimeSunset, 1500,500);
-  	sunY2 = map(Time,TimeMidi,TimeSunset,200,800);
+ 	sunX2 = map(Realtime,TimeMidi, TimeSunset, 1500,500);
+  	sunY2 = map(Realtime,TimeMidi,TimeSunset,200,800);
 	
 	noStroke();
 	fill(255, 246, 188);
 	ellipse(sunX, sunY, 80,80);
 	fill(255, 246, 188);
-  	ellipse(sunX2, sunY2, 80,80);*/
+  	ellipse(sunX2, sunY2, 80,80);
 	
 	
 	/////////////// la perspective 
