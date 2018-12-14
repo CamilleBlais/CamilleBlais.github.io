@@ -2,6 +2,10 @@ var BriqueX = 0;
 var BriqueY = 0;
 var BriqueX2 = 0;
 var BriqueY2 = 0;
+var rt = 0;
+var gt = 0;
+var bt = 0;
+var terreX = 0;
 var temperature = 0;
 var lever = 0;
 var coucher = 0;
@@ -109,12 +113,18 @@ function setup(){
 	
 	}
 
-	
+	/// motons de terre qui change de couleur avec la neige
+	function Terre(terreX, rt, gt, bt){	
+	fill(rt, gt, bt);
+	noStroke();
+	rect(terreX,1200,45,30);
+	ellipse(terreX+8,1203,15,10);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	}
 	
 
 function draw() {
-	background(230,235,250);
-	
 	///////////////////////////////////////////// calcule du lever du soleil
 	var D1 = (lever/ 86400);
 	var D2 = floor(D1);
@@ -173,8 +183,17 @@ function draw() {
 	var Realtime = ((hr*3600) + (mn*60) + sc)
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
-
+	
+	///////////////////////////////////////////// LE BACKGROUND 
+	background(230,235,250);  //daylight time normale
+	
+	
+	
+	
+	
 	/////////////////////////// LE SOLEIL 
+	
+	
 	
 	sunX = map(Realtime,TimeSunrise,TimeMidi,2500,1500);
 	sunY = map(Realtime,TimeSunrise, TimeMidi, 800,200);
@@ -2684,40 +2703,12 @@ function draw() {
 	
 	/// toutes les mottons de terre en ordre de gauche a droite
 	
-	var terreX = -10;
-	//var colorterre = 0;
-	//function Terre(terreX, y)
-	fill(49, 41, 32);
-	noStroke();
-	rect(terreX,1200,45,30);
-	ellipse(terreX+8,1203,15,10);
-	ellipse(terreX+25,1201,15,10);
-	ellipse(terreX+38,1201,12,8);
 	
-	//2
-	var terreX = 105;
-	fill(45, 39, 25);
-	noStroke();
-	rect(terreX,1200,120,30);
-	ellipse(terreX+25,1201,15,10);
-	ellipse(terreX+38,1201,12,8);
+	Terre(-20, 49, 41, 32);
+	Terre(105, 49, 41, 32);
+	Terre(270, 49, 41, 32);
+	Terre(397, 49, 41, 32);
 	
-	//3
-	var terreX = 270;
-	fill(49, 41, 32);
-	noStroke();
-	rect(terreX,1200,65,30);
-	ellipse(terreX+8,1203,15,10);
-	ellipse(terreX+25,1201,15,10);
-	ellipse(terreX+38,1201,12,8);
-	
-	//4
-	var terreX = 397;
-	fill(49, 41, 32);
-	noStroke();
-	rect(terreX,1200,105,30);
-	ellipse(terreX+28,1201,12,8);
-	ellipse(terreX+48,1201,12,8);
 	
 	//5
 	var terreX = 555;
