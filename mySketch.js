@@ -2684,9 +2684,9 @@ function draw() {
 	
 	/// toutes les mottons de terre en ordre de gauche a droite
 	
-	var terreX = 0;
-	var colorterre = 0;
-	function Terre(terreX, y)
+	var terreX = -10;
+	//var colorterre = 0;
+	//function Terre(terreX, y)
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,45,30);
