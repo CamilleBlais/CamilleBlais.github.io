@@ -4407,12 +4407,13 @@ function draw() {
 	fill(180,180,170,150);
 	ellipse(lampeX,1405,12,12);
 	
-	if(meteo = "light rain"){
+	if(meteo == "light rain"){
 	for (var i = 0; i < drops.length; i++) {
          drops[i].fall();
          drops[i].show();
   	}
 	}
+	
 	
 	
 }
