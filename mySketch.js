@@ -48,7 +48,7 @@ function setup(){
       console.log(lever);
     }
   }); 
-  for (var i = 0; i < 800; i++) {
+  for (var i = 0; i < 1000; i++) {
     drops[i] = new Drop();
   }
 }
