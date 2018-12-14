@@ -979,7 +979,7 @@ function draw() {
 	////////////////////////////////////////////////////////////////// maison #4 //////////// maison #4//////////// maison #4
 	//////////// maison #4//////////// maison #4////////////// maison #4//////////// maison #4//////////// maison #4
 	/////////////////// maison #4//////////// maison #4//////////// maison #4//////////// maison #4//////////// maison #4
-	//////////// m/aison #4///////////// maison #4///////////// maison #4//////////// maison #4//////////// maison #4
+	//////////// maison #4///////////// maison #4///////////// maison #4//////////// maison #4//////////// maison #4
 	
 	strokeWeight(1);
 	stroke(0);
@@ -1490,7 +1490,6 @@ function draw() {
 	rect(porteX-65, porteY-30, 130, 12);
 	fill(85,70,70,75);
 	rect(porteX-65, porteY-18, 130, 16);
-	
 	fill(135,85,85);
 	rect(porteX-30, porteY-28, 60, 5);   // 1er escaliers
 	rect(porteX-30, porteY-19, 60, 5);
@@ -1512,9 +1511,6 @@ function draw() {
 	strokeWeight(4)
 	line(porteX-67, porteY-62, porteX-40, porteY-62); //gauche
 	line(porteX+67, porteY-62, porteX+40, porteY-62); //droite
-	
-	
-  
 	noStroke();
 	fill(135,85,85);//////////////////////////// les longues escaliers
 	rect(porteX-148, porteY-5, 50, 4); 
@@ -1591,9 +1587,6 @@ function draw() {
 	line(porteX-88, porteY-145, porteX-82, porteY-150);
 	line(porteX-82, porteY-150, porteX-75, porteY-155);
 	line(porteX-75, porteY-155, porteX-70, porteY-157);
-	
-	
-	
 	strokeWeight(1);
 	stroke(120);
 	fill(245,245,235); 					/// les 2 portes du deuxieme patios
@@ -1611,7 +1604,6 @@ function draw() {
 	rect(porteX+75,porteY-240,55,60);
 	line(porteX-103,porteY-240, porteX-103, porteY-185);
 	line(porteX+102,porteY-240, porteX+102, porteY-185);
-	
 	stroke(0);
 	strokeWeight(1);
 	fill(210,200,180);        /////// 2eme patio 
@@ -1693,7 +1685,7 @@ function draw() {
 	line(porteX+15, porteY-289, porteX+15, porteY-259);
 	line(porteX+9, porteY-289, porteX+9, porteY-259);
 	line(porteX+3, porteY-289, porteX+3, porteY-259);
-		strokeWeight(2);			
+	strokeWeight(2);			
 	line(porteX-69, porteY-263, porteX+69, porteY-263);
 	line(porteX-70, porteY-290, porteX+70, porteY-290);
 	
@@ -1709,7 +1701,7 @@ function draw() {
 	fill(20);
 	rect(1660,815,330,5);
 	
-	translate(-25,0);
+	//translate(-25,0);
 	
 	noFill();
 	BriqueX = 1695;
