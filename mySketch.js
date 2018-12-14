@@ -5046,7 +5046,7 @@ var porteX = 930;  //mettre le centre de la maison
 	fill(180,180,170,150);
 	ellipse(lampeX,1405,12,12);
 
-  for (var i = 0; i < drops.length; i++) {
+  for (var i = 0; i < drops.length; i+2) {
     drops[i].fall();
     drops[i].show();
   }
