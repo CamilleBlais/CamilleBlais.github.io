@@ -6,7 +6,7 @@
 
 function Drop() {
   this.x = random(width);
-  this.y = random(-1000, -20);
+  this.y = random(-50, 1525);
   this.len = random(5, 20);
   this.yspeed = random(10,20);
 
@@ -23,7 +23,7 @@ function Drop() {
   this.show = function() {
    
     strokeWeight(3);
-    stroke(131, 192, 247);
+    stroke(131, 192, 247,200);
     line(this.x, this.y, this.x, this.y+this.len);
   }
 }
