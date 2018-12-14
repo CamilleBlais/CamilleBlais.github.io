@@ -2685,6 +2685,8 @@ function draw() {
 	/// toutes les mottons de terre en ordre de gauche a droite
 	
 	var terreX = 0;
+	var colorterre = 0;
+	function Terre(terreX, y)
 	fill(49, 41, 32);
 	noStroke();
 	rect(terreX,1200,45,30);
@@ -3913,7 +3915,7 @@ function draw() {
 	fill(180,180,170,150);
 	ellipse(lampeX,1405,12,12);
 	
-	meteo = 20;
+	
 	
 	if(meteo == "light rain"){
 	for (var i = 0; i < drops.length; i++) {
