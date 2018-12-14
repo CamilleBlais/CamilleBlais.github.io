@@ -7,18 +7,16 @@
 function Drop() {
   this.x = random(width);
   this.y = random(-500, -50);
-  this.z = random(0, 20);
-  this.len = map(this.z, 15, 20, 15, 20);
-  this.yspeed = map(this.z, 15, 20, 15, 20);
+  this.len = random(5, 20);
+  this.yspeed = random(10,20);
 
   this.fall = function() {
     this.y = this.y + this.yspeed;
-    var grav = map(this.z, 15, 20, 0.2, 0.3);
-    this.yspeed = this.yspeed + grav;
+    this.yspeed = this.yspeed + 0.3;
 
     if (this.y > height) {
       this.y = random(-200, -100);
-      this.yspeed = map(this.z, 15, 20, 15, 20);
+      this.yspeed = random(10,20);
     }
   }
 
