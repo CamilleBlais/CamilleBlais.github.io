@@ -5,6 +5,7 @@ var BriqueY2 = 0;
 var temperature = 0;
 var lever = 0;
 var coucher = 0;
+var meteo = 0;
 var drops = [];
 
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
@@ -42,10 +43,12 @@ function setup(){
     if (err !== null) {
       alert('Ça marche pas!! ' + err);
     } else {
-      temperature = data.main.temp;
-      lever = data.sys.sunrise;
-      coucher = data.sys.sunset;
-      console.log(lever);
+	    temperature = data.main.temp;
+	    lever = data.sys.sunrise;
+	    coucher = data.sys.sunset;
+	    meteo = data.weather.main;
+      
+      console.log(meteo);
     }
   }); 
   for (var i = 0; i < 1000; i++) {
