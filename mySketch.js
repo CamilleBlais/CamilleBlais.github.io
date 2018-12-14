@@ -2,10 +2,16 @@ var BriqueX = 0;
 var BriqueY = 0;
 var BriqueX2 = 0;
 var BriqueY2 = 0;
+var terreX = 0;
 var rt = 0;
 var gt = 0;
 var bt = 0;
-var terreX = 0;
+var lampeX = 0;
+var lampeY = 0;
+var rl = 0;
+var gl = 0;
+var bl = 0;
+var al = 0;
 var temperature = 0;
 var lever = 0;
 var coucher = 0;
@@ -110,19 +116,31 @@ function setup(){
 	rect(BriqueX2+8, BriqueY2+16, 16,8);
 	rect(BriqueX2+24, BriqueY2+16, 16,8);
 	rect(BriqueX2+40, BriqueY2+16, 16,8);
-	
 	}
-
-	/// motons de terre qui change de couleur avec la neige
-	function Terre(terreX, rt, gt, bt){	
-	fill(rt, gt, bt);
-	noStroke();
-	rect(terreX,1200,45,30);
-	ellipse(terreX+8,1203,15,10);
-	ellipse(terreX+25,1201,15,10);
-	ellipse(terreX+38,1201,12,8);
+	// les lampadaires avec possibilités de changer la lumière 
+	function lampadaire(lampeX,lampeY, rl, gl, bl, al){
+	fill(70);
+	strokeWeight(1);
+	stroke(10);
+	beginShape();     ////tapis de ciment    
+	vertex(lampeX-12,lampeY);
+	vertex(lampeX+12,lampeY);
+	vertex(lampeX+10,lampeY-14);
+	vertex(lampeX-10,lampeY-14);
+	endShape(CLOSE);
+	noStroke();	
+	fill(15);
+	rect(lampeX-4, lampeY-109, 8, 100);
+	ellipse(lampeX,lampeY-14,12,6);
+	ellipse(lampeX,lampeY-9,18,8);
+	ellipse(lampeX,lampeY-99,12,6);
+	ellipse(lampeX,lampeY-104,18,8);
+	strokeWeight(1);
+	stroke(15);
+	line(lampeX-6,lampeY-122,lampeX+5,lampeY-122);
+	fill(rl,gl,bl,al);
+	ellipse(lampeX,lampeY-115,12,12);
 	}
-	
 
 function draw() {
 	///////////////////////////////////////////// calcule du lever du soleil
@@ -2704,15 +2722,42 @@ function draw() {
 	/// toutes les mottons de terre en ordre de gauche a droite
 	
 	
-	Terre(-20, 49, 41, 32);
-	Terre(105, 49, 41, 32);
-	Terre(270, 49, 41, 32);
-	Terre(397, 49, 41, 32);
+	rt = 49;
+	gt = 41;
+	bt = 32;
 	
+	var terreX = 0;  //1
+	fill(rt, gt, bt);
+	noStroke();
+	rect(terreX,1200,45,30);
+	ellipse(terreX+8,1203,15,10);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	var terreX = 110;    //2
+	fill(rt, gt, bt);
+	noStroke();
+	rect(terreX,1200,120,30);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	var terreX = 270;    //3
+	fill(rt, gt, bt);
+	noStroke();
+	rect(terreX,1200,65,30);
+	ellipse(terreX+8,1203,15,10);
+	ellipse(terreX+25,1201,15,10);
+	ellipse(terreX+38,1201,12,8);
+	
+	var terreX = 400;  //4
+	fill(rt, gt, bt);
+	noStroke();
+	rect(terreX,1200,55,30);
+	ellipse(terreX+38,1201,12,8);
 	
 	//5
 	var terreX = 555;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,65,30);
 	ellipse(terreX+8,1203,15,10);
@@ -2721,7 +2766,7 @@ function draw() {
 	
 	//6
 	var terreX = 685;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,235,30);
 	ellipse(terreX+58,1201,12,8);
@@ -2730,7 +2775,7 @@ function draw() {
 	
 	//7
 	var terreX = 985;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,65,30);
 	ellipse(terreX+8,1203,15,10);
@@ -2738,7 +2783,7 @@ function draw() {
 	
 	//8
 	var terreX = 1105;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,70,30);
 	ellipse(terreX+8,1203,15,10);
@@ -2746,7 +2791,7 @@ function draw() {
 	
 	//9
 	var terreX = 1235;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,90,30);
 	ellipse(terreX+8,1203,15,10);
@@ -2754,13 +2799,13 @@ function draw() {
 	
 	//10                         /// le petit
 	var terreX = 1375;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,10,30);
 	
 	//11
 	var terreX = 1440;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,65,30);
 	ellipse(terreX+8,1203,15,10);
@@ -2768,7 +2813,7 @@ function draw() {
 	
 	//12
 	var terreX = 1565;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,230,30);
 	ellipse(terreX+8,1203,15,10);
@@ -2778,7 +2823,7 @@ function draw() {
 	
 	//13
 	var terreX = 1855;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,80,30);
 	ellipse(terreX+25,1201,15,10);
@@ -2786,7 +2831,7 @@ function draw() {
 	
 	//14
 	var terreX = 1985;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,115,30);
 	ellipse(terreX+25,1201,15,10);
@@ -2794,7 +2839,7 @@ function draw() {
 	
 	//15
 	var terreX = 2165;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,70,30);
 	ellipse(terreX+25,1201,15,10);
@@ -2802,7 +2847,7 @@ function draw() {
 	
 	//16
 	var terreX = 2330;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,65,30);
 	ellipse(terreX+25,1201,15,10);
@@ -2810,7 +2855,7 @@ function draw() {
 	
 	//17
 	var terreX = 2455;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,105,30);
 	ellipse(terreX+25,1201,15,10);
@@ -2818,7 +2863,7 @@ function draw() {
 	
 	//18
 	var terreX = 2620;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,45,30);
 	ellipse(terreX+8,1203,15,10);
@@ -2827,17 +2872,13 @@ function draw() {
 	
 	//19
 	var terreX = 2715;
-	fill(49, 41, 32);
+	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,160,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
-	
-	
-	
-	
-	
+
 	
 	
 	///lampadaires///////lampadaires///////lampadaires///////lampadaires////
@@ -2845,30 +2886,8 @@ function draw() {
 	///lampadaires///////lampadaires///////lampadaires///////lampadaires////
 	// en ordre de gauche a droite 
 	
+	lampadaire(500,1289,180,180,170,150);
 	
-	
-	var lampeX = 500;
-	fill(70);
-	strokeWeight(1);
-	stroke(10);
-	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1289);
-	vertex(lampeX+12,1289);
-	vertex(lampeX+10, 1275);
-	vertex(lampeX-10,1275);
-	endShape(CLOSE);
-	noStroke();	
-	fill(15);
-	rect(lampeX-4, 1180, 8, 100);
-	ellipse(lampeX,1275,12,6);
-	ellipse(lampeX,1280,18,8);
-	ellipse(lampeX,1190,12,6);
-	ellipse(lampeX,1185,18,8);
-	strokeWeight(1);
-	stroke(15);
-	line(lampeX-6,1167,lampeX+5,1167);
-	fill(180,180,170,150);
-	ellipse(lampeX,1174,12,12);
 	
 	var lampeX = 1100;
 	fill(70);
