@@ -12,6 +12,10 @@ var rl = 0;
 var gl = 0;
 var bl = 0;
 var al = 0;
+var arbreX = 0;
+var arbreY = 0;
+var arbreX2 = 0;
+var arbreY2 = 0;
 var temperature = 0;
 var lever = 0;
 var coucher = 0;
@@ -140,6 +144,168 @@ function setup(){
 	line(lampeX-6,lampeY-122,lampeX+5,lampeY-122);
 	fill(rl,gl,bl,al);
 	ellipse(lampeX,lampeY-115,12,12);
+	}
+	/////// l'arbre 
+	function arbre(arbreX, arbreY){
+	strokeWeight(3);
+	stroke(55, 35, 15); /////////// petites branches 
+	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
+	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
+	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
+	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
+	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
+	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
+	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
+	stroke(40, 20, 6); /////////// petites branches + foncés
+	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
+	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
+	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
+	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
+	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
+	stroke(10);
+	strokeWeight(2);
+	fill(55, 50, 45);
+	beginShape();                 ////tapis de terre    
+	vertex(arbreX-38, arbreY+7);
+	vertex(arbreX-32, arbreY-18);
+	vertex(arbreX+32, arbreY-18);
+	vertex(arbreX+38, arbreY+7);
+	endShape(CLOSE);
+	noStroke();
+	fill(72, 49, 27);   ///////////// tronc de l'arbres
+	rect(arbreX-12, arbreY-150, 24, 145);
+	beginShape();		//////////////// racines
+	vertex(arbreX, arbreY-5);
+	vertex(arbreX-8, arbreY+5);
+	vertex(arbreX-7, arbreY-5);
+	endShape(CLOSE);
+	beginShape();
+	vertex(arbreX-6, arbreY-6);
+	vertex(arbreX-17, arbreY+6);
+	vertex(arbreX-13, arbreY-5);
+	endShape(CLOSE);
+	beginShape();
+	vertex(arbreX, arbreY-6);
+	vertex(arbreX+17, arbreY+4);
+	vertex(arbreX+13, arbreY-5);
+	endShape(CLOSE);
+	beginShape();   ////////// branche droite
+	vertex(arbreX+5, arbreY-150);
+	vertex(arbreX+10, arbreY-175);
+	vertex(arbreX+25, arbreY-197);
+	vertex(arbreX+15, arbreY-175);
+	vertex(arbreX+12, arbreY-150);
+	endShape(CLOSE);
+	beginShape();   ////////// branche droite 
+	vertex(arbreX+5, arbreY-150);
+	vertex(arbreX+5, arbreY-197);
+	vertex(arbreX+15, arbreY-250);
+	vertex(arbreX-3, arbreY-200);
+	vertex(arbreX-5, arbreY-150);
+	endShape(CLOSE);
+	beginShape();   ////////// branche gauche gauche  
+	vertex(arbreX-12, arbreY-140);
+	vertex(arbreX-25, arbreY-170);
+	vertex(arbreX-35, arbreY-210);
+	vertex(arbreX-65, arbreY-260);
+	vertex(arbreX-40, arbreY-200);
+	vertex(arbreX-30, arbreY-160);
+	vertex(arbreX-12, arbreY-120);
+	endShape(CLOSE);
+	beginShape();   ////////// branche gauche milieu 
+	vertex(arbreX-12, arbreY-150);
+	vertex(arbreX-25, arbreY-215);
+	vertex(arbreX-10, arbreY-265);
+	vertex(arbreX-17, arbreY-285);
+	vertex(arbreX-5, arbreY-265);
+	vertex(arbreX-17, arbreY-215);
+	vertex(arbreX, arbreY-150);
+	endShape(CLOSE);
+	translate(15,8);
+	beginShape();   ////////// branche droite longue
+	vertex(arbreX+12, arbreY-150);
+	vertex(arbreX+25, arbreY-215);
+	vertex(arbreX+10, arbreY-265);
+	vertex(arbreX+17, arbreY-285);
+	vertex(arbreX+5, arbreY-265);
+	vertex(arbreX+17, arbreY-215);
+	vertex(arbreX, arbreY-150);
+	endShape(CLOSE);
+	translate(-15,-8);
+	beginShape();   ////////// branche droite longue
+	vertex(arbreX+11, arbreY-142);
+	vertex(arbreX+27, arbreY-142);
+	vertex(arbreX+12, arbreY-120);
+	endShape(CLOSE);
+	}
+	// l'autre arbre plus bas coupé en deux
+	function arbre2(arbreX2, arbreY2){
+	strokeWeight(3);
+	stroke(55, 35, 15); /////////// petites branches 
+	line(arbreX2-13,arbreY2-170,arbreX2-25, arbreY2-185);
+	line(arbreX2-37,arbreY2-198,arbreX2-32, arbreY2-225);
+	line(arbreX2+3,arbreY2-200,arbreX2+1, arbreY2-235);
+	line(arbreX2+12,arbreY2-170,arbreX2+15, arbreY2-210);
+	line(arbreX2+34,arbreY2-200,arbreX2+45, arbreY2-255);
+	line(arbreX2+42,arbreY2-235,arbreX2+57, arbreY2-260);
+	line(arbreX2+12,arbreY2-170,arbreX2+15, arbreY2-210);	
+	stroke(40, 20, 6); /////////// petites branches + foncés
+	line(arbreX2-13,arbreY2-240,arbreX2-23, arbreY2-268);
+	line(arbreX2+27,arbreY2-240,arbreX2+37, arbreY2-268);
+	line(arbreX2-47,arbreY2-220,arbreX2-61, arbreY2-232);
+	line(arbreX2-47,arbreY2-220,arbreX2-40, arbreY2-245);
+	line(arbreX2+32,arbreY2-175,arbreX2+55, arbreY2-215);
+	noStroke();
+	fill(72, 49, 27);   ///////////// tronc de l'arbres
+	rect(arbreX2-12, arbreY2-150, 24, 55);
+	beginShape();   ////////// branche droite
+	vertex(arbreX2+5, arbreY2-150);
+	vertex(arbreX2+10, arbreY2-175);
+	vertex(arbreX2+25, arbreY2-197);
+	vertex(arbreX2+15, arbreY2-175);
+	vertex(arbreX2+12, arbreY2-150);
+	endShape(CLOSE);
+	beginShape();   ////////// branche droite 
+	vertex(arbreX2+5, arbreY2-150);
+	vertex(arbreX2+5, arbreY2-197);
+	vertex(arbreX2+15, arbreY2-250);
+	vertex(arbreX2-3, arbreY2-200);
+	vertex(arbreX2-5, arbreY2-150);
+	endShape(CLOSE);
+	beginShape();   ////////// branche gauche gauche  
+	vertex(arbreX2-12, arbreY2-140);
+	vertex(arbreX2-25, arbreY2-170);
+	vertex(arbreX2-35, arbreY2-210);
+	vertex(arbreX2-65, arbreY2-260);
+	vertex(arbreX2-40, arbreY2-200);
+	vertex(arbreX2-30, arbreY2-160);
+	vertex(arbreX2-12, arbreY2-120);
+	endShape(CLOSE);
+	beginShape();   ////////// branche gauche milieu 
+	vertex(arbreX2-12, arbreY2-150);
+	vertex(arbreX2-25, arbreY2-215);
+	vertex(arbreX2-10, arbreY2-265);
+	vertex(arbreX2-17, arbreY2-285);
+	vertex(arbreX2-5, arbreY2-265);
+	vertex(arbreX2-17, arbreY2-215);
+	vertex(arbreX2, arbreY2-150);
+	endShape(CLOSE);
+	translate(15,8);
+	beginShape();   ////////// branche droite longue
+	vertex(arbreX2+12, arbreY2-150);
+	vertex(arbreX2+25, arbreY2-215);
+	vertex(arbreX2+10, arbreY2-265);
+	vertex(arbreX2+17, arbreY2-285);
+	vertex(arbreX2+5, arbreY2-265);
+	vertex(arbreX2+17, arbreY2-215);
+	vertex(arbreX2, arbreY2-150);
+	endShape(CLOSE);
+	translate(-15,-8);
+	beginShape();   ////////// branche droite longue
+	vertex(arbreX2+11, arbreY2-142);
+	vertex(arbreX2+27, arbreY2-142);
+	vertex(arbreX2+12, arbreY2-120);
+	endShape(CLOSE);
 	}
 
 function draw() {
@@ -2879,1051 +3045,40 @@ function draw() {
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 
-	
-	
-	///lampadaires///////lampadaires///////lampadaires///////lampadaires////
-	///lampadaires///////lampadaires///////lampadaires///////lampadaires///////lampadaires///////lampadaires////
 	///lampadaires///////lampadaires///////lampadaires///////lampadaires////
 	// en ordre de gauche a droite 
 	
 	lampadaire(500,1289,180,180,170,150);
+	lampadaire(1100,1289,180,180,170,150);
+	lampadaire(1700,1289,180,180,170,150);
+	lampadaire(2300,1289,180,180,170,150);
 	
-	
-	var lampeX = 1100;
-	fill(70);
-	strokeWeight(1);
-	stroke(10);
-	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1289);
-	vertex(lampeX+12,1289);
-	vertex(lampeX+10, 1275);
-	vertex(lampeX-10,1275);
-	endShape(CLOSE);
-	noStroke();
-	fill(15);
-	rect(lampeX-4, 1180, 8, 100);
-	ellipse(lampeX,1275,12,6);
-	ellipse(lampeX,1280,18,8);
-	ellipse(lampeX,1190,12,6);
-	ellipse(lampeX,1185,18,8);
-	strokeWeight(1);
-	stroke(15);
-	line(lampeX-6,1167,lampeX+5,1167);
-	fill(180,180,170,150);
-	ellipse(lampeX,1174,12,12);
-	
-	var lampeX = 1700;
-	fill(70);
-	strokeWeight(1);
-	stroke(10);
-	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1289);
-	vertex(lampeX+12,1289);
-	vertex(lampeX+10, 1275);
-	vertex(lampeX-10,1275);
-	endShape(CLOSE);
-	noStroke();
-	fill(15);
-	rect(lampeX-4, 1180, 8, 100);
-	ellipse(lampeX,1275,12,6);
-	ellipse(lampeX,1280,18,8);
-	ellipse(lampeX,1190,12,6);
-	ellipse(lampeX,1185,18,8);
-	strokeWeight(1);
-	stroke(15);
-	line(lampeX-6,1167,lampeX+5,1167);
-	fill(180,180,170,150);
-	ellipse(lampeX,1174,12,12);
-	
-	var lampeX = 2300;
-	fill(70);
-	strokeWeight(1);
-	stroke(10);
-	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1289);
-	vertex(lampeX+12,1289);
-	vertex(lampeX+10, 1275);
-	vertex(lampeX-10,1275);
-	endShape(CLOSE);
-	noStroke();
-	fill(15);
-	rect(lampeX-4, 1180, 8, 100);
-	ellipse(lampeX,1275,12,6);
-	ellipse(lampeX,1280,18,8);
-	ellipse(lampeX,1190,12,6);
-	ellipse(lampeX,1185,18,8);
-	strokeWeight(1);
-	stroke(15);
-	line(lampeX-6,1167,lampeX+5,1167);
-	fill(180,180,170,150);
-	ellipse(lampeX,1174,12,12);
-	
-	
-	
-	
-	//////////arbres //////////////////////////////////////arbres //////////////////////////////////////arbres ////////////
 	//arbres //////////////////////////////////////arbres ////////////////////////////
-	//////////arbres //////////////////////////////////////arbres ////////////////////////////
-	////////////////////arbres //////////////////////////////////////////////////arbres ////////////////////////////
-	// 1 
-	var arbreX = 200;
-	var arbreY = 1280;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	stroke(10);
-	strokeWeight(2);
-	fill(55, 50, 45);
-	beginShape();                 ////tapis de terre    
-	vertex(arbreX-38, arbreY+7);
-	vertex(arbreX-32, arbreY-18);
-	vertex(arbreX+32, arbreY-18);
-	vertex(arbreX+38, arbreY+7);
-	endShape(CLOSE);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 145);
-	beginShape();						//////////////// racines
-	vertex(arbreX, arbreY-5);
-	vertex(arbreX-8, arbreY+5);
-	vertex(arbreX-7, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX-6, arbreY-6);
-	vertex(arbreX-17, arbreY+6);
-	vertex(arbreX-13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX, arbreY-6);
-	vertex(arbreX+17, arbreY+4);
-	vertex(arbreX+13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
-	
-	/////// arbre 2/////// arbre 2/////// arbre 2/////// arbre 2/////// arbre 2/////// arbre 2
-	///////////////////////// arbre 2///////////////////////////// arbre 2/////// arbre 2/////// arbre 2
-	
-	
-	var arbreX = 800;
-	var arbreY = 1280;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	stroke(10);
-	strokeWeight(2);
-	fill(55, 50, 45);
-	beginShape();                 ////tapis de terre    
-	vertex(arbreX-38, arbreY+7);
-	vertex(arbreX-32, arbreY-18);
-	vertex(arbreX+32, arbreY-18);
-	vertex(arbreX+38, arbreY+7);
-	endShape(CLOSE);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 145);
-	beginShape();						//////////////// racines
-	vertex(arbreX, arbreY-5);
-	vertex(arbreX-8, arbreY+5);
-	vertex(arbreX-7, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX-6, arbreY-6);
-	vertex(arbreX-17, arbreY+6);
-	vertex(arbreX-13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX, arbreY-6);
-	vertex(arbreX+17, arbreY+4);
-	vertex(arbreX+13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
 
+	arbre(200,1280);
+	arbre(800,1280);
+	arbre(1400,1280);
+	arbre(2000,1280);
+	arbre(2600,1280);
 	
-	////// arbre 3/////// arbre 3re 3//////////////// arbre 3/////// arbre 3/////// arbre 3/////// arbre 3/////// arbr3
-	///////////////////////// arbre 3///////////////////////////// arbre3/////// arbre 3/////// arbre 3
+	///// ARBRES CACHÉES POUR MOBILES ////
 	
-	var arbreX = 1400;
-	var arbreY = 1280;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	stroke(10);
-	strokeWeight(2);
-	fill(55, 50, 45);
-	beginShape();                 ////tapis de terre    
-	vertex(arbreX-38, arbreY+7);
-	vertex(arbreX-32, arbreY-18);
-	vertex(arbreX+32, arbreY-18);
-	vertex(arbreX+38, arbreY+7);
-	endShape(CLOSE);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 145);
-	beginShape();						//////////////// racines
-	vertex(arbreX, arbreY-5);
-	vertex(arbreX-8, arbreY+5);
-	vertex(arbreX-7, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX-6, arbreY-6);
-	vertex(arbreX-17, arbreY+6);
-	vertex(arbreX-13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX, arbreY-6);
-	vertex(arbreX+17, arbreY+4);
-	vertex(arbreX+13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
+	arbre2(365,1620);
+	arbre2(965,1620);
+	arbre2(1565,1620);
+	arbre2(2165,1620);
+	arbre2(2765,1620);
 	
-	
-	////// arbre 4 ///// arbre 4 ///// arbre 4 ///// arbre 4 ///// arbre 4 ///// arbre 4 
-	///// arbre 4 ///// arbre 4 ///// arbre 4 ///// arbre 4 
-	///// arbre 4 ///// arbre 4 ///// arbre 4 ///// arbre 4 ///// arbre 4 ///// arbre 4 
-	///// arbre 4 ///// arbre 4 ///// arbre 4 ///// arbre 4 
-	
-	
-	var arbreX = 2000;
-	var arbreY = 1280;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	stroke(10);
-	strokeWeight(2);
-	fill(55, 50, 45);
-	beginShape();                 ////tapis de terre    
-	vertex(arbreX-38, arbreY+7);
-	vertex(arbreX-32, arbreY-18);
-	vertex(arbreX+32, arbreY-18);
-	vertex(arbreX+38, arbreY+7);
-	endShape(CLOSE);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 145);
-	beginShape();						//////////////// racines
-	vertex(arbreX, arbreY-5);
-	vertex(arbreX-8, arbreY+5);
-	vertex(arbreX-7, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX-6, arbreY-6);
-	vertex(arbreX-17, arbreY+6);
-	vertex(arbreX-13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX, arbreY-6);
-	vertex(arbreX+17, arbreY+4);
-	vertex(arbreX+13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
-	
-	
-	//////// arbre 5 //// arbre 5 //// arbre 5 //// arbre 5 //// arbre 5 //// arbre 5 
-	//// arbre 5 //// arbre 5 //// arbre 5 //// arbre 5 //// arbre 5 //// arbre 5 //// arbre 5 //// arbre 5 
-	//// arbre 5 //// arbre 5 //// arbre 5 //// arbre 5 
-	
-	var arbreX = 2600;
-	var arbreY = 1280;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	stroke(10);
-	strokeWeight(2);
-	fill(55, 50, 45);
-	beginShape();                 ////tapis de terre    
-	vertex(arbreX-38, arbreY+7);
-	vertex(arbreX-32, arbreY-18);
-	vertex(arbreX+32, arbreY-18);
-	vertex(arbreX+38, arbreY+7);
-	endShape(CLOSE);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 145);
-	beginShape();						//////////////// racines
-	vertex(arbreX, arbreY-5);
-	vertex(arbreX-8, arbreY+5);
-	vertex(arbreX-7, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX-6, arbreY-6);
-	vertex(arbreX-17, arbreY+6);
-	vertex(arbreX-13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();
-	vertex(arbreX, arbreY-6);
-	vertex(arbreX+17, arbreY+4);
-	vertex(arbreX+13, arbreY-5);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
-	
-	
-	///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES 
-	///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES 
-	///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES ///// ARBRES CACHÉES POUR MOBILES 
-	
-	var arbreX = 365;
-	var arbreY = 1620;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 55);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
-	
-	var arbreX = 965;
-	var arbreY = 1620;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 55);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
-	
-	var arbreX = 1565;
-	var arbreY = 1620;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 55);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
-	
-	var arbreX = 2165;
-	var arbreY = 1620;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 55);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
-	
-	var arbreX = 2765;
-	var arbreY = 1620;
-	strokeWeight(3);
-	stroke(55, 35, 15); /////////// petites branches 
-	line(arbreX-13,arbreY-170,arbreX-25, arbreY-185);
-	line(arbreX-37,arbreY-198,arbreX-32, arbreY-225);
-	line(arbreX+3,arbreY-200,arbreX+1, arbreY-235);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);
-	line(arbreX+34,arbreY-200,arbreX+45, arbreY-255);
-	line(arbreX+42,arbreY-235,arbreX+57, arbreY-260);
-	line(arbreX+12,arbreY-170,arbreX+15, arbreY-210);	
-	stroke(40, 20, 6); /////////// petites branches + foncés
-	line(arbreX-13,arbreY-240,arbreX-23, arbreY-268);
-	line(arbreX+27,arbreY-240,arbreX+37, arbreY-268);
-	line(arbreX-47,arbreY-220,arbreX-61, arbreY-232);
-	line(arbreX-47,arbreY-220,arbreX-40, arbreY-245);
-	line(arbreX+32,arbreY-175,arbreX+55, arbreY-215);
-	noStroke();
-	fill(72, 49, 27);   ///////////// tronc de l'arbres
-	rect(arbreX-12, arbreY-150, 24, 55);
-	beginShape();   ////////// branche droite
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+10, arbreY-175);
-	vertex(arbreX+25, arbreY-197);
-	vertex(arbreX+15, arbreY-175);
-	vertex(arbreX+12, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche droite 
-	vertex(arbreX+5, arbreY-150);
-	vertex(arbreX+5, arbreY-197);
-	vertex(arbreX+15, arbreY-250);
-	vertex(arbreX-3, arbreY-200);
-	vertex(arbreX-5, arbreY-150);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche gauche  
-	vertex(arbreX-12, arbreY-140);
-	vertex(arbreX-25, arbreY-170);
-	vertex(arbreX-35, arbreY-210);
-	vertex(arbreX-65, arbreY-260);
-	vertex(arbreX-40, arbreY-200);
-	vertex(arbreX-30, arbreY-160);
-	vertex(arbreX-12, arbreY-120);
-	endShape(CLOSE);
-	beginShape();   ////////// branche gauche milieu 
-	vertex(arbreX-12, arbreY-150);
-	vertex(arbreX-25, arbreY-215);
-	vertex(arbreX-10, arbreY-265);
-	vertex(arbreX-17, arbreY-285);
-	vertex(arbreX-5, arbreY-265);
-	vertex(arbreX-17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(15,8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+12, arbreY-150);
-	vertex(arbreX+25, arbreY-215);
-	vertex(arbreX+10, arbreY-265);
-	vertex(arbreX+17, arbreY-285);
-	vertex(arbreX+5, arbreY-265);
-	vertex(arbreX+17, arbreY-215);
-	vertex(arbreX, arbreY-150);
-	endShape(CLOSE);
-	translate(-15,-8);
-	beginShape();   ////////// branche droite longue
-	vertex(arbreX+11, arbreY-142);
-	vertex(arbreX+27, arbreY-142);
-	vertex(arbreX+12, arbreY-120);
-	endShape(CLOSE);
-	
-	//////// LAMPADAIRE CACHÉS POUR MOBILES//////// LAMPADAIRE CACHÉS POUR MOBILES//////// LAMPADAIRE CACHÉS POUR MOBILES
-	//////// LAMPADAIRE CACHÉS POUR MOBILES//////// LAMPADAIRE CACHÉS POUR MOBILES//////// LAMPADAIRE CACHÉS POUR MOBILES
+	//////// LAMPADAIRE CACHÉS POUR MOBILES////
 	// en ordre de gauche a droite 
 	
-	var lampeX = 35;
+	lampadaire(35,1520,180,180,170,150);
+	lampadaire(665,1520,180,180,170,150);
+	lampadaire(1265,1520,180,180,170,150);
+	lampadaire(1865,1520,180,180,170,150);
+	lampadaire(2465,1520,180,180,170,150);
 	
-	fill(70);
-	strokeWeight(1);
-	stroke(10);
-	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1520);
-	vertex(lampeX+12,1520);
-	vertex(lampeX+10,1510);
-	vertex(lampeX-10,1506);
-	endShape(CLOSE);
-	noStroke();
-	fill(15);
-	rect(lampeX-4, 1411, 8, 100);
-	ellipse(lampeX,1506,12,6);
-	ellipse(lampeX,1511,18,8);
-	ellipse(lampeX,1421,12,6);
-	ellipse(lampeX,1416,18,8);
-	strokeWeight(1);
-	stroke(15);
-	line(lampeX-6,1398,lampeX+5,1398);
-	fill(180,180,170,150);
-	ellipse(lampeX,1405,12,12);
 	
-	var lampeX = 665;
-	
-	fill(70);
-	strokeWeight(1);
-	stroke(10);
-	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1520);
-	vertex(lampeX+12,1520);
-	vertex(lampeX+10,1510);
-	vertex(lampeX-10,1506);
-	endShape(CLOSE);
-	noStroke();
-	fill(15);
-	rect(lampeX-4, 1411, 8, 100);
-	ellipse(lampeX,1506,12,6);
-	ellipse(lampeX,1511,18,8);
-	ellipse(lampeX,1421,12,6);
-	ellipse(lampeX,1416,18,8);
-	strokeWeight(1);
-	stroke(15);
-	line(lampeX-6,1398,lampeX+5,1398);
-	fill(180,180,170,150);
-	ellipse(lampeX,1405,12,12);
-	
-	var lampeX = 1265;
-	
-	fill(70);
-	strokeWeight(1);
-	stroke(10);
-	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1520);
-	vertex(lampeX+12,1520);
-	vertex(lampeX+10,1510);
-	vertex(lampeX-10,1506);
-	endShape(CLOSE);
-	noStroke();
-	fill(15);
-	rect(lampeX-4, 1411, 8, 100);
-	ellipse(lampeX,1506,12,6);
-	ellipse(lampeX,1511,18,8);
-	ellipse(lampeX,1421,12,6);
-	ellipse(lampeX,1416,18,8);
-	strokeWeight(1);
-	stroke(15);
-	line(lampeX-6,1398,lampeX+5,1398);
-	fill(180,180,170,150);
-	ellipse(lampeX,1405,12,12);
-	
-	var lampeX = 1865;
-	
-	fill(70);
-	strokeWeight(1);
-	stroke(10);
-	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1520);
-	vertex(lampeX+12,1520);
-	vertex(lampeX+10,1510);
-	vertex(lampeX-10,1506);
-	endShape(CLOSE);
-	noStroke();
-	fill(15);
-	rect(lampeX-4, 1411, 8, 100);
-	ellipse(lampeX,1506,12,6);
-	ellipse(lampeX,1511,18,8);
-	ellipse(lampeX,1421,12,6);
-	ellipse(lampeX,1416,18,8);
-	strokeWeight(1);
-	stroke(15);
-	line(lampeX-6,1398,lampeX+5,1398);
-	fill(180,180,170,150);
-	ellipse(lampeX,1405,12,12);
-	
-	var lampeX = 2465;
-	
-	fill(70);
-	strokeWeight(1);
-	stroke(10);
-	beginShape();     ////tapis de ciment    
-	vertex(lampeX-12,1520);
-	vertex(lampeX+12,1520);
-	vertex(lampeX+10,1510);
-	vertex(lampeX-10,1506);
-	endShape(CLOSE);
-	noStroke();
-	fill(15);
-	rect(lampeX-4, 1411, 8, 100);
-	ellipse(lampeX,1506,12,6);
-	ellipse(lampeX,1511,18,8);
-	ellipse(lampeX,1421,12,6);
-	ellipse(lampeX,1416,18,8);
-	strokeWeight(1);
-	stroke(15);
-	line(lampeX-6,1398,lampeX+5,1398);
-	fill(180,180,170,150);
-	ellipse(lampeX,1405,12,12);
 	
 	
 	
