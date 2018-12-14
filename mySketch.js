@@ -50,69 +50,12 @@ function setup(){
       console.log(meteo);
     }
   }); 
+	
   for (var i = 0; i < 1000; i++) {
     drops[i] = new Drop();
   }
 }
 
-///////////////////////////////////////////// calcule du lever du soleil
-	var D1 = (lever/ 86400);
-	var D2 = floor(D1);
-	var D3 = (D1 - D2);
-	var H1 = (D3*86400);
-	var H2 = (H1/3600);
-	var H3 = floor(H2);
-	
-	var M1 = (H2 - H3);
-	var H4 = (H2 - M1 - 5);
-	var H5 = (H4*3600);     		//nombre de secondes en termes d'heures
-	
-	var M2 = (M1*60);
-	var M3 = floor(M2);
-	
-	var S1 = (M2-M3);
-	var S2 = (S1*60);
-	var S3 = floor(S2);  // nombre de secondes toutes nues
-	var M4 = (M3*60);  // nombres de secondes en termes de minutes
-	
-	var TimeSunrise = (S3 + M4 + H5);
-	    
-	///////////////////////////////////////////// calcule du coucher du soleil
-	    
-	// D (comme day) = C // H (comme hour) = F // M (comme minute) = E // S comme secondes = G //
-	var C1 = (coucher/86400);
-	var C2 = floor(C1);
-	var C3 = (C1 - C2);
-	
-	var F1 = (C3*86400);
-	var F2 = (F1/3600);
-	var F3 = floor(F2);
-	
-	var E1 = (F2 - F3);
-	var F4 = (F2 - E1 - 5);
-	var F5 = (F4*3600)  //nombre de secondes en termes d'heures
-	
-	var E2 = (E1*60);
-	var E3 = floor(E2);
-	
-	var G1 = (E2-E3);
-	var G2 = (G1*60);
-	var G3 = floor(G2);  // nombre de secondes toutes nues
-	var E4 = (E3*60);  // nombres de secondes en termes de minutes
-	
-	var TimeSunset = (G3 + E4 + F5);
-	    
-	    
-	///////////////////////////////////Définition du temps
-	var hr = hour();
-	var d = day();
-	var m = month();
-	var mn = minute();
-	var sc = second();
-	
-	var Realtime = ((hr*3600) + (mn*60) + sc)
-	
-	var TimeMidi = TimeSunset - TimeSunrise;
 
 /////////////////////////////////////////// Définition de fonctions 
 
@@ -170,8 +113,66 @@ function setup(){
 	
 
 function draw() {
-
 	background(230,235,250);
+	
+	///////////////////////////////////////////// calcule du lever du soleil
+	var D1 = (lever/ 86400);
+	var D2 = floor(D1);
+	var D3 = (D1 - D2);
+	var H1 = (D3*86400);
+	var H2 = (H1/3600);
+	var H3 = floor(H2);
+	
+	var M1 = (H2 - H3);
+	var H4 = (H2 - M1 - 5);
+	var H5 = (H4*3600);     		//nombre de secondes en termes d'heures
+	
+	var M2 = (M1*60);
+	var M3 = floor(M2);
+	
+	var S1 = (M2-M3);
+	var S2 = (S1*60);
+	var S3 = floor(S2);  // nombre de secondes toutes nues
+	var M4 = (M3*60);  // nombres de secondes en termes de minutes
+	
+	var TimeSunrise = (S3 + M4 + H5);
+	    
+	///////////////////////////////////////////// calcule du coucher du soleil
+	    
+	// D (comme day) = C // H (comme hour) = F // M (comme minute) = E // S comme secondes = G //
+	var C1 = (coucher/86400);
+	var C2 = floor(C1);
+	var C3 = (C1 - C2);
+	
+	var F1 = (C3*86400);
+	var F2 = (F1/3600);
+	var F3 = floor(F2);
+	
+	var E1 = (F2 - F3);
+	var F4 = (F2 - E1 - 5);
+	var F5 = (F4*3600)  //nombre de secondes en termes d'heures
+	
+	var E2 = (E1*60);
+	var E3 = floor(E2);
+	
+	var G1 = (E2-E3);
+	var G2 = (G1*60);
+	var G3 = floor(G2);  // nombre de secondes toutes nues
+	var E4 = (E3*60);  // nombres de secondes en termes de minutes
+	
+	var TimeSunset = (G3 + E4 + F5);
+	    
+	    
+	///////////////////////////////////Définition du temps
+	var hr = hour();
+	var d = day();
+	var m = month();
+	var mn = minute();
+	var sc = second();
+	
+	var Realtime = ((hr*3600) + (mn*60) + sc)
+	
+	var TimeMidi = TimeSunset - TimeSunrise;
 
 	/////////////////////////// LE SOLEIL 
 	
@@ -4405,10 +4406,11 @@ function draw() {
 	line(lampeX-6,1398,lampeX+5,1398);
 	fill(180,180,170,150);
 	ellipse(lampeX,1405,12,12);
-
-  for (var i = 0; i < drops.length; i++) {
-    drops[i].fall();
-    drops[i].show();
+	
+	if(meteo = "light rain"){
+	for (var i = 0; i < drops.length; i++) {
+         drops[i].fall();
+         drops[i].show();
   }
 }
 	    
