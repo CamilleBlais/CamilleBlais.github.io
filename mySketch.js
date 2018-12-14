@@ -46,7 +46,7 @@ function setup(){
 	    temperature = data.main.temp;
 	    lever = data.sys.sunrise;
 	    coucher = data.sys.sunset;
-	    meteo = data.weather.main;
+	    meteo = data.weather.description;
       
       console.log(meteo);
     }
