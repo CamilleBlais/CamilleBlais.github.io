@@ -55,6 +55,8 @@ function setup(){
 	
 function draw() {
 
+	background(230,235,250);
+
 	///////////////////////////////////////////// calcule du lever du soleil
 	var D1 = (lever/ 86400);
 	var D2 = floor(D1);
