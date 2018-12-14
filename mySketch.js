@@ -5,6 +5,7 @@ var BriqueY2 = 0;
 var temperature = 0;
 var lever = 0;
 var coucher = 0;
+var drops = [];
 
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
@@ -47,6 +48,9 @@ function setup(){
       console.log(lever);
     }
   }); 
+  for (var i = 0; i < 500; i++) {
+    drops[i] = new Drop();
+  }
 }
 	
 function draw() {
@@ -5039,7 +5043,11 @@ var porteX = 930;  //mettre le centre de la maison
 	line(lampeX-6,1398,lampeX+5,1398);
 	fill(180,180,170,150);
 	ellipse(lampeX,1405,12,12);
-	
+
+  for (var i = 0; i < drops.length; i++) {
+    drops[i].fall();
+    drops[i].show();
+  }
 }
 	    
 	    
