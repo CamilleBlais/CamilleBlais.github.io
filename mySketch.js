@@ -2892,22 +2892,22 @@ function draw() {
 	gt = 41;
 	bt = 32;
 	
-	var terreX = 0;  //1
+	var terreX = -10;  //1
 	fill(rt, gt, bt);
 	noStroke();
-	rect(terreX,1200,45,30);
+	rect(terreX,1200,30,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	var terreX = 110;    //2
+	var terreX = 90;    //2
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,120,30);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	var terreX = 270;    //3
+	var terreX =250;    //3
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,65,30);
@@ -2915,14 +2915,14 @@ function draw() {
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
-	var terreX = 400;  //4
+	var terreX = 380;  //4
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,55,30);
 	ellipse(terreX+38,1201,12,8);
 	
 	//5
-	var terreX = 555;
+	var terreX = 535;
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,65,30);
@@ -2931,7 +2931,7 @@ function draw() {
 	ellipse(terreX+38,1201,12,8);
 	
 	//6
-	var terreX = 685;
+	var terreX = 665;
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,235,30);
@@ -2940,7 +2940,7 @@ function draw() {
 	ellipse(terreX+98,1201,12,8);
 	
 	//7
-	var terreX = 985;
+	var terreX = 975;
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,65,30);
@@ -2948,7 +2948,7 @@ function draw() {
 	ellipse(terreX+38,1201,12,8);
 	
 	//8
-	var terreX = 1105;
+	var terreX = 1085;
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,70,30);
@@ -2956,7 +2956,7 @@ function draw() {
 	ellipse(terreX+38,1201,12,8);
 	
 	//9
-	var terreX = 1235;
+	var terreX = 1215;
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,90,30);
@@ -2964,13 +2964,13 @@ function draw() {
 	ellipse(terreX+38,1201,12,8);
 	
 	//10                         /// le petit
-	var terreX = 1375;
+	var terreX = 1355;
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,10,30);
 	
 	//11
-	var terreX = 1440;
+	var terreX = 1420;
 	fill(rt, gt, bt);
 	noStroke();
 	rect(terreX,1200,65,30);
@@ -2978,10 +2978,10 @@ function draw() {
 	ellipse(terreX+38,1201,12,8);
 	
 	//12
-	var terreX = 1565;
+	var terreX = 1550;
 	fill(rt, gt, bt);
 	noStroke();
-	rect(terreX,1200,230,30);
+	rect(terreX,1200,245,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+38,1201,12,8);
 	ellipse(terreX+88,1201,12,8);
@@ -3028,19 +3028,19 @@ function draw() {
 	ellipse(terreX+38,1201,12,8);
 	
 	//18
-	var terreX = 2620;
+	var terreX = 2618;
 	fill(rt, gt, bt);
 	noStroke();
-	rect(terreX,1200,45,30);
+	rect(terreX,1200,57,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 	
 	//19
-	var terreX = 2715;
+	var terreX = 2735;
 	fill(rt, gt, bt);
 	noStroke();
-	rect(terreX,1200,160,30);
+	rect(terreX,1200,110,30);
 	ellipse(terreX+8,1203,15,10);
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
