@@ -23,6 +23,12 @@ var murY2 = 0;
 var fenetrer = 0;
 var fenetreg = 0;
 var fenetreb = 0;
+var shadowr = 0;
+var shadowg = 0;
+var shadowb = 0;
+var shadowa = 0;
+var lumiereX = 0;
+var lumiereY = 0;
 var temperature = 0;
 var lever = 0;
 var coucher = 0;
@@ -351,6 +357,19 @@ function setup(){
 	line(murX2-52,murY2+19,murX2-11,murY2-4);
 	line(murX2+52,murY2+19,murX2+11,murY2-4);
 	noFill();
+	}
+	function lumiere(lumiereX, lumiereY){
+	noStroke();
+	fill(250,250,170,80);
+	ellipse(lumiereX,lumiereY,30,30);
+	fill(250,250,170,50);
+	ellipse(lumiereX,lumiereY,55,55);
+	fill(250,250,170,30);
+	ellipse(lumiereX,lumiereY,95,95);
+	fill(250,250,170,20);
+	ellipse(lumiereX,lumiereY,140,140);
+	fill(250,250,170,10);
+	ellipse(lumiereX,lumiereY,180,180);
 	}
 
 function draw() {
@@ -3094,12 +3113,48 @@ function draw() {
 	arbre2(2165,1620);
 	arbre2(2765,1620);
 	
+	////////////////////////////// OMBRE CHANGEANTE DE LA NUIT
+	
+	shadowr = 5;
+	shadowg = 5;
+	shadowb = 6;
+	shadowa = map(Realtime, TimeSunset-1500, TimeSunset+2000, 0,120); //  au plus foncés de la nuit, sinon jour 0 
+	shadowa = map(Realtime, TimeSunrise-1800, TimeSunrise+1800, 120,0); 
+	
+	noStroke();
+	fill(shadowr, shadowg, shadowb, shadowa);
+	rect(-100,1200,2950,325);
+	rect(0,785,610,415);
+	rect(610,778,300,422);
+	rect(910,797,10,405);
+	rect(920,780,300,420);
+	rect(1220,810,10,390);
+	rect(1230,765,330,435);
+	rect(1560,775,330,425);
+	rect(1890,820,10,380); // petit
+	rect(1900,758,300,442);
+	rect(2200,750,300,452);
+	rect(2500,777,300,425);
+	rect(2800,825,50,377);
+	fill(shadowr, shadowg, shadowb, shadowa);
+	detailmur2(760,758);
+	fill(shadowr, shadowg, shadowb, shadowa);
+	detailmur2(2050,738);
+	fill(shadowr, shadowg, shadowb, shadowa);
+	detailmur(-2, 780);
+	fill(shadowr, shadowg, shadowb, shadowa);
+	detailmur(1230, 765);
+	fill(shadowr, shadowg, shadowb, shadowa);
+	detailmur(1560, 775);
+	noFill();
+	ellipse(500,1189,100,100);
+	
 	///lampadaires///////lampadaires//// en ordre de gauche a droite 
 	
 	rl = 180;
 	gl = 180;
 	bl = 170;
-	al = 150;
+	al = 200;
 	
 	lampadaire(500,1289, rl,gl,bl,al);
 	lampadaire(1100,1289,rl,gl,bl,al);
@@ -3114,6 +3169,19 @@ function draw() {
 	lampadaire(1865,1520,rl,gl,bl,al);
 	lampadaire(2465,1520,rl,gl,bl,al);
 	
+	if (Realtime > TimeSunset){
+		lumiere(500,1175);
+		lumiere(1100,1175);
+		lumiere(1700,1175);
+		lumiere(2300,1175);
+	}
+	
+	if (Realtime < TimeSunrise){
+		lumiere(500,1175);
+		lumiere(1100,1175);
+		lumiere(1700,1175);
+		lumiere(2300,1175);
+	}
 	
 	
 	
