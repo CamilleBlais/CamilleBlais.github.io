@@ -461,7 +461,7 @@ function draw() {
 	background(Nightr,Nightg,Nightb);  
 	
 	
-	if(Realtime > 86400){
+	if(Realtime == 86400){
 	background(0);  
 	}
 	
@@ -476,14 +476,21 @@ function draw() {
  	sunX2 = map(Realtime,TimeMidi, TimeSunset, 1500,500);
   	sunY2 = map(Realtime,TimeMidi,TimeSunset,200,800);
 	
-	noStroke();
-	fill(255, 246, 188);
-	ellipse(sunX, sunY, 80,80);
-	fill(255, 246, 188);
-  	ellipse(sunX2, sunY2, 80,80);
+		if(Realtime <= TimeMidi && Realtime > TimeSunrise-1800){
+		noStroke();
+		fill(255, 246, 188);
+		ellipse(sunX, sunY, 80,80);
+		}
+		
+		if(Realtime > TimeMidi && Realtime < TimeSunset + 1800){
+		noStroke();
+		fill(255, 246, 188);
+ 		 ellipse(sunX2, sunY2, 80,80);
+		}
+	
 	
 
-	///// couleur fenetre
+	/////////////////////// couleur fenetre
 	/*fenetrer = 35;
 	fenetreg = 35;
 	fenetreb = 65;*/
@@ -3133,6 +3140,9 @@ function draw() {
 	}
 	if(Realtime < TimeSunrise-1800){
 	shadowa = 120;
+	}
+	else{
+	shadowa = 0;
 	}
 	
 	noStroke();
