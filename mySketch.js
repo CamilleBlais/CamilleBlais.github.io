@@ -482,10 +482,12 @@ function draw() {
 	fill(68, 53, 32,240);
 	rect(610,778,300,100);
 	detailmur2(760,758);
+	fill(68, 53, 32,240);
 	rect(920,780,300,100);
 	fill(60,45,40);
 	rect(1230,765,330,100);
 	detailmur(1230, 765);
+	fill(60,45,40);
 	rect(1560,775,330,100);
 	detailmur(1560, 775);
 	fill(88, 75, 55,240);
@@ -3076,14 +3078,6 @@ function draw() {
 	ellipse(terreX+25,1201,15,10);
 	ellipse(terreX+38,1201,12,8);
 
-	///lampadaires///////lampadaires///////lampadaires///////lampadaires////
-	// en ordre de gauche a droite 
-	
-	lampadaire(500,1289,180,180,170,150);
-	lampadaire(1100,1289,180,180,170,150);
-	lampadaire(1700,1289,180,180,170,150);
-	lampadaire(2300,1289,180,180,170,150);
-	
 	//arbres //////////////////////////////////////arbres ////////////////////////////
 
 	arbre(200,1280);
@@ -3100,14 +3094,25 @@ function draw() {
 	arbre2(2165,1620);
 	arbre2(2765,1620);
 	
-	//////// LAMPADAIRE CACHÉS POUR MOBILES////
-	// en ordre de gauche a droite 
+	///lampadaires///////lampadaires//// en ordre de gauche a droite 
 	
-	lampadaire(35,1520,180,180,170,150);
-	lampadaire(665,1520,180,180,170,150);
-	lampadaire(1265,1520,180,180,170,150);
-	lampadaire(1865,1520,180,180,170,150);
-	lampadaire(2465,1520,180,180,170,150);
+	rl = 180;
+	gl = 180;
+	bl = 170;
+	al = 150;
+	
+	lampadaire(500,1289, rl,gl,bl,al);
+	lampadaire(1100,1289,rl,gl,bl,al);
+	lampadaire(1700,1289,rl,gl,bl,al);
+	lampadaire(2300,1289,rl,gl,bl,al);
+	
+	//////// LAMPADAIRE CACHÉS POUR MOBILES////// en ordre de gauche a droite 
+	
+	lampadaire(35,1520,rl,gl,bl,al);
+	lampadaire(665,1520,rl,gl,bl,al);
+	lampadaire(1265,1520,rl,gl,bl,al);
+	lampadaire(1865,1520,rl,gl,bl,al);
+	lampadaire(2465,1520,rl,gl,bl,al);
 	
 	
 	
