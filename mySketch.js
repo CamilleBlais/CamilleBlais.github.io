@@ -37,6 +37,7 @@ var Nightg = 0;
 var Nightb = 0;
 var meteo = 0;
 var drops = [];
+var drops2 = [];
 
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
@@ -83,6 +84,10 @@ function setup(){
 
   	for (var i = 0; i < 1000; i++) {
     	drops[i] = new Drop();
+  	}
+	
+	for (var j = 0; j < 200; j++) {
+    	drops2[j] = new Drop2();
   	}
 	
 }
@@ -3208,6 +3213,12 @@ function draw() {
 	for (var i = 0; i < drops.length; i++) {
          drops[i].fall();
          drops[i].show();
+  	}
+	}
+	if(meteo == "light rain"){
+	for (var j = 0; j < drops2.length; j++) {
+    	drops2[j].fall();
+   	drops2[j].show();
   	}
 	}
 
