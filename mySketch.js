@@ -16,6 +16,10 @@ var arbreX = 0;
 var arbreY = 0;
 var arbreX2 = 0;
 var arbreY2 = 0;
+var murX = 0;
+var murY = 0;
+var murX2 = 0;
+var murY2 = 0; 
 var temperature = 0;
 var lever = 0;
 var coucher = 0;
@@ -318,6 +322,30 @@ function setup(){
 	rect(murX+200,murY-3,100,5);
 	rect(murX+100,murY-13,100,5);
 	}
+	function detailmur2(murX2, murY2){
+	noStroke();
+	fill(141, 114, 78);
+	rect(murX2-140,murY2,20,25);
+	rect(murX2+120,murY2,20,25);
+	rect(murX2-50,murY2+15,100,8);
+	rect(murX2-40,murY2+10,80,8);
+	rect(murX2-30,murY2+5,60,8);
+	rect(murX2-20,murY2,40,8);
+	rect(murX2-10,murY2-5,20,8);
+	fill(15);
+	rect(murX2-141,murY2-3,22,5);
+	rect(murX2+119,murY2-3,22,5);
+	rect(murX2-12,murY2-8,24,5);
+	stroke(15);
+	strokeWeight(3);
+	line(murX2-141,murY2,murX2-141,murY2+19);
+	line(murX2-119,murY2, murX2-119, murY2+19);
+	line(murX2+141,murY2,murX2+141,murY2+19);
+	line(murX2+119,murY2,murX2+119,murY2+19);
+	strokeWeight(7);
+	line(murX2-52,murY2+19,murX2-11,murY2-4);
+	line(murX2+52,murY2+19,murX2+11,murY2-4);
+	}
 
 function draw() {
 	///////////////////////////////////////////// calcule du lever du soleil
@@ -405,8 +433,8 @@ function draw() {
 	
 	/////////////// la perspective 
 	
-	stroke(5,240);
-	strokeWeight(5);
+	stroke(25);
+	strokeWeight(3);
 	fill(60,45,40);
 	rect(0,785,300,100);
 	rect(300,785,310,100);
@@ -422,9 +450,10 @@ function draw() {
 	rect(2200,750,300,100);
 	fill(88, 85, 85);
 	rect(2500,777,300,100);
-	detailmur(-2, 785);
+	detailmur(-2, 780);
 	detailmur(1230, 765);
 	detailmur(1560, 775);
+	
 	/////////////////////// ruee
 	strokeWeight(1);
 	fill(108, 96, 78);
@@ -2374,7 +2403,9 @@ function draw() {
 	fill(141, 114, 78);
 	rect(2280,800,290,400);
 	
-	noStroke();
+	detailmur2(2425,780);
+	
+	/*noStroke();
 	var porteX = 2425; 
 	rect(porteX-140,780,20,25);
 	rect(porteX+120,780,20,25);
@@ -2395,12 +2426,12 @@ function draw() {
 	line(porteX+119,780,porteX+119,799);
 	strokeWeight(7);
 	line(porteX-52,799,porteX-11,776);
-	line(porteX+52,799,porteX+11,776);
+	line(porteX+52,799,porteX+11,776);*/
 	
-	Brique2(2360,815);
-	Brique2(2300,1105);
-	Brique2(2500,1105);
-	Brique2(2500,905);
+	Brique(2360,815);
+	Brique(2300,1105);
+	Brique(2500,1105);
+	Brique(2500,905);
 	
 	// centre maison 9 = 2425 en x. Sol en y = 1200 
 	var porteX = 2425;  //mettre le centre de la maison
