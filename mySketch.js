@@ -326,6 +326,7 @@ function setup(){
 	rect(murX,murY-3,100,5);
 	rect(murX+200,murY-3,100,5);
 	rect(murX+100,murY-13,100,5);
+	noFill();
 	}
 	function detailmur2(murX2, murY2){
 	noStroke();
@@ -349,6 +350,7 @@ function setup(){
 	strokeWeight(7);
 	line(murX2-52,murY2+19,murX2-11,murY2-4);
 	line(murX2+52,murY2+19,murX2+11,murY2-4);
+	noFill();
 	}
 
 function draw() {
