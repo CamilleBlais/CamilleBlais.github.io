@@ -20,6 +20,9 @@ var murX = 0;
 var murY = 0;
 var murX2 = 0;
 var murY2 = 0; 
+var fenetrer = 0;
+var fenetreg = 0;
+var fenetreb = 0;
 var temperature = 0;
 var lever = 0;
 var coucher = 0;
@@ -451,6 +454,11 @@ function draw() {
 	fill(255, 246, 188);
   	ellipse(sunX2, sunY2, 80,80);
 	
+
+	///// couleur fenetre
+	var fenetrer = 0;
+	var fenetreg = 0;
+	var fenetreb = 0;
 	
 	/////////////// la perspective 
 	
@@ -489,6 +497,8 @@ function draw() {
 	rect(-100,1290,2950,230);
 	fill(118, 106, 88);
 	rect(-100,1500,2950,25);
+	
+	
 
 	///////////////////////////////////////////////////////////////////// maison #1 
 	//rectangles de base
@@ -770,7 +780,7 @@ function draw() {
 	line(porteX, porteY-120,porteX, porteY-35);
 	line(porteX-4, porteY-68, porteX-4, porteY-63);
 	line(porteX+4, porteY-68, porteX+4, porteY-63);
-	fill(35,35,65);
+	fill(fenetrer,fenetreg,fenetreb);
 	rect(porteX-30, porteY-115,23,45);    /// fenetre dans la 1ere porte
 	rect(porteX+7,porteY-115,23,45);
 	strokeWeight(6);
@@ -893,7 +903,7 @@ function draw() {
 	rect(porteX-17, porteY-230, 34, 80);
 	rect(porteX+26, porteY-230, 34, 80);
 	strokeWeight(2);
-	fill(35,35,65);						//// fenetre des 3  deuxieme portes 
+	fill(fenetrer,fenetreg,fenetreb);			//// fenetre des 3  deuxieme portes 
 	rect(porteX-51, porteY-227, 15, 45);
 	rect(porteX-12, porteY-227, 24, 45);
 	rect(porteX+35, porteY-227, 15, 45);
@@ -945,7 +955,7 @@ function draw() {
 	rect(porteX-68, porteY-250,136, 10);
 	strokeWeight(6);
 	stroke(15);
-	fill(35,35,65);	
+	fill(fenetrer,fenetreg,fenetreb);	
 	rect(porteX-125, porteY-340, 45,70); /////////////////// 3eme fenetres a gauche//droite du 3er niveau
 	rect(porteX+80,porteY-340,45,70);
 	line(porteX-103,porteY-340, porteX-103, porteY-275);
@@ -956,7 +966,7 @@ function draw() {
 	rect(porteX-40, porteY-340, 34,80);
 	rect(porteX+10, porteY-340, 34, 80);
 	strokeWeight(2);
-	fill(35,35,65);							//// fenetre des 3eme portes 
+	fill(fenetrer,fenetreg,fenetreb);			//// fenetre des 3eme portes 
 	rect(porteX-33, porteY-337, 20, 45);
 	rect(porteX+18, porteY-337, 20, 45);
 	strokeWeight(3);					////////// rampes pour 3eme patio
@@ -1020,7 +1030,7 @@ function draw() {
 	line(porteX, porteY-120,porteX, porteY-35);
 	line(porteX-4, porteY-68, porteX-4, porteY-63);
 	line(porteX+4, porteY-68, porteX+4, porteY-63);
-	fill(35,35,65);
+	fill(fenetrer,fenetreg,fenetreb);
 	rect(porteX-30, porteY-115,23,45);    /// fenetre dans la 1ere porte
 	rect(porteX+7,porteY-115,23,45);
 	strokeWeight(6);
@@ -1139,7 +1149,7 @@ function draw() {
 	rect(porteX-17, porteY-230, 34, 80);
 	rect(porteX+26, porteY-230, 34, 80);
 	strokeWeight(2);
-	fill(35,35,65);				//// fenetre des 3  deuxieme portes 
+	fill(fenetrer,fenetreg,fenetreb);			//// fenetre des 3  deuxieme portes 
 	rect(porteX-55, porteY-227, 24, 45);
 	rect(porteX-12, porteY-227, 24, 45);
 	rect(porteX+31, porteY-227, 24, 45);
@@ -1188,7 +1198,7 @@ function draw() {
 	rect(porteX-68, porteY-250,136, 10);
 	strokeWeight(6);
 	stroke(15);
-	fill(35,35,65);	
+	fill(fenetrer,fenetreg,fenetreb);	
 	rect(porteX-130, porteY-340, 55,60); /////////////////// 3eme fenetres a gauche//droite du 3er niveau
 	rect(porteX+75,porteY-340,55,60);
 	line(porteX-103,porteY-340, porteX-103, porteY-285);
@@ -1199,7 +1209,7 @@ function draw() {
 	rect(porteX-50, porteY-340, 34,80);
 	rect(porteX+15, porteY-340, 34, 80);
 	strokeWeight(2);
-	fill(35,35,65);						//// fenetre des 3eme portes 
+	fill(fenetrer,fenetreg,fenetreb);				//// fenetre des 3eme portes 
 	rect(porteX-45, porteY-337, 24, 45);
 	rect(porteX+21, porteY-337, 24, 45);
 	strokeWeight(3);					////////// rampes pour 3eme patio
@@ -1264,7 +1274,7 @@ function draw() {
 	line(porteX, porteY-120,porteX, porteY-35);
 	line(porteX-4, porteY-68, porteX-4, porteY-63);
 	line(porteX+4, porteY-68, porteX+4, porteY-63);
-	fill(35,35,65);
+	fill(fenetrer,fenetreg,fenetreb);
 	rect(porteX-30, porteY-115,23,45);    /// fenetre dans la 1ere porte
 	rect(porteX+7,porteY-115,23,45);
 	strokeWeight(6);
@@ -1279,7 +1289,7 @@ function draw() {
 	rect(porteX-65, porteY-30, 130, 12);
 	fill(25);
 	rect(porteX-65, porteY-18, 130, 16);
-	fill(25);											//////////////////toit
+	fill(25);							//////////////////toit
 	rect(porteX-60, 830, 120,10);
 	line(porteX-60, 825, porteX-60, 830);
 	line(porteX+60, 825, porteX+60, 830);
@@ -1386,7 +1396,7 @@ function draw() {
 	rect(porteX-35, porteY-230, 34,80);
 	rect(porteX+1, porteY-230, 34, 80);
 	strokeWeight(2);
-	fill(35,35,65);											//// fenetre des 3  deuxieme portes 
+	fill(fenetrer,fenetreg,fenetreb);						//// fenetre des 3  deuxieme portes 
 	rect(porteX-30, porteY-227, 15, 45);
 	rect(porteX+15, porteY-227, 15, 45);
 	strokeWeight(6);
@@ -1431,13 +1441,13 @@ function draw() {
 	strokeWeight(2);			
 	line(porteX-69, porteY-153, porteX+69, porteY-153);
 	line(porteX-70, porteY-180, porteX+70, porteY-180);
-	fill(25);        													/////// 3eme patio 
+	fill(25);        						/////// 3eme patio 
 	rect(porteX-65, porteY-260, 130, 10);
 	fill(35,20,20);
 	rect(porteX-68, porteY-250,136, 10);
 	strokeWeight(6);
 	stroke(15);
-	fill(35,35,65);	
+	fill(fenetrer,fenetreg,fenetreb);	
 	rect(porteX-125, porteY-350, 45,80); /////////////////// 3eme fenetres a gauche//droite du 3er niveau
 	rect(porteX+80,porteY-350,45,80);
 	line(porteX-103,porteY-350, porteX-103, porteY-275);
@@ -1448,7 +1458,7 @@ function draw() {
 	rect(porteX-40, porteY-340, 34,80);
 	rect(porteX+10, porteY-340, 34, 80);
 	strokeWeight(2);
-	fill(35,35,65);										//// fenetre des 3eme portes 
+	fill(fenetrer,fenetreg,fenetreb);				//// fenetre des 3eme portes 
 	rect(porteX-33, porteY-337, 20, 45);
 	rect(porteX+18, porteY-337, 20, 45);
 	strokeWeight(3);					////////// rampes pour 3eme patio
