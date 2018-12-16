@@ -307,6 +307,16 @@ function setup(){
 	vertex(arbreX2+12, arbreY2-120);
 	endShape(CLOSE);
 	}
+	//////////// fonction pour détaillés les batiments derrieres
+	function detailmur(murX, murY){	
+	noStroke();
+	fill(60,45,40);
+	rect(murX,murY,300,20);
+	rect(murX+100,murY-8,100,10);
+	fill(35);
+	rect(murX,murY-3,100,5);
+	rect(murX+200,murY-3,100,5);
+	rect(murX+100,murY-13,100,5);
 
 function draw() {
 	///////////////////////////////////////////// calcule du lever du soleil
@@ -394,24 +404,11 @@ function draw() {
 	
 	/////////////// la perspective 
 	
-	stroke(50,240);
-	strokeWeight(4);	
-	fill(88, 75, 55,240);
-	rect(0,755,300,100);
-	fill(78,62,60,245);
-	rect(290,760,310,100);
-	rect(600,755,300,100);
-	//fill(45,40,33,230);
-	//rect(1233,740,330,100);
-	fill(78,62,60,250);
-	rect(1580,750,330,100);
-	//fill(45,40,33,230);
-	//rect(2220,735,300,100);
-	
 	stroke(5,240);
 	strokeWeight(5);
-	fill(50,35,30,240);
+	fill(60,45,40);
 	rect(0,775,300,100);
+	detailmur(0, 775);
 	rect(300,780,310,100);
 	fill(68, 53, 32,240);
 	rect(610,775,300,100);
@@ -2887,10 +2884,11 @@ function draw() {
 	
 	/// toutes les mottons de terre en ordre de gauche a droite
 	
+	//49;41;32;
 	
-	rt = 49;
-	gt = 41;
-	bt = 32;
+	rt = 230;
+	gt = 230;
+	bt = 230;
 	
 	var terreX = -10;  //1
 	fill(rt, gt, bt);
