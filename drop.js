@@ -12,7 +12,7 @@ function Drop() {
 
   this.fall = function() {
     this.y = this.y + this.yspeed;
-    this.yspeed = this.yspeed + 0.3;
+    this.yspeed = this.yspeed + 0.5;
 
     if (this.y > height) {
       this.y = random(-200, -100);
@@ -23,7 +23,7 @@ function Drop() {
   this.show = function() {
    
     strokeWeight(3);
-    stroke(131, 192, 247,200);
+    stroke(131, 192, 247,150);
     line(this.x, this.y, this.x, this.y+this.len);
   }
 }
