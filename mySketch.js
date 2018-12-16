@@ -3090,6 +3090,3 @@ function draw() {
 	
 	
 }
-	    
-	    
-
