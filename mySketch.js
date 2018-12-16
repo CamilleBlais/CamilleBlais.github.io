@@ -3120,6 +3120,8 @@ function draw() {
 	shadowb = 6;
 	shadowa = map(Realtime, TimeSunset-1500, TimeSunset+2000, 0,120); //  au plus foncés de la nuit, sinon jour 0 
 	shadowa = map(Realtime, TimeSunrise-1800, TimeSunrise+1800, 120,0); 
+	 
+	//if(Realtime
 	
 	noStroke();
 	fill(shadowr, shadowg, shadowb, shadowa);
