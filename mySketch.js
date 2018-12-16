@@ -410,10 +410,6 @@ function draw() {
 	
 	///////////////////////////////////////////// LE BACKGROUND 
 	
-
-	/*Nightr = 21;
-	Nightg = 10;
-	Nightb = 38;*/
 	
 	Nightr = map(Realtime, TimeSunset-1800, TimeSunset+1800, 230,13);
 	Nightg = map(Realtime, TimeSunset-1800, TimeSunset+1800, 235, 20);
@@ -423,6 +419,13 @@ function draw() {
 	Nightg = map(Realtime, TimeSunset+2000, 86399, 20, 5);
 	Nightb = map(Realtime, TimeSunset+2000, 86399, 37, 15);
 	
+	Nightr = map(Realtime, 1, TimeSunrise-1800, 5, 13);
+	Nightg = map(Realtime, 1, TimeSunrise-1800, 5, 20);
+	Nightb = map(Realtime, 1, TimeSunrise-1800, 15, 37);
+	
+	Nightr = map(Realtime, TimeSunrise-1800, TimeSunrise+1800, 13, 230);
+	Nightg = map(Realtime, TimeSunrise-1800, TimeSunrise+1800, 20, 235);
+	Nightb = map(Realtime, TimeSunrise-1800, TimeSunrise+1800, 37, 250);
 	
 	background(Nightr,Nightg,Nightb);  
 	
@@ -452,7 +455,7 @@ function draw() {
 	/////////////// la perspective 
 	
 	stroke(25);
-	strokeWeight(3);
+	strokeWeight(1);
 	fill(60,45,40);
 	rect(0,785,300,100);
 	detailmur(-2, 780);
@@ -460,7 +463,7 @@ function draw() {
 	rect(300,785,310,100);
 	fill(68, 53, 32,240);
 	rect(610,778,300,100);
-	detailmur2(760,760);
+	detailmur2(760,758);
 	rect(920,780,300,100);
 	fill(60,45,40);
 	rect(1230,765,330,100);
@@ -469,7 +472,9 @@ function draw() {
 	detailmur(1560, 775);
 	fill(88, 75, 55,240);
 	rect(1900,758,300,100);
-	detailmur2(2050,740);
+	detailmur2(2050,738);
+	stroke(25);
+	strokeWeight(1);
 	fill(75);
 	rect(2200,750,300,100);
 	rect(2500,777,300,100);
