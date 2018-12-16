@@ -3121,7 +3121,12 @@ function draw() {
 	shadowa = map(Realtime, TimeSunset-1500, TimeSunset+2000, 0,120); //  au plus foncés de la nuit, sinon jour 0 
 	shadowa = map(Realtime, TimeSunrise-1800, TimeSunrise+1800, 120,0); 
 	 
-	//if(Realtime
+	if(Realtime > TimeSunset+2000){
+	shadowa = 120;
+	}
+	if(Realtime < TimeSunrise-1800){
+	shadowa = 120;
+	}
 	
 	noStroke();
 	fill(shadowr, shadowg, shadowb, shadowa);
@@ -3176,6 +3181,11 @@ function draw() {
 		lumiere(1100,1175);
 		lumiere(1700,1175);
 		lumiere(2300,1175);
+		lumiere(35,1406);
+		lumiere(665,1406);
+		lumiere(1265,1406);
+		lumiere(1865,1406);
+		lumiere(2465,1406);
 	}
 	
 	if (Realtime < TimeSunrise){
@@ -3183,6 +3193,11 @@ function draw() {
 		lumiere(1100,1175);
 		lumiere(1700,1175);
 		lumiere(2300,1175);
+		lumiere(35,1406);
+		lumiere(665,1406);
+		lumiere(1265,1406);
+		lumiere(1865,1406);
+		lumiere(2465,1406);
 	}
 	
 	
