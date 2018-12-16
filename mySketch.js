@@ -317,6 +317,7 @@ function setup(){
 	rect(murX,murY-3,100,5);
 	rect(murX+200,murY-3,100,5);
 	rect(murX+100,murY-13,100,5);
+	}
 
 function draw() {
 	///////////////////////////////////////////// calcule du lever du soleil
