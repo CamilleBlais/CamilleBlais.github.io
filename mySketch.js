@@ -314,7 +314,6 @@ function setup(){
 	//////////// fonction pour détaillés les batiments derrieres
 	function detailmur(murX, murY){	
 	noStroke();
-	fill(60,45,40);
 	rect(murX,murY,300,20);
 	rect(murX+100,murY-8,100,10);
 	fill(35);
@@ -324,7 +323,6 @@ function setup(){
 	}
 	function detailmur2(murX2, murY2){
 	noStroke();
-	//fill(141, 114, 78);
 	rect(murX2-140,murY2,20,25);
 	rect(murX2+120,murY2,20,25);
 	rect(murX2-50,murY2+15,100,8);
@@ -437,22 +435,24 @@ function draw() {
 	strokeWeight(3);
 	fill(60,45,40);
 	rect(0,785,300,100);
+	detailmur(-2, 780);
+	fill(75);
 	rect(300,785,310,100);
 	fill(68, 53, 32,240);
 	rect(610,775,300,100);
 	rect(920,780,300,100);
+	detailmur2(920,780);
 	fill(60,45,40);
 	rect(1230,765,330,100);
+	detailmur(1230, 765);
 	rect(1560,775,330,100);
+	detailmur(1560, 775);
 	fill(88, 75, 55,240);
 	rect(1900,755,300,100);
-	fill(38, 23, 2,240);
+	fill(75);
 	rect(2200,750,300,100);
-	fill(88, 85, 85);
+	detailmur2(2200,750);
 	rect(2500,777,300,100);
-	detailmur(-2, 780);
-	detailmur(1230, 765);
-	detailmur(1560, 775);
 	
 	/////////////////////// ruee
 	strokeWeight(1);
