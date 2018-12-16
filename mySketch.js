@@ -441,7 +441,7 @@ function draw() {
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
 	
-	//Realtime = TimeSunrise;
+	Realtime = TimeSunrise;
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
@@ -525,8 +525,15 @@ function draw() {
 	
 	///LE DEUXIEME SOLEIL 
 	
- 	sunX2 = map(Realtime,TimeMidi, TimeSunset, 1500,500);
-  	sunY2 = map(Realtime,TimeMidi,TimeSunset,200,800);
+ 	sunX2 = map(Realtime,TimeMidi, TimeSunset+1800, 1500,500);
+	
+	if(Realtime > TimeMidi && Realtime <= TimeSunset){
+  	sunY2 = map(Realtime,TimeMidi,TimeSunset,200,730);
+	}
+	if(Realtime > TimeSunset && Realtime <= TimeSunset+1800){
+	sunY2 = map(Realtime,TimeSunset,TimeSunset+1800,730,900);
+	}
+	
 		
 	if(Realtime > TimeMidi && Realtime < TimeSunset + 1800){
 	noStroke();
@@ -534,7 +541,43 @@ function draw() {
  	ellipse(sunX2, sunY2, 80,80);
 	}
 	
-	///////////////////// Le coucher et lever du soleil avec le soleil de couleur par dessus 
+	// coucher 
+	if(Realtime > TimeSunset-1000 && Realtime <= TimeSunset){ 
+	alphasoleil2 = map(Realtime,TimeSunset-1000,TimeSunset,5,120);
+	}
+	
+	if(Realtime > TimeSunset && Realtime < TimeSunset+1800){
+	alphasoleil2 = map(Realtime,TimeSunset, TimeSunset+1800,120,5);
+	}	
+	
+	noStroke();
+	fill(210,200,255,alphasoleil2);// ciel
+	rect(0,0,2950,100);
+	fill(230,230,255,alphasoleil2);// ciel
+	rect(0,sunY2-675,2950,275);
+	fill(255,230,150,alphasoleil2+20);// ciel
+	rect(0,sunY2-400,2950,725);
+	fill(225, 189, 185,alphasoleil2); // ciel
+	rect(0,sunY2-200,2950,625);
+	fill(255, 187, 185,alphasoleil2-10);
+	ellipse(sunX2,sunY2,600,340);
+	fill(255, 110, 44, alphasoleil2-5);
+	ellipse(sunX2,sunY2,830,350);
+	fill(255, 86, 41,alphasoleil2);
+	rect(sunX2-570,sunY2-40,1200,80,40);
+	rect(sunX2-600,sunY2-80,1200,80,40);
+	rect(sunX2-580,sunY2+20,1200,80,40);
+	rect(sunX2-450,sunY2-120,900,80,40);
+	fill(255, 37, 18,alphasoleil2);
+	rect(sunX2-800,sunY2-10,1400,40,20);
+	rect(sunX2-700,sunY2+30,1400,40,20);
+	rect(sunX2-700,sunY2-50,1400,40,20);
+	fill(255,246,188,alphasoleil2);
+	ellipse(sunX2, sunY2, 100,100);
+	ellipse(sunX2, sunY2, 200,200);
+	ellipse(sunX2, sunY2, 280,280);
+	ellipse(sunX2, sunY2, 420,320);
+	
 
 	/////////////////////// couleur fenetre
 	/*fenetrer = 35;
