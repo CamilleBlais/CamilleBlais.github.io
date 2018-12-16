@@ -532,10 +532,10 @@ function draw() {
  	sunX2 = map(Realtime,TimeMidi, TimeSunset+1800, 1500,500);
 	
 	if(Realtime > TimeMidi && Realtime <= TimeSunset){
-  	sunY2 = map(Realtime,TimeMidi,TimeSunset,200,730);
+  	sunY2 = map(Realtime,TimeMidi,TimeSunset,200,530);
 	}
 	if(Realtime > TimeSunset && Realtime <= TimeSunset+1800){
-	sunY2 = map(Realtime,TimeSunset,TimeSunset+1800,730,900);
+	sunY2 = map(Realtime,TimeSunset,TimeSunset+1800,530,900);
 	}
 	else{
 	sunY2 = 1200;
