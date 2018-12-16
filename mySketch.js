@@ -3152,9 +3152,7 @@ function draw() {
 	if(Realtime > TimeSunrise +1800){
 	shadowa = 0;
 	}
-	else{
-	shadowa = 0;
-	}
+	
 	
 	noStroke();
 	fill(shadowr, shadowg, shadowb, shadowa);
@@ -3181,8 +3179,7 @@ function draw() {
 	detailmur(1230, 765);
 	fill(shadowr, shadowg, shadowb, shadowa);
 	detailmur(1560, 775);
-	noFill();
-	ellipse(500,1189,100,100);
+	
 	
 	///lampadaires///////lampadaires//// en ordre de gauche a droite 
 	
