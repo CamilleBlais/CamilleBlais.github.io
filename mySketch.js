@@ -471,27 +471,66 @@ function draw() {
 	}
 	
 	
-	/////////////////////////// LE SOLEIL 
+	/////////////////////////// LE PREMIER SOLEIL 
 	
 	
 	
 	sunX = map(Realtime,TimeSunrise,TimeMidi,2500,1500);
-	sunY = map(Realtime,TimeSunrise, TimeMidi, 800,200);
+	sunY = map(Realtime,TimeSunrise, TimeMidi, 900,200);
+	
+	
+	if(Realtime <= TimeMidi && Realtime > TimeSunrise-1800){
+	noStroke();
+	fill(255, 246, 188);
+	ellipse(sunX, sunY, 80,80);
+	}
+	
+	///// coucher 1er soleil 
+	if(Realtime > TimeSunrise-1800 && Realtime <= TimeSunrise){ 
+	alphasoleil = map(Realtime,TimeSunrise-1800,TimeSunrise,5,120);
+	}
+	
+	if(Realtime > TimeSunrise && Realtime < TimeSunrise+1000){
+	alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
+	}	
+		noStroke();
+	fill(210,200,255,alphasoleil);// ciel
+	rect(0,0,2950,100);
+	fill(230,230,255,alphasoleil);// ciel
+	rect(0,sunY-675,2950,275);
+	fill(255,230,150,alphasoleil+20);// ciel
+	rect(0,sunY-400,2950,725);
+	fill(225, 189, 185,alphasoleil); // ciel
+	rect(0,sunY-200,2950,625);
+	fill(255, 187, 185,alphasoleil-10);
+	ellipse(sunX,sunY,600,340);
+	fill(255, 110, 44, alphasoleil-5);
+	ellipse(sunX,sunY,830,350);
+	fill(255, 86, 41,alphasoleil);
+	rect(sunX-570,sunY-40,1200,80,40);
+	rect(sunX-600,sunY-80,1200,80,40);
+	rect(sunX-580,sunY+20,1200,80,40);
+	rect(sunX-450,sunY-120,900,80,40);
+	fill(255, 37, 18,alphasoleil);
+	rect(sunX-800,sunY-10,1400,40,20);
+	rect(sunX-700,sunY+30,1400,40,20);
+	rect(sunX-700,sunY-50,1400,40,20);
+	fill(255,246,188,alphasoleil);
+	ellipse(sunX, sunY, 100,100);
+	ellipse(sunX, sunY, 200,200);
+	ellipse(sunX, sunY, 280,280);
+	ellipse(sunX, sunY, 420,320);
+	
+	///LE DEUXIEME SOLEIL 
 	
  	sunX2 = map(Realtime,TimeMidi, TimeSunset, 1500,500);
   	sunY2 = map(Realtime,TimeMidi,TimeSunset,200,800);
-	
-		if(Realtime <= TimeMidi && Realtime > TimeSunrise-1800){
-		noStroke();
-		fill(255, 246, 188);
-		ellipse(sunX, sunY, 80,80);
-		}
 		
-		if(Realtime > TimeMidi && Realtime < TimeSunset + 1800){
-		noStroke();
-		fill(255, 246, 188);
- 		 ellipse(sunX2, sunY2, 80,80);
-		}
+	if(Realtime > TimeMidi && Realtime < TimeSunset + 1800){
+	noStroke();
+	fill(255, 246, 188);
+ 	ellipse(sunX2, sunY2, 80,80);
+	}
 	
 	///////////////////// Le coucher et lever du soleil avec le soleil de couleur par dessus 
 
