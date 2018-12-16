@@ -443,30 +443,31 @@ function draw() {
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
-	Nightr = map(Realtime, TimeSunset+1000, TimeSunset+3000, 230, 20);
-	Nightg = map(Realtime, TimeSunset+1000, TimeSunset+3000, 235, 25);
-	Nightb = map(Realtime, TimeSunset+1000, TimeSunset+3000, 250, 55);
-	
-	Nightr = map(Realtime, TimeSunset+3000, 86399, 20, 10);
-	Nightg = map(Realtime, TimeSunset+3000, 86399, 25, 10);
-	Nightb = map(Realtime, TimeSunset+3000, 86399, 55, 20);
-	
+	if(Realtime > TimeSunset-1000 && Realtime < TimeSunset+3000){
+	Nightr = map(Realtime, TimeSunset-1000, TimeSunset+3000, 230, 20);
+	Nightg = map(Realtime, TimeSunset-1000, TimeSunset+3000, 235, 25);
+	Nightb = map(Realtime, TimeSunset-1000, TimeSunset+3000, 250, 55);
+	}
+	if(Realtime >= TimeSunset+3000){
+	Nightr = map(Realtime, TimeSunset+3000, 86400, 20, 10);
+	Nightg = map(Realtime, TimeSunset+3000, 86400, 25, 10);
+	Nightb = map(Realtime, TimeSunset+3000, 86400, 55, 20);
+	}
+	if(Realtime <= TimeSunrise-3000){
 	Nightr = map(Realtime, 0, TimeSunrise-3000, 10, 20);
 	Nightg = map(Realtime, 0, TimeSunrise-3000, 10, 25);
 	Nightb = map(Realtime, 0, TimeSunrise-3000, 20, 55);
-	
+	}
+	if(Realtime > TimeSunrise-3000 && Realtime < TimeSunrise+1000){
 	Nightr = map(Realtime, TimeSunrise-3000, TimeSunrise-1000, 20, 230);
 	Nightg = map(Realtime, TimeSunrise-3000, TimeSunrise-1000, 25, 235);
 	Nightb = map(Realtime, TimeSunrise-3000, TimeSunrise-1000, 55, 250);
-	
+	}
+
 	background(Nightr,Nightg,Nightb);  
 	
-	if(Realtime > TimeSunrise+3000 && Realtime < TimeSunset-3000){
+	if(Realtime >= TimeSunrise+1000 && Realtime <= TimeSunset-1000){
 	background(230,235,250);  
-	}
-	
-	if(Realtime == 86400){
-	background(0);  
 	}
 	
 	
