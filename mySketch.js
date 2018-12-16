@@ -418,13 +418,13 @@ function draw() {
 	Nightg = map(Realtime, TimeSunset-1800, TimeSunset+1800, 235, 20);
 	Nightb = map(Realtime, TimeSunset-1800, TimeSunset+1800, 250, 37);
 	
-	Nightr = map(Realtime, TimeSunset+2000, 86399, 13, 5);
-	Nightg = map(Realtime, TimeSunset+2000, 86399, 20, 5);
-	Nightb = map(Realtime, TimeSunset+2000, 86399, 37, 15);
+	Nightr = map(Realtime, TimeSunset+2000, 86399, 13, 10);
+	Nightg = map(Realtime, TimeSunset+2000, 86399, 20, 10);
+	Nightb = map(Realtime, TimeSunset+2000, 86399, 37, 20);
 	
-	Nightr = map(Realtime, 1, TimeSunrise-1800, 5, 13);
-	Nightg = map(Realtime, 1, TimeSunrise-1800, 5, 20);
-	Nightb = map(Realtime, 1, TimeSunrise-1800, 15, 37);
+	Nightr = map(Realtime, 1, TimeSunrise-1800, 10, 13);
+	Nightg = map(Realtime, 1, TimeSunrise-1800, 10, 20);
+	Nightb = map(Realtime, 1, TimeSunrise-1800, 20, 37);
 	
 	Nightr = map(Realtime, TimeSunrise-1800, TimeSunrise+1800, 13, 230);
 	Nightg = map(Realtime, TimeSunrise-1800, TimeSunrise+1800, 20, 235);
