@@ -324,7 +324,7 @@ function setup(){
 	}
 	function detailmur2(murX2, murY2){
 	noStroke();
-	fill(141, 114, 78);
+	//fill(141, 114, 78);
 	rect(murX2-140,murY2,20,25);
 	rect(murX2+120,murY2,20,25);
 	rect(murX2-50,murY2+15,100,8);
@@ -2137,29 +2137,8 @@ function draw() {
 	fill(141, 114, 78);
 	rect(1990,800,290,400);
 	
-	noStroke();
-	var porteX = 2135; 
-	rect(porteX-140,780,20,25);
-	rect(porteX+120,780,20,25);
-	rect(porteX-50,795,100,8);
-	rect(porteX-40,790,80,8);
-	rect(porteX-30,785,60,8);
-	rect(porteX-20,780,40,8);
-	rect(porteX-10,775,20,8);
-	fill(15);
-	rect(porteX-141,777,22,5);
-	rect(porteX+119,777,22,5);
-	rect(porteX-12,772,24,5);
-	stroke(15);
-	strokeWeight(3);
-	line(porteX-141,780,porteX-141,799);
-	line(porteX-119,780, porteX-119, 799);
-	line(porteX+141,780,porteX+141,799);
-	line(porteX+119,780,porteX+119,799);
-	strokeWeight(7);
-	line(porteX-52,799,porteX-11,776);
-	line(porteX+52,799,porteX+11,776);
-	
+	fill(141, 114, 78);
+	detailmur2(2135,780);
 	Brique(2060,815);
 	Brique(2000,1105);
 	Brique(2020,955);
@@ -2404,30 +2383,6 @@ function draw() {
 	rect(2280,800,290,400);
 	
 	detailmur2(2425,780);
-	
-	/*noStroke();
-	var porteX = 2425; 
-	rect(porteX-140,780,20,25);
-	rect(porteX+120,780,20,25);
-	rect(porteX-50,795,100,8);
-	rect(porteX-40,790,80,8);
-	rect(porteX-30,785,60,8);
-	rect(porteX-20,780,40,8);
-	rect(porteX-10,775,20,8);
-	fill(15);
-	rect(porteX-141,777,22,5);
-	rect(porteX+119,777,22,5);
-	rect(porteX-12,772,24,5);
-	stroke(15);
-	strokeWeight(3);
-	line(porteX-141,780,porteX-141,799);
-	line(porteX-119,780, porteX-119, 799);
-	line(porteX+141,780,porteX+141,799);
-	line(porteX+119,780,porteX+119,799);
-	strokeWeight(7);
-	line(porteX-52,799,porteX-11,776);
-	line(porteX+52,799,porteX+11,776);*/
-	
 	Brique(2360,815);
 	Brique(2300,1105);
 	Brique(2500,1105);
