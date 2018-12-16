@@ -3142,9 +3142,9 @@ function draw() {
 	shadowa = 120;
 	}
 	
-	if(Realtime < TimeSunset-1800 && Realtime > TimeSunrise +1800){
+	/*if(Realtime < TimeSunset-1800 && Realtime > TimeSunrise +1800){
 	shadowa = 0;
-	}
+	}*/
 	
 	noStroke();
 	fill(shadowr, shadowg, shadowb, shadowa);
