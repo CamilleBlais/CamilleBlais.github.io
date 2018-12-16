@@ -78,16 +78,13 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	    meteo = "moderate rain";
     }
   }); 
 
-  	for (var i = 0; i < 100; i++) {
+  	for (var i = 0; i < 1000; i++) {
     	drops[i] = new Drop();
   	}
-	for (var j = 0; j < 1200; j++) {
-    	drops[j] = new Drop2();
-  	}
+	
 }
 
 
@@ -3207,17 +3204,10 @@ function draw() {
 	
 	
 	
-	if(meteo == "light rain"){
+	if(meteo == "moderate rain"){
 	for (var i = 0; i < drops.length; i++) {
          drops[i].fall();
          drops[i].show();
-  	}
-	}
-	
-	if(meteo == "moderate rain"){
-	for (var j = 0; j < drops.length; j++) {
-         drops[j].fall();
-         drops[j].show();
   	}
 	}
 
