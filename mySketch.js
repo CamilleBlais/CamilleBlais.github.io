@@ -443,25 +443,25 @@ function draw() {
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
-	Nightr = map(Realtime, TimeSunset-1800, TimeSunset+1800, 230,13);
-	Nightg = map(Realtime, TimeSunset-1800, TimeSunset+1800, 235, 20);
-	Nightb = map(Realtime, TimeSunset-1800, TimeSunset+1800, 250, 37);
+	Nightr = map(Realtime, TimeSunset+1000, TimeSunset+3000, 230, 20);
+	Nightg = map(Realtime, TimeSunset+1000, TimeSunset+3000, 235, 25);
+	Nightb = map(Realtime, TimeSunset+1000, TimeSunset+3000, 250, 55);
 	
-	Nightr = map(Realtime, TimeSunset+2000, 86399, 13, 10);
-	Nightg = map(Realtime, TimeSunset+2000, 86399, 20, 10);
-	Nightb = map(Realtime, TimeSunset+2000, 86399, 37, 20);
+	Nightr = map(Realtime, TimeSunset+3000, 86399, 20, 10);
+	Nightg = map(Realtime, TimeSunset+3000, 86399, 25, 10);
+	Nightb = map(Realtime, TimeSunset+3000, 86399, 55, 20);
 	
-	Nightr = map(Realtime, 0, TimeSunrise-2000, 10, 13);
-	Nightg = map(Realtime, 0, TimeSunrise-2000, 10, 20);
-	Nightb = map(Realtime, 0, TimeSunrise-2000, 20, 37);
+	Nightr = map(Realtime, 0, TimeSunrise-3000, 10, 20);
+	Nightg = map(Realtime, 0, TimeSunrise-3000, 10, 25);
+	Nightb = map(Realtime, 0, TimeSunrise-3000, 20, 55);
 	
-	Nightr = map(Realtime, TimeSunrise-2000, TimeSunrise+1800, 13, 230);
-	Nightg = map(Realtime, TimeSunrise-2000, TimeSunrise+1800, 20, 235);
-	Nightb = map(Realtime, TimeSunrise-2000, TimeSunrise+1800, 37, 250);
+	Nightr = map(Realtime, TimeSunrise-3000, TimeSunrise-1000, 20, 230);
+	Nightg = map(Realtime, TimeSunrise-3000, TimeSunrise-1000, 25, 235);
+	Nightb = map(Realtime, TimeSunrise-3000, TimeSunrise-1000, 55, 250);
 	
 	background(Nightr,Nightg,Nightb);  
 	
-	if(Realtime > TimeSunrise+1800 && Realtime < TimeSunset-1800){
+	if(Realtime > TimeSunrise+3000 && Realtime < TimeSunset-3000){
 	background(230,235,250);  
 	}
 	
@@ -492,7 +492,7 @@ function draw() {
  		 ellipse(sunX2, sunY2, 80,80);
 		}
 	
-	
+	///////////////////// Le coucher et lever du soleil avec le soleil de couleur par dessus 
 
 	/////////////////////// couleur fenetre
 	/*fenetrer = 35;
