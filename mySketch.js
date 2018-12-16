@@ -411,17 +411,19 @@ function draw() {
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 
-	Nightr = 21;
+	/*Nightr = 21;
 	Nightg = 10;
-	Nightb = 38;
+	Nightb = 38;*/
 	
-	/*Nightr = map(Realtime, TimeSunset-1800, TimeSunset+1800, 230,21);
+	Nightr = map(Realtime, TimeSunset-1800, TimeSunset+1800, 230,21);
 	Nightg = map(Realtime, TimeSunset-1800, TimeSunset+1800, 235, 10);
-	Nightb = map(Realtime, TimeSunset-1800, TimeSunset+1800, 250, 38);*/
+	Nightb = map(Realtime, TimeSunset-1800, TimeSunset+1800, 250, 38);
 	
 	background(Nightr,Nightg,Nightb);  
 	
-	
+	if(Realtime > TimeSunset+1800){
+	background(20,15,35);  
+	}
 	
 	
 	
