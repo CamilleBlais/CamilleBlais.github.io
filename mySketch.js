@@ -82,10 +82,10 @@ function setup(){
     }
   }); 
 
-  	for (var i = 0; i < 300; i++) {
+  	for (var i = 0; i < 100; i++) {
     	drops[i] = new Drop();
   	}
-	for (var j = 0; j < 1000; j++) {
+	for (var j = 0; j < 1200; j++) {
     	drops[j] = new Drop2();
   	}
 }
