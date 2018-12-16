@@ -415,16 +415,21 @@ function draw() {
 	Nightg = 10;
 	Nightb = 38;*/
 	
-	Nightr = map(Realtime, TimeSunset-1800, TimeSunset+1800, 230,21);
-	Nightg = map(Realtime, TimeSunset-1800, TimeSunset+1800, 235, 10);
-	Nightb = map(Realtime, TimeSunset-1800, TimeSunset+1800, 250, 38);
+	Nightr = map(Realtime, TimeSunset-1800, TimeSunset+1800, 230,13);
+	Nightg = map(Realtime, TimeSunset-1800, TimeSunset+1800, 235, 20);
+	Nightb = map(Realtime, TimeSunset-1800, TimeSunset+1800, 250, 37);
+	
+	Nightr = map(Realtime, TimeSunset+2000, 86399, 13, 5);
+	Nightg = map(Realtime, TimeSunset+2000, 86399, 20, 5);
+	Nightb = map(Realtime, TimeSunset+2000, 86399, 37, 15);
+	
 	
 	background(Nightr,Nightg,Nightb);  
 	
-	if(Realtime > TimeSunset+1800){
-	background(20,15,35);  
-	}
 	
+	if(Realtime > 86400){
+	background(0);  
+	}
 	
 	
 	/////////////////////////// LE SOLEIL 
