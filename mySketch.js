@@ -23,6 +23,9 @@ var murY2 = 0;
 var temperature = 0;
 var lever = 0;
 var coucher = 0;
+var Nightr = 0;
+var Nightg = 0;
+var Nightb = 0;
 var meteo = 0;
 var drops = [];
 
@@ -406,7 +409,12 @@ function draw() {
 	var TimeMidi = TimeSunset - TimeSunrise;
 	
 	///////////////////////////////////////////// LE BACKGROUND 
-	background(230,235,250);  //daylight time normale
+	
+	Nightr = map(Realtime, TimeSunset-1800, TimeSunset+1800, 230,21);
+	Nightg = map(Realtime, TimeSunset-1800, TimeSunset+1800, 235, 10);
+	Nightb = map(Realtime, TimeSunset-1800, TimeSunset+1800, 250, 38);
+	
+	background(Nightr,Nightg,Nightb);  
 	
 	
 	
@@ -440,8 +448,8 @@ function draw() {
 	rect(300,785,310,100);
 	fill(68, 53, 32,240);
 	rect(610,775,300,100);
+	detailmur2(760,770);
 	rect(920,780,300,100);
-	detailmur2(920,780);
 	fill(60,45,40);
 	rect(1230,765,330,100);
 	detailmur(1230, 765);
@@ -449,9 +457,9 @@ function draw() {
 	detailmur(1560, 775);
 	fill(88, 75, 55,240);
 	rect(1900,755,300,100);
+	detailmur2(2050,750);
 	fill(75);
 	rect(2200,750,300,100);
-	detailmur2(2200,750);
 	rect(2500,777,300,100);
 	
 	/////////////////////// ruee
