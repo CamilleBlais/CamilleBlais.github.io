@@ -1,4 +1,4 @@
-function Drop() {
+function Drop2() {
   this.x = random(width);
   this.y = random(-50, 1525);
   this.len = random(5, 15);
