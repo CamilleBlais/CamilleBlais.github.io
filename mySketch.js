@@ -82,8 +82,11 @@ function setup(){
     }
   }); 
 
-  	for (var i = 0; i < 1000; i++) {
+  	for (var i = 0; i < 500; i++) {
     	drops[i] = new Drop();
+  	}
+	for (var j = 0; j < 1000; j++) {
+    	drops[j] = new Drop2();
   	}
 }
 
@@ -3211,7 +3214,13 @@ function draw() {
   	}
 	}
 	
-	
+	if(meteo == "moderate rain"){
+	for (var j = 0; j < drops.length; j++) {
+         drops[j].fall();
+         drops[j].show();
+  	}
+	}
+
 	
 	
 }
