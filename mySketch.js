@@ -79,7 +79,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	    meteo = "light rain";
+	    //meteo = "light rain";
     }
   }); 
 
@@ -3142,7 +3142,7 @@ function draw() {
 	shadowa = 120;
 	}
 	
-	if(Realtime < TimeSunset-1800 && Realtime > TimeSunrise +1800 {
+	if(Realtime < TimeSunset-1800 && Realtime > TimeSunrise +1800){
 	shadowa = 0;
 	}
 	
