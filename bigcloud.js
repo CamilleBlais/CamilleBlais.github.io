@@ -1,5 +1,5 @@
 function BigCloud() {
-  this.x = random(0,2900);
+  this.x = random(-200,2900);
   this.y = random(-50, 350);
   this.len = random(160, 430);
   this.high = random(70,120);
