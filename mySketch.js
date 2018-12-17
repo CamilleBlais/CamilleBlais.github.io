@@ -485,7 +485,7 @@ function draw() {
 	
 	
 	if(Realtime <= TimeSunrise && Realtime > TimeSunrise + 1800){
-	sunY = map(Realtime,TimeSunrise-1800, TimeSunrise, 900,700);
+	sunY = map(Realtime,TimeSunrise, TimeSunrise-1800, 700,1000);
 	noStroke();
 	fill(255, 246, 188);
 	ellipse(sunX, sunY, 80,80);	
