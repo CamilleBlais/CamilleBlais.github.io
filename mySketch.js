@@ -51,6 +51,7 @@ var gravity = 0;
 var snow2 = [];
 var gravity2 = 0;
 var clouds = [];
+var bigclouds = [];
 var clouds2 = [];
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
@@ -120,10 +121,13 @@ function setup(){
     	clouds[i] = new Cloud();
   	}
 	
-	for (var j = 0; j < 70; j++) {
+	for (var j = 0; j < 70; j++) {    //more clouds
     	clouds2[j] = new Cloud2();
   	}
 	
+	for (var i = 0; i < 10; i++) {   //big clouds
+    	bigclouds[i] = new BigCloud();
+  	}
 	
 }
 
@@ -3454,14 +3458,21 @@ function draw() {
   	}
 	}
 	
-	if(meteo == "mist"){
+	if(meteo == "mist" || meteo == "fog"){
 	for (var j = 0; j < clouds2.length; j++) {
     	clouds2[j].move();
 	clouds2[j].show();
 	}
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
+  	}
 	noStroke();
-	fill(240,240,245,50);
+	fill(240,240,245,40);
 	rect(0,0,windowWidth, windowHeight);
+	rect(0,700,windowWidth,100);
+	rect(0,500,windowWidth,50);
+	rect(0,900,windowWidth,120);
 	}
 	
 	if(meteo == "moderate rain"){
@@ -3469,6 +3480,10 @@ function draw() {
     	clouds2[j].move();
 	clouds2[j].show();
   	}
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
+  	}	
 	for (var i = 0; i < drops.length; i++) {
          drops[i].fall();
          drops[i].show();
