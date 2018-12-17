@@ -544,11 +544,12 @@ function draw() {
 	if(Realtime > TimeSunrise-1800 && Realtime <= TimeSunrise){ 
 	alphasoleil = map(Realtime,TimeSunrise-1800,TimeSunrise,5,120);
 	}
-	else if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
+	if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
 	alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
 	}
-	
-	
+	else{
+	alphasoleil = 0;
+	}
 	
 	
 	
