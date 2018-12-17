@@ -677,15 +677,21 @@ function draw() {
 
 	/////////////////////// couleur fenetre
 
-	
+	if(Realtime > TimeSunset-1800){
 	fenetrer = map(Realtime, TimeSunset-1800,86400,35,10);
 	fenetreg = map(Realtime, TimeSunset-1800,86400,35,10);
 	fenetreb = map(Realtime, TimeSunset-1800,86400,65,20);
-	
+	}
+	if(Realtime < TimeSunrise+1800){
 	fenetrer = map(Realtime, 0,TimeSunrise+1800,10,35);
 	fenetreg = map(Realtime, 0,TimeSunrise+1800,10,35);
 	fenetreb = map(Realtime, 0,TimeSunrise+1800,20,65);
-	
+	}
+	if(Realtime > TimeSunrise +1800 && Realtime < TimeSunset-1800){
+	fenetrer = 35;
+	fenetreg = 35;
+	fenetreb = 65;
+	}	
 	/////////////// la perspective 
 	
 	stroke(25);
