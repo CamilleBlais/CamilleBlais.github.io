@@ -1,4 +1,4 @@
-class Snowflake{
+class Snowflake2{
 
 constructor(){
 
@@ -21,7 +21,7 @@ this.acc.mult(0);
 }
 
 render(){
-stroke(255);
+stroke(200,0,255);
 strokeWeight(this.r);
 point(this.pos.x, this.pos.y);
 }
