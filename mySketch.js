@@ -44,7 +44,8 @@ var Nightb = 0;
 var meteo = 0;
 var drops = [];
 var drops2 = [];
-var trandom = random();
+var etoileX = 0;
+var etoileY = 0;
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
 $const.tlong = -71.10; // longitude
@@ -384,10 +385,10 @@ function setup(){
 	ellipse(lumiereX,lumiereY,180,180);
 	}
 	
-	function Star() {
+	function Star(etoileX, etoileY) {
 	strokeWeight(1);
   	stroke(230, 230, 250);
-  	point(trandom(width), trandom(-20, 500));
+  	point(etoileX), etoileY);
  	}
 
 function draw() {
@@ -481,11 +482,11 @@ function draw() {
 	background(230,235,250);  
 	}
 	
-	trandom = random();
-        Star();Star(); Star(); Star(); Star(); Star(); Star(); Star(); 
-	Star();Star();Star(); Star(); Star(); Star(); Star(); Star(); 
-	Star(); Star(); Star(); Star(); Star(); Star(); Star(); Star(); 
-	Star(); Star(); Star(); Star(); Star(); Star(); Star(); Star(); 
+	etoileX = random(0,2900);
+	etoileY = random(0,550);
+	Star(etoileX, etoileY); Star(etoileX, etoileY); Star(etoileX, etoileY); Star(etoileX, etoileY);
+	Star(etoileX, etoileY); Star(etoileX, etoileY); Star(etoileX, etoileY); Star(etoileX, etoileY);
+        
   	
 	
 	/////////////////////////// LE PREMIER SOLEIL 
