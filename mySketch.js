@@ -48,6 +48,8 @@ var etoileX = 0;
 var etoileY = 0;
 var snow = [];
 var gravity = 0;
+var snow2 = [];
+var gravity2 = 0;
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
 $const.tlong = -71.10; // longitude
@@ -88,7 +90,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	    //meteo = "light rain";
+	    meteo = "light snow";
     }
   }); 
 
@@ -102,6 +104,7 @@ function setup(){
 	
 	////////////////// SNOWFLAKE
 	gravity = createVector(0, 0.02);
+	//gravity2 = createVector(0, 0.04);
 	
 }
 
@@ -3432,6 +3435,7 @@ function draw() {
   	}
 	}
 	
+	if(meteo == "light snow"){
 	snow.push(new Snowflake());
 	for(flake of snow){
 		flake.applyForce(gravity);
@@ -3440,9 +3444,22 @@ function draw() {
 		}
 	for(var i = snow.lenght-1; i >= 0; i--){
 		if(snow[i].offScreen()){
-		snow.splice,(i,1)
+		snow.splice,(i,1);
 		}
-	}
+	}}
+	
+	/*if(meteo == "snow"){
+	snow2.push(new Snowflake2());
+	for(flake of snow2){
+		flake.applyForce(gravity2);
+		flake.render();
+		flake.update();
+		}
+	for(var i = snow2.lenght-1; i >= 0; i--){
+		if(snow2[i].offScreen()){
+		snow2.splice,(i,1);
+		}
+	}}*/
 	
 	
 }
