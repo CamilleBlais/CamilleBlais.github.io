@@ -24,7 +24,7 @@ applyForce(force){
 
 update(){
 this.vel.add(this.acc);
-this.vel.limit(this.r * 0.2);
+this.vel.limit(this.r);
 this.pos.add(this.vel);
 this.acc.mult(0);
 }
