@@ -451,7 +451,7 @@ function draw() {
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
 	
-	//Realtime = TimeSunset-500;
+	Realtime = 86380;
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
