@@ -21,7 +21,7 @@ function Cloud() {
    	noStroke();
 	  fill(250,250,255,200);
 	  rect(this.x,this.y,this.len,this.high,this.high/2);
-	  rect(this.x,this.y-this.high/3,this.len/2,this.high,this.high/2);
+	  rect(this.x+this.len/8,this.y-this.high/2,this.len/2,this.high,this.high/2);
 	  rect(this.x+this.len/2,this.y-this.high/3,this.len/2,this.high,this.high/2);
     }
 
