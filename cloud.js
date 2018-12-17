@@ -1,25 +1,25 @@
 
 function Cloud() {
-  this.x = random(-400,-10);
-  this.y = random(-50, 1525);
-  this.len = random(70, 200);
-  this.high = random(30,80);
-  this.xspeed = random(10,20);
+  this.x = random(-500,-10);
+  this.y = random(-50, 400);
+  this.len = random(90, 240);
+  this.high = random(50,90);
+  this.xspeed = random(0.02,0.05);
   
   
     this.move = function() {
     this.x = this.x + this.xspeed;
-    //this.xspeed = this.xspeed + 0.09;
+    
 
     if (this.x > width) {
-      this.x = random(-400,-10);
-      this.xspeed = random(10,20);
+      this.x = random(-500,-10);
+      this.xspeed = random(0.02,0.05);
     }
   }
     this.show = function() {
    
    	noStroke();
-	  fill(230,230,245,200);
+	  fill(250,250,255,200);
 	  rect(this.x,this.y,this.len,this.high,this.high/2);
     }
 
