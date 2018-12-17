@@ -3,7 +3,7 @@ class Snowflake{
 constructor(){
 
 var x = random(width);
-var y = random(-25,1600);
+var y = random(-1600,10);
 this.pos = createVector(x,y);
 this.vel = createVector(0,0);
 this.acc = createVector();
