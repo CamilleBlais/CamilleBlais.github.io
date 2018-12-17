@@ -388,7 +388,7 @@ function setup(){
 	function Star(etoileX, etoileY) {
 	strokeWeight(1);
   	stroke(230, 230, 250);
-  	point(etoileX), etoileY);
+  	point(etoileX, etoileY);
  	}
 
 function draw() {
