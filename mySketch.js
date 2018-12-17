@@ -114,11 +114,18 @@ function setup(){
 		}
 	
 	//////////////// clouds 1 ////few clouds 
-		
+	if(meteo=="few clouds"){
 	for (var i = 0; i < 10; i++) {
     	clouds[i] = new Cloud();
-  	}
-	
+  	}}
+	if(meteo == "light snow"){
+	for (var i = 0; i < 70; i++) {
+    	clouds[i] = new Cloud();
+  	}}
+	if(meteo == "light rain"){
+	for (var i = 0; i < 70; i++) {
+    	clouds[i] = new Cloud();
+  	}}
 	
 }
 
@@ -3442,7 +3449,7 @@ function draw() {
 		lumiere(2465,1406);
 	}
 	
-	if(meteo == "few clouds"){
+	if(meteo == "few clouds"){    //10 petits nuages
 	for (var i = 0; i < clouds.length; i++) {
     	clouds[i].move();
 	clouds[i].show();
@@ -3457,13 +3464,22 @@ function draw() {
   	}
 	}
 	if(meteo == "light rain"){
+	for (var i = 0; i < clouds.length; i++) {
+    	clouds[i].move();
+	clouds[i].show();
+		}
 	for (var j = 0; j < drops2.length; j++) {
     	drops2[j].fall();
    	drops2[j].show();
-  	}
+  		}
 	}
 	
+		
 	if(meteo == "light snow"){
+	for (var i = 0; i < clouds.length; i++) {
+    	clouds[i].move();
+	clouds[i].show();
+  	}
 	snow.push(new Snowflake());
 	for(flake of snow){
 		flake.applyForce(gravity);
