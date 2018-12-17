@@ -92,7 +92,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	   meteo = "light rain";
+	   meteo = "mist";
     }
   }); 
 
@@ -3516,7 +3516,7 @@ function draw() {
 		if(snow2[i].offScreen()){
 		snow2.splice,(i,1);
 		}
-	}}
+		}
 	
 	
 }
