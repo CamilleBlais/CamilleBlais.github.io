@@ -44,6 +44,7 @@ var Nightb = 0;
 var meteo = 0;
 var drops = [];
 var drops2 = [];
+var stars = [];
 
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
@@ -96,7 +97,9 @@ function setup(){
 	for (var j = 0; j < 200; j++) {
     	drops2[j] = new Drop2();
   	}
-	
+	for (var i = 0; i < 300; i++){
+	stars = [i] = new Star();
+	}
 }
 
 
@@ -445,7 +448,7 @@ function draw() {
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
 	
-	Realtime = TimeSunset-500;
+	//Realtime = TimeSunset-500;
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
@@ -476,6 +479,10 @@ function draw() {
 	background(230,235,250);  
 	}
 	
+	//les étoiles
+	for (var i = 0; i < stars.length; i++) {
+         stars[i].show();
+  	}
 	
 	/////////////////////////// LE PREMIER SOLEIL 
 
@@ -3369,7 +3376,6 @@ function draw() {
 		lumiere(1865,1406);
 		lumiere(2465,1406);
 	}
-	
 	
 	
 	
