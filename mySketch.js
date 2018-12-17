@@ -445,7 +445,7 @@ function draw() {
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
 	
-	Realtime = TimeSunset - 500;
+	Realtime = TimeSunrise;
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
@@ -497,9 +497,9 @@ function draw() {
 	if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
 	alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
 	}
-	else{
-	alphasoleil2 = 0;
-	}
+	//else{
+	//alphasoleil2 = 0;
+	//}
 	
 	
 	noStroke();
