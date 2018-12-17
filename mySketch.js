@@ -3458,7 +3458,7 @@ function draw() {
 	for (var j = 0; j < clouds2.length; j++) {
     	clouds2[j].move();
 	clouds2[j].show();
-	
+	}
 	noStroke();
 	fill(240,240,245,50);
 	rect(0,0,windowWidth, windowHeight);
