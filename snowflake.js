@@ -17,7 +17,7 @@ this.acc.add(force);
 update(){
 this.vel.add(this.acc);
 this.pos.add(this.vel);
-this.accmult(0);
+this.acc.mult(0);
 }
 
 render(){
