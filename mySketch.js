@@ -93,7 +93,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	   meteo = "broken clouds";
+	   //meteo = "broken clouds";
     }
   }); 
 
