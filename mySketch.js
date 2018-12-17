@@ -3576,6 +3576,114 @@ function draw() {
 		snow2.splice,(i,1);
 		}}
 		}
+	//////////////////////////////////////////////////// meteo 2
+	
+	if(meteo2 == "few clouds"){    //10 petits nuages
+	for (var i = 0; i < clouds.length; i++) {
+    	clouds[i].move();
+	clouds[i].show();
+  	}
+	}
+	
+	/////
+	
+	if(meteo2 == "light snow"){
+	snow.push(new Snowflake());
+	for(flake of snow){
+	flake.applyForce(gravity);
+	flake.render();
+	flake.update();
+	}
+	for(var i = snow.lenght-1; i >= 0; i--){
+	if(snow[i].offScreen()){
+	snow.splice,(i,1);
+	}
+	}}
+	
+	/////
+	if(meteo2 == "light rain"){
+	for (var j = 0; j < drops2.length; j++) {
+    	drops2[j].fall();
+   	drops2[j].show();
+  	}}
+	//////////////
+	
+
+	if(meteo2 == "broken clouds"){
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
+  	}}
+	
+	if(meteo2 == "overcast clouds"){
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
+  	}}
+	
+	
+	if(meteo2 == "mist"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+	}
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
+  	}
+	noStroke();
+	fill(240,240,245,40);
+	rect(0,0,windowWidth, windowHeight);
+	rect(0,700,windowWidth,100);
+	rect(0,500,windowWidth,50);
+	rect(0,900,windowWidth,120);
+	}
+	
+	
+	if(meteo2 == "fog"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+	}
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
+  	}
+	noStroke();
+	fill(240,240,245,40);
+	rect(0,0,windowWidth, windowHeight);
+	rect(0,700,windowWidth,100);
+	rect(0,500,windowWidth,50);
+	rect(0,900,windowWidth,120);
+	}
+	
+	if(meteo2 == "moderate rain"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+  	}	
+	for (var i = 0; i < drops.length; i++) {
+         drops[i].fall();
+         drops[i].show();
+  	}
+	}
+	
+	if(meteo2 == "snow"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+  	}
+	snow2.push(new Snowflake2());
+	for(flake of snow2){
+		flake.applyForce(gravity2);
+		flake.render();
+		flake.update();
+		}
+	for(var i = snow2.lenght-1; i >= 0; i--){
+		if(snow2[i].offScreen()){
+		snow2.splice,(i,1);
+		}}
+		}
 	
 	
 }
