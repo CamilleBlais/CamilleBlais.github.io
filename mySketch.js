@@ -478,37 +478,29 @@ function draw() {
 	
 	
 	/////////////////////////// LE PREMIER SOLEIL 
-	
-	
-	
-	sunX = map(Realtime,TimeSunrise,TimeMidi,2500,1500);
-	
-	
-	if(Realtime <= TimeSunrise && Realtime > TimeSunrise + 1800){
-	sunY = map(Realtime,TimeSunrise, TimeSunrise-1800, 700,1000);
-	noStroke();
-	fill(255, 246, 188);
-	ellipse(sunX, sunY, 80,80);	
-	}
-	
-	if(Realtime <= TimeMidi && Realtime > TimeSunrise){
-	sunY = map(Realtime,TimeSunrise, TimeMidi, 700,200);
-	noStroke();
-	fill(255, 246, 188);
-	ellipse(sunX, sunY, 80,80);
-	}
-	
-	
-	////////////////////coucher 1er soleil 
+
+
 	sunX = map(Realtime,TimeSunrise-1800,TimeMidi,2500,1500);
 	sunY = map(Realtime,TimeSunrise-1800, TimeMidi, 800,200);
 	
-	//le soleil
-	if(Realtime <= TimeMidi && Realtime >= TimeSunrise-1800){
+	
+	if(Realtime < TimeMidi && Realtime >= TimeSunrise-1800){
 	noStroke();
 	fill(255, 246, 188);
 	ellipse(sunX, sunY, 80,80);
 	}
+	
+	
+	if(Realtime > TimeSunrise-1800 && Realtime <= TimeSunrise){ 
+	alphasoleil = map(Realtime,TimeSunrise-1800,TimeSunrise,5,120);
+	}
+	if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
+	alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
+	}
+	else{
+	alphasoleil2 = 0;
+	}
+	
 	
 	noStroke();
 	fill(210,200,255,alphasoleil);// ciel
@@ -538,6 +530,32 @@ function draw() {
 	ellipse(sunX, sunY, 280,280);
 	ellipse(sunX, sunY, 420,320);
 	
+	if(Realtime > TimeSunrise-600 && Realtime < TimeSunrise+300){ //rouge pétant
+	noStroke();
+	fill(255, 60, 51);
+	ellipse(sunX, sunY, 80,80);
+	}
+	if(Realtime >= TimeSunrise+300 && Realtime < TimeSunrise+500){ //rouge pétant plus soft 
+	noStroke();
+	fill(238, 96, 51);
+	ellipse(sunX, sunY, 80,80);
+	}
+	if(Realtime >= TimeSunrise+500 && Realtime < TimeSunrise+800){ //orangé-jaune pétant
+	noStroke();
+	fill(255, 128, 0);
+	ellipse(sunX, sunY, 80,80);
+	}
+	if(Realtime >= TimeSunrise+800 && Realtime < TimeSunrise+900){ //jaune
+	noStroke();
+	fill(255, 255, 102);
+	ellipse(sunX, sunY, 80,80);
+	}
+	if(Realtime >= TimeSunrise+900 && Realtime < TimeSunrise+1000){ //jaune pale
+	noStroke();
+	fill(255, 253, 110);
+	ellipse(sunX, sunY, 80,80);
+	}
+	
 	///LE DEUXIEME SOLEIL 
 	
  	sunX2 = map(Realtime,TimeMidi, TimeSunset+1800, 1500,500);
@@ -563,7 +581,11 @@ function draw() {
 	
 	if(Realtime > TimeSunset && Realtime < TimeSunset+1800){
 	alphasoleil2 = map(Realtime,TimeSunset, TimeSunset+1800,120,5);
-	}	
+	}
+	
+	else{
+	alphasoleil2 = 0;
+	}
 	
 	noStroke();
 	fill(210,200,255,alphasoleil2);// ciel
