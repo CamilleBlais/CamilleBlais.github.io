@@ -12,7 +12,7 @@ function Cloud() {
     
 
     if (this.x > 3000) {
-      this.x = random(0,2900);
+      this.x = random(-2000,-200);
       this.xspeed = random(0.02,0.05);
     }
   }
