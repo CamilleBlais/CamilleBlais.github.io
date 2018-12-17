@@ -3490,12 +3490,18 @@ function draw() {
 	//////////////
 	
 
-	if(meteo == "broken clouds" || "overcast clouds"){
+	if(meteo == "broken clouds"){
 	for (var i = 0; i < bigclouds.length; i++) {
     	bigclouds[i].move();
 	bigclouds[i].show();
-  	}
-	}
+  	}}
+	
+	if(meteo == "overcast clouds"){
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
+  	}}
+	
 	/*
 	if(meteo == "mist" || meteo == "fog"){
 	for (var j = 0; j < clouds2.length; j++) {
