@@ -484,7 +484,7 @@ function draw() {
 	}
 	
 	for (var t = 0; t < 300; t++) {
-         stars[t] = new Star();
+         stars[t];
   	}
 	
 	/////////////////////////// LE PREMIER SOLEIL 
