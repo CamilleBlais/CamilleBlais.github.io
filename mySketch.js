@@ -93,7 +93,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	   meteo = "mist";
+	   meteo = "broken clouds";
     }
   }); 
 
@@ -3455,6 +3455,13 @@ function draw() {
 	for (var i = 0; i < clouds.length; i++) {
     	clouds[i].move();
 	clouds[i].show();
+  	}
+	}
+	
+	if(meteo == "broken clouds" || "overcast clouds"){
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
   	}
 	}
 	
