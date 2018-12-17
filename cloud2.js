@@ -12,7 +12,7 @@ function Cloud2() {
 
     if (this.x > width) {
       this.x = random(0,2900);
-      this.xspeed = random(0.02,0.05);
+      this.xspeed = random(0.02,0.07);
     }
   }
     this.show = function() {
