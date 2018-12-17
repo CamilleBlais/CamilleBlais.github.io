@@ -1,8 +1,8 @@
 function BigCloud() {
   this.x = random(0,2900);
   this.y = random(-50, 350);
-  this.len = random(90, 240);
-  this.high = random(50,90);
+  this.len = random(150, 400);
+  this.high = random(70,120);
   this.xspeed = random(0.02,0.05);
   
   
@@ -18,10 +18,9 @@ function BigCloud() {
     this.show = function() {
    
    	noStroke();
-	  fill(250,250,255,200);
+	  fill('red');
 	  rect(this.x,this.y,this.len,this.high,this.high/2);
-	  rect(this.x+this.len/12,this.y-this.high/2.5,this.len/2,this.high,this.high/2);
-	  rect(this.x+this.len/2,this.y-this.high/3,this.len/2,this.high,this.high/2);
+	  
     }
 
   }
