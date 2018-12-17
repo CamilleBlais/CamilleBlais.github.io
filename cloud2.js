@@ -1,5 +1,5 @@
 function Cloud2() {
-  this.x = random(0,2900);
+  this.x = random(-200,2900);
   this.y = random(-50, 300);
   this.len = random(90, 240);
   this.high = random(50,90);
