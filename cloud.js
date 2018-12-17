@@ -1,6 +1,6 @@
 
 function Cloud() {
-  this.x = random(width);
+  this.x = random(0,2900);
   this.y = random(-50, 400);
   this.len = random(90, 240);
   this.high = random(50,90);
@@ -12,7 +12,7 @@ function Cloud() {
     
 
     if (this.x > width) {
-      this.x = random(-500,-10);
+      this.x = random(0,2900);
       this.xspeed = random(0.02,0.05);
     }
   }
