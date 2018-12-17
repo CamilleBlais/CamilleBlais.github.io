@@ -29,7 +29,6 @@ var shadowb = 0;
 var shadowa = 0;
 var lumiereX = 0;
 var lumiereY = 0;
-var r = random();
 var sunX = 0;
 var sunY = 0;
 var sunX2 =  0;
