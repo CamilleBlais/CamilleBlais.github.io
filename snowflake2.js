@@ -29,7 +29,7 @@ applyForce(force){
 
 update(){
 this.vel.add(this.acc);
-this.vel.limit(this.r * 0.2);
+this.vel.limit(this.r);
  if(this.vel.mag() < 1){
   this.vel.normalize();
   }
