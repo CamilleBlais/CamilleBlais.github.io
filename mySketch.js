@@ -125,7 +125,7 @@ function setup(){
     	clouds2[j] = new Cloud2();
   	}
 	
-	for (var i = 0; i < 10; i++) {   //big clouds
+	for (var i = 0; i < 30; i++) {   //big clouds
     	bigclouds[i] = new BigCloud();
   	}
 	
