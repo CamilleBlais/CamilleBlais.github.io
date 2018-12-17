@@ -92,7 +92,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	   meteo = "light rain";
+	   meteo = "few clouds";
     }
   }); 
 
@@ -121,7 +121,7 @@ function setup(){
   	}
 	
 	for (var j = 0; j < 70; j++) {
-    	clouds2[j] = new Cloud();
+    	clouds2[j] = new Cloud2();
   	}
 	
 	
