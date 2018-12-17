@@ -121,7 +121,7 @@ function setup(){
   	}
 	
 	for (var j = 0; j < 70; j++) {
-    	clouds2[i] = new Cloud();
+    	clouds2[j] = new Cloud();
   	}
 	
 	
