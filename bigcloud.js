@@ -10,7 +10,7 @@ function BigCloud() {
     this.x = this.x + this.xspeed;
     
 
-    if (this.x > width) {
+    if (this.x > 3000) {
       this.x = random(0,2900);
       this.xspeed = random(0.02,0.05);
     }
