@@ -505,7 +505,7 @@ function draw() {
 	Star(1200, 29); Star(1235, 27); Star(2035, 222);
 	Star(1450, 20); Star(1204, 258); Star(1099, 202); Star(1520, 12);
 	Star(1152,212); Star(2800, 422); Star(910, 34); Star(1335, 322); Star(955, 378);
-	Star1(455, 320); Star(1120, 369); Star(999, 278); Star(1350, 39);
+	Star(455, 320); Star(1120, 369); Star(999, 278); Star(1350, 39);
 	Star(2850, 20); Star(2904, 77); Star(1899, 159); Star(1820, 56);
 	Star(1152, 477); Star(2800, 56); Star(910, 348); Star(1935, 59); Star(1955, 456);
 	Star(1455, 320); Star(1720, 333); Star(1999, 257); Star(1850, 79);
@@ -540,13 +540,13 @@ function draw() {
 	rect(0,0,2950,100);
 	fill(230,230,255,alphasoleil);// ciel
 	rect(0,sunY-675,2950,275);
-	fill(255,230,150,alphasoleil+20);// ciel
+	fill(255,230,150,alphasoleil);// ciel
 	rect(0,sunY-400,2950,725);
 	fill(225, 189, 185,alphasoleil); // ciel
 	rect(0,sunY-200,2950,625);
-	fill(255, 187, 185,alphasoleil-10);
+	fill(255, 187, 185,alphasoleil);
 	ellipse(sunX,sunY,600,340);
-	fill(255, 110, 44, alphasoleil-5);
+	fill(255, 110, 44, alphasoleil);
 	ellipse(sunX,sunY,830,350);
 	fill(255, 86, 41,alphasoleil);
 	rect(sunX-570,sunY-40,1200,80,40);
@@ -625,13 +625,13 @@ function draw() {
 	rect(0,0,2950,100);
 	fill(230,230,255,alphasoleil2);// ciel
 	rect(0,sunY2-675,2950,275);
-	fill(255,230,150,alphasoleil2+20);// ciel
+	fill(255,230,150,alphasoleil2);// ciel
 	rect(0,sunY2-400,2950,725);
 	fill(225, 189, 185,alphasoleil2); // ciel
 	rect(0,sunY2-200,2950,625);
-	fill(255, 187, 185,alphasoleil2-10);
+	fill(255, 187, 185,alphasoleil2);
 	ellipse(sunX2,sunY2,600,340);
-	fill(255, 110, 44, alphasoleil2-5);
+	fill(255, 110, 44, alphasoleil2);
 	ellipse(sunX2,sunY2,830,350);
 	fill(255, 86, 41,alphasoleil2);
 	rect(sunX2-570,sunY2-40,1200,80,40);
