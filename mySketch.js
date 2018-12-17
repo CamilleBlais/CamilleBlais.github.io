@@ -3458,6 +3458,33 @@ function draw() {
   	}
 	}
 	
+	if(meteo == "light snow"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+  	}
+	snow.push(new Snowflake());
+	for(flake of snow){
+	flake.applyForce(gravity);
+	flake.render();
+	flake.update();
+	}
+	for(var i = snow.lenght-1; i >= 0; i--){
+	if(snow[i].offScreen()){
+	snow.splice,(i,1);
+	}
+	}}
+	if(meteo == "light rain"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+  	}
+	for (var j = 0; j < drops2.length; j++) {
+    	drops2[j].fall();
+   	drops2[j].show();
+  	}
+	}
+	
 	if(meteo == "broken clouds" || "overcast clouds"){
 	for (var i = 0; i < bigclouds.length; i++) {
     	bigclouds[i].move();
@@ -3496,36 +3523,6 @@ function draw() {
          drops[i].show();
   	}
 	}
-	
-	
-	if(meteo == "light rain"){
-	for (var j = 0; j < clouds2.length; j++) {
-    	clouds2[j].move();
-	clouds2[j].show();
-  	}
-	for (var j = 0; j < drops2.length; j++) {
-    	drops2[j].fall();
-   	drops2[j].show();
-  		}
-	}
-	
-		
-	if(meteo == "light snow"){
-	for (var j = 0; j < clouds2.length; j++) {
-    	clouds2[j].move();
-	clouds2[j].show();
-  	}
-	snow.push(new Snowflake());
-	for(flake of snow){
-		flake.applyForce(gravity);
-		flake.render();
-		flake.update();
-		}
-	for(var i = snow.lenght-1; i >= 0; i--){
-		if(snow[i].offScreen()){
-		snow.splice,(i,1);
-		}
-	}}
 	
 	if(meteo == "snow"){
 	for (var j = 0; j < clouds2.length; j++) {
