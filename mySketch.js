@@ -541,12 +541,12 @@ function draw() {
 	}
 	
 	
-	//if(Realtime > TimeSunrise-1800 && Realtime <= TimeSunrise){ 
-	//alphasoleil = map(Realtime,TimeSunrise-1800,TimeSunrise,5,120);
-	//}
-	if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
-	alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
+	if(Realtime > TimeSunrise-1800 && Realtime <= TimeSunrise){ 
+	alphasoleil = map(Realtime,TimeSunrise-1800,TimeSunrise,5,120);
 	}
+	//if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
+	//alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
+	//}
 	if(Realtime < TimeSunrise-1800 && Realtime > TimeSunrise+1000){
 	alphasoleil = 0;
 	}
@@ -555,7 +555,7 @@ function draw() {
 	
 	noStroke();
 	fill(210,200,255,alphasoleil);// ciel
-	rect(0,0,2950,100);
+	rect(0,0,2950,102);
 	fill(230,230,255,alphasoleil);// ciel
 	rect(0,sunY-675,2950,275);
 	fill(255,230,150,alphasoleil);// ciel
@@ -640,7 +640,7 @@ function draw() {
 	
 	noStroke();
 	fill(210,200,255,alphasoleil2);// ciel
-	rect(0,0,2950,100);
+	rect(0,0,2950,102);
 	fill(230,230,255,alphasoleil2);// ciel
 	rect(0,sunY2-675,2950,275);
 	fill(255,230,150,alphasoleil2);// ciel
