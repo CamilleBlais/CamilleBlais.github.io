@@ -3454,8 +3454,21 @@ function draw() {
   	}
 	}
 	
+	if(meteo == "mist"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+	
+	noStroke();
+	fill(240,240,245,50);
+	rect(0,0,windowWidth, windowHeight);
+	}
 	
 	if(meteo == "moderate rain"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+  	}
 	for (var i = 0; i < drops.length; i++) {
          drops[i].fall();
          drops[i].show();
