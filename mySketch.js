@@ -42,6 +42,7 @@ var Nightr = 0;
 var Nightg = 0;
 var Nightb = 0;
 var meteo = 0;
+var meteo2 = 0;
 var drops = [];
 var drops2 = [];
 var etoileX = 0;
@@ -91,8 +92,9 @@ function setup(){
 	    lever = data.sys.sunrise;
 	    coucher = data.sys.sunset;
 	    meteo = data.weather[0].description;
+	    meteo2 = data.weather[1].description;
       
-      console.log(meteo);
+      console.log(meteo2);
 	  // meteo = "snow";
     }
   }); 
