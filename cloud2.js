@@ -18,7 +18,7 @@ function Cloud2() {
     this.show = function() {
    
    	noStroke();
-	  fill(250,250,255,200);
+	  fill(250,250,255,170);
 	  rect(this.x,this.y,this.len,this.high,this.high/2);
 	  rect(this.x+this.len/12,this.y-this.high/2.5,this.len/2,this.high,this.high/2);
 	  rect(this.x+this.len/2,this.y-this.high/3,this.len/2,this.high,this.high/2);
