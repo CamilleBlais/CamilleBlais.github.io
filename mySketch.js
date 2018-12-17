@@ -3485,7 +3485,7 @@ function draw() {
   	}
 	}
 	
-	if(meteo == "broken clouds" || "overcast clouds"){
+	/*if(meteo == "broken clouds" || "overcast clouds"){
 	for (var i = 0; i < bigclouds.length; i++) {
     	bigclouds[i].move();
 	bigclouds[i].show();
@@ -3544,7 +3544,7 @@ function draw() {
 		if(snow2[i].offScreen()){
 		snow2.splice,(i,1);
 		}}
-		}
+		}*/
 	
 	
 }
