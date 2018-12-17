@@ -93,7 +93,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	   //meteo = "broken clouds";
+	   meteo = "light rain";
     }
   }); 
 
@@ -3528,6 +3528,15 @@ function draw() {
 	}}
 	
 	if(meteo == "snow"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+  	}
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
+  	}
+		
 	snow2.push(new Snowflake2());
 	for(flake of snow2){
 		flake.applyForce(gravity2);
