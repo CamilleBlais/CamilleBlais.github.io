@@ -544,9 +544,9 @@ function draw() {
 	if(Realtime > TimeSunrise-1800 && Realtime <= TimeSunrise){ 
 	alphasoleil = map(Realtime,TimeSunrise-1800,TimeSunrise,5,120);
 	}
-	//if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
-	//alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
-	//}
+	if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
+	alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
+	}
 	if(Realtime < TimeSunrise-1800 && Realtime > TimeSunrise+1000){
 	alphasoleil = 0;
 	}
@@ -634,10 +634,15 @@ function draw() {
 	alphasoleil2 = map(Realtime,TimeSunset, TimeSunset+1800,120,5);
 	}
 	
-	if(Realtime < TimeSunset-1000 && Realtime > TimeSunset+1800){
+	if(Realtime < TimeSunset-1000 && Realtime >= 0){ 
 	alphasoleil2 = 0;
 	}
 	
+	if(Realtime >= TimeSunset+1800 && Realtime <= 86400){
+	alphasoleil2 = 0;
+	}
+	
+	 
 	noStroke();
 	fill(210,200,255,alphasoleil2);// ciel
 	rect(0,0,2950,102);
