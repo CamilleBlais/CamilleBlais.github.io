@@ -109,7 +109,7 @@ function setup(){
 	for(var i = 0; i < 500; i ++){
 		var x = random(width);
 		var y = random(height);
-		snow2.push(new Snowflake2(x, y);
+		snow2.push(new Snowflake2(x, y));
 		}
 		
 }
