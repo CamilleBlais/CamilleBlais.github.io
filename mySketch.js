@@ -498,16 +498,16 @@ function draw() {
 	ellipse(sunX, sunY, 80,80);
 	}
 	
-	///// coucher 1er soleil 
-	if(Realtime > TimeSunrise-1800 && Realtime <= TimeSunrise){ 
-	alphasoleil = map(Realtime,TimeSunrise-1800,TimeSunrise,5,120);
-	}
 	
-	if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
-	alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
-	}
-	if(Realtime > TimeSunrise+1000 && Realtime < 86400){
-	alphasoleil = 0;
+	////////////////////coucher 1er soleil 
+	sunX = map(Realtime,TimeSunrise-1800,TimeMidi,2500,1500);
+	sunY = map(Realtime,TimeSunrise-1800, TimeMidi, 800,200);
+	
+	//le soleil
+	if(Realtime <= TimeMidi && Realtime >= TimeSunrise-1800){
+	noStroke();
+	fill(255, 246, 188);
+	ellipse(sunX, sunY, 80,80);
 	}
 	
 	noStroke();
