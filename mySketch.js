@@ -90,7 +90,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	    //meteo = "light snow";
+	    meteo = "snow";
     }
   }); 
 
@@ -104,7 +104,7 @@ function setup(){
 	
 	////////////////// SNOWFLAKE
 	gravity = createVector(0, 0.02);
-	//gravity2 = createVector(0, 0.04);
+	gravity2 = createVector(0, 0.04);
 	
 }
 
@@ -3448,7 +3448,7 @@ function draw() {
 		}
 	}}
 	
-	/*if(meteo == "snow"){
+	if(meteo == "snow"){
 	snow2.push(new Snowflake2());
 	for(flake of snow2){
 		flake.applyForce(gravity2);
@@ -3459,7 +3459,7 @@ function draw() {
 		if(snow2[i].offScreen()){
 		snow2.splice,(i,1);
 		}
-	}}*/
+	}}
 	
 	
 }
