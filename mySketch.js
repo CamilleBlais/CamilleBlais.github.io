@@ -3515,7 +3515,7 @@ function draw() {
 	for(var i = snow2.lenght-1; i >= 0; i--){
 		if(snow2[i].offScreen()){
 		snow2.splice,(i,1);
-		}
+		}}
 		}
 	
 	
