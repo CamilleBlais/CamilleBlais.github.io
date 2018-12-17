@@ -46,6 +46,8 @@ var drops = [];
 var drops2 = [];
 var etoileX = 0;
 var etoileY = 0;
+var snow = [];
+var gravity = 0;
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
 $const.tlong = -71.10; // longitude
@@ -97,6 +99,10 @@ function setup(){
 	for (var j = 0; j < 200; j++) {
     	drops2[j] = new Drop2();
   	}
+	
+	////////////////// SNOWFLAKE
+	gravity = createVector(0, 0.02);
+	
 }
 
 
@@ -3425,7 +3431,18 @@ function draw() {
    	drops2[j].show();
   	}
 	}
-
+	
+	snow.push(new Snowflake());
+	for(flake of snow){
+		flake.applyForce(gravity);
+		flake.render();
+		flake.update();
+		}
+	for(var i = snow.lenght-1; i >= 0; i--){
+		if(snow[i].offScreen()){
+		snow.splice,(i,1)
+		}
+	}
 	
 	
 }
