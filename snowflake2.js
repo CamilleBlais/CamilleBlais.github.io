@@ -1,15 +1,15 @@
 class Snowflake2{
 
-/*constructor(){
+constructor(){
 
 var x = random(width);
 var y = random(-1000,50);
 this.pos = createVector(x,y);
 this.vel = createVector(0,0);
 this.acc = createVector();
-this.r = random(3,13);
+this.r = random(3,15);
 
-}*/
+}
 
 applyForce(force){
   // parallele effect hack
