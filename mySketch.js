@@ -51,6 +51,7 @@ var gravity = 0;
 var snow2 = [];
 var gravity2 = 0;
 var clouds = [];
+var clouds2 = [];
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
 $const.tlong = -71.10; // longitude
@@ -114,18 +115,15 @@ function setup(){
 		}
 	
 	//////////////// clouds 1 ////few clouds 
-	if(meteo=="few clouds"){
+	
 	for (var i = 0; i < 10; i++) {
     	clouds[i] = new Cloud();
+  	}
+	
+	for (var j = 0; j < 70; j++) {
+    	clouds2[i] = new Cloud();
   	}}
-	if(meteo == "light snow"){
-	for (var i = 0; i < 70; i++) {
-    	clouds[i] = new Cloud();
-  	}}
-	if(meteo == "light rain"){
-	for (var i = 0; i < 70; i++) {
-    	clouds[i] = new Cloud();
-  	}}
+	
 	
 }
 
@@ -481,7 +479,7 @@ function draw() {
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
 	
-	Realtime = TimeMidi-1000;
+	//Realtime = TimeMidi-1000;
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
@@ -3463,11 +3461,13 @@ function draw() {
          drops[i].show();
   	}
 	}
+	
+	
 	if(meteo == "light rain"){
-	for (var i = 0; i < clouds.length; i++) {
-    	clouds[i].move();
-	clouds[i].show();
-		}
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+  	}
 	for (var j = 0; j < drops2.length; j++) {
     	drops2[j].fall();
    	drops2[j].show();
@@ -3476,9 +3476,9 @@ function draw() {
 	
 		
 	if(meteo == "light snow"){
-	for (var i = 0; i < clouds.length; i++) {
-    	clouds[i].move();
-	clouds[i].show();
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
   	}
 	snow.push(new Snowflake());
 	for(flake of snow){
