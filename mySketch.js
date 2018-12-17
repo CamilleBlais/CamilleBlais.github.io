@@ -482,10 +482,17 @@ function draw() {
 	
 	
 	sunX = map(Realtime,TimeSunrise,TimeMidi,2500,1500);
-	sunY = map(Realtime,TimeSunrise, TimeMidi, 900,200);
 	
 	
-	if(Realtime <= TimeMidi && Realtime > TimeSunrise-1800){
+	if(Realtime <= TimeSunrise && Realtime > TimeSunrise + 1800){
+	sunY = map(Realtime,TimeSunrise-1800, TimeSunrise, 900,700);
+	noStroke();
+	fill(255, 246, 188);
+	ellipse(sunX, sunY, 80,80);	
+	}
+	
+	if(Realtime <= TimeMidi && Realtime > TimeSunrise){
+	sunY = map(Realtime,TimeSunrise, TimeMidi, 700,200);
 	noStroke();
 	fill(255, 246, 188);
 	ellipse(sunX, sunY, 80,80);
@@ -502,7 +509,8 @@ function draw() {
 	if(Realtime > TimeSunrise+1000 && Realtime < 86400){
 	alphasoleil = 0;
 	}
-		noStroke();
+	
+	noStroke();
 	fill(210,200,255,alphasoleil);// ciel
 	rect(0,0,2950,100);
 	fill(230,230,255,alphasoleil);// ciel
