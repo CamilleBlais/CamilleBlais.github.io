@@ -482,10 +482,33 @@ function draw() {
 	background(230,235,250);  
 	}
 	
-	etoileX = random(0,2900);
-	etoileY = random(0,550);
-	Star(etoileX, etoileY); Star(etoileX, etoileY); Star(etoileX, etoileY); Star(etoileX, etoileY);
-	Star(etoileX, etoileY); Star(etoileX, etoileY); Star(etoileX, etoileY); Star(etoileX, etoileY);
+	//etoileX = random(0,2900);
+	//etoileY = random(0,550);
+	Star(0, 20); Star(1389, 53); Star(35, 49); Star(1356, 63);
+	Star(455, 20); Star(120, 120); Star(99, 150); Star(50, 111);
+	Star(945, 178); Star(35, 186); Star(1120, 156); Star(1000, 70); 
+	Star(2100, 256); Star(235, 244); Star(2035, 222); Star(902, 20); Star(120, 299); 
+	Star(99, 200); Star(50, 70);
+	Star(799, 266); Star(785, 20); Star(1200, 335); Star(99, 414); Star(1550, 377);
+	Star(785, 402); Star(1435, 415); Star(489, 345); Star(1200, 302); 
+	Star(200, 456); Star(235, 489); Star(2035, 499);
+	Star(450, 20); Star(1204, 512); Star(1099, 525); Star(520, 478);
+	Star(152, 489); Star(2800, 347); Star(610, 200); Star(335, 189); Star(655, 277);
+	Star(455, 320); Star(120, 59); Star(399, 852); Star(350, 252);
+	Star(290, 123 ); Star(1389, 530); Star(35, 352); Star(1356, 550);
+	Star(10, 20); Star(2120, 100); Star(99, 105); Star(50, 135);
+	Star(945, 163); Star(2335, 2); Star(1120, 163);Star(1000, 151); 
+	Star(2100, 456); Star(235, 489); Star(2035, 186);
+	Star(1902, 20); Star(120, 302); Star(99, 500); Star(50, 327);
+	Star(1799, 478);Star(2785, 20); Star(1200, 425); Star(99, 345); Star(1550, 56);
+	Star(1785, 456); Star(1435, 266); Star(2489, 188); Star(1400, 258); 
+	Star(1200, 29); Star(1235, 27); Star(2035, 222);
+	Star(1450, 20); Star(1204, 258); Star(1099, 202); Star(1520, 12);
+	Star(1152,212); Star(2800, 422); Star(910, 34); Star(1335, 322); Star(955, 378);
+	Star1(455, 320); Star(1120, 369); Star(999, 278); Star(1350, 39);
+	Star(2850, 20); Star(2904, 77); Star(1899, 159); Star(1820, 56);
+	Star(1152, 477); Star(2800, 56); Star(910, 348); Star(1935, 59); Star(1955, 456);
+	Star(1455, 320); Star(1720, 333); Star(1999, 257); Star(1850, 79);
         
   	
 	
