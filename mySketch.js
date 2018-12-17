@@ -105,8 +105,8 @@ function setup(){
 	////////////////// SNOWFLAKE
 	gravity = createVector(0, 0.02);
 	
-	gravity2 = createVector(0, 0.04);
-	for(var i = 0; i < 500; i ++){
+	gravity2 = createVector(0, 0.05);
+	for(var i = 0; i < 600; i ++){
 		var x = random(width);
 		var y = random(height);
 		snow2.push(new Snowflake2(x, y));
