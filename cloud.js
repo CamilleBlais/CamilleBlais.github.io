@@ -3,7 +3,7 @@ function Cloud() {
   this.x = random(-400,-10);
   this.y = random(-50, 1525);
   this.len = random(70, 200);
-  this.high = random(
+  this.high = random(30,80);
   this.xspeed = random(10,20);
   
   
