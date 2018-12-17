@@ -90,7 +90,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	    meteo = "snow";
+	    //meteo = "snow";
     }
   }); 
 
@@ -105,7 +105,7 @@ function setup(){
 	////////////////// SNOWFLAKE
 	gravity = createVector(0, 0.02);
 	
-	gravity2 = createVector(0, 0.05);
+	gravity2 = createVector(0, 0.06);
 	for(var i = 0; i < 600; i ++){
 		var x = random(width);
 		var y = random(height);
