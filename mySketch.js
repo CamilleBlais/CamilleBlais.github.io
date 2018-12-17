@@ -97,8 +97,8 @@ function setup(){
 	for (var j = 0; j < 200; j++) {
     	drops2[j] = new Drop2();
   	}
-	for (var i = 0; i < 300; i++){
-	stars = [i] = new Star();
+	for (var t = 0; t < 300; t++){
+	stars = [t] = new Star();
 	}
 }
 
@@ -480,8 +480,8 @@ function draw() {
 	}
 	
 	//les étoiles
-	for (var i = 0; i < stars.length; i++) {
-         stars[i].show();
+	for (var t = 0; t < stars.length; t++) {
+         stars[t].show();
   	}
 	
 	/////////////////////////// LE PREMIER SOLEIL 
