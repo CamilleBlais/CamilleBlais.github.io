@@ -90,7 +90,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	    meteo = "light rain";
+	    meteo = "moderate rain";
     }
   }); 
 
@@ -466,7 +466,7 @@ function draw() {
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
 	
-	Realtime = TimeSunrise-20;
+	Realtime = TimeMidi-1000;
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
