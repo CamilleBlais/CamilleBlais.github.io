@@ -480,7 +480,7 @@ function draw() {
 	}
 	
 	//les étoiles
-	for (var t = 0; t < stars.length; t++) {
+	for (var t = 0; t < 300; t++) {
          stars[t].show();
   	}
 	
