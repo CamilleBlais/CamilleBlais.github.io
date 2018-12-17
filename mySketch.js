@@ -93,7 +93,7 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	   meteo = "few clouds";
+	   meteo = "snow";
     }
   }); 
 
@@ -3502,8 +3502,26 @@ function draw() {
 	bigclouds[i].show();
   	}}
 	
-	/*
-	if(meteo == "mist" || meteo == "fog"){
+	
+	if(meteo == "mist"){
+	for (var j = 0; j < clouds2.length; j++) {
+    	clouds2[j].move();
+	clouds2[j].show();
+	}
+	for (var i = 0; i < bigclouds.length; i++) {
+    	bigclouds[i].move();
+	bigclouds[i].show();
+  	}
+	noStroke();
+	fill(240,240,245,40);
+	rect(0,0,windowWidth, windowHeight);
+	rect(0,700,windowWidth,100);
+	rect(0,500,windowWidth,50);
+	rect(0,900,windowWidth,120);
+	}
+	
+	
+	if(meteo == "fog"){
 	for (var j = 0; j < clouds2.length; j++) {
     	clouds2[j].move();
 	clouds2[j].show();
@@ -3555,7 +3573,7 @@ function draw() {
 		if(snow2[i].offScreen()){
 		snow2.splice,(i,1);
 		}}
-		}*/
+		}
 	
 	
 }
