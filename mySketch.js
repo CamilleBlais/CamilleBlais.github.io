@@ -116,7 +116,7 @@ function setup(){
 	//////////////// clouds 1 ////few clouds 
 		
 	for (var i = 0; i < 10; i++) {
-    	clouds[i]; = new Cloud();
+    	clouds[i] = new Cloud();
   	}
 	
 	
