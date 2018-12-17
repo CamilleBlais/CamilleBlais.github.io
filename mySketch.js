@@ -445,7 +445,7 @@ function draw() {
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
 	
-	Realtime = TimeSunrise;
+	Realtime = TimeSunrise+500;
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
@@ -615,11 +615,35 @@ function draw() {
 	ellipse(sunX2, sunY2, 280,280);
 	ellipse(sunX2, sunY2, 420,320);
 	
+	if(Realtime >= TimeSunset-1000 && Realtime < TimeSunset-900){ //jaune pale
+	noStroke();
+	fill(255, 253, 110);
+	ellipse(sunX2, sunY2, 80,80);
+	}
+	if(Realtime >= TimeSunset-900 && Realtime < TimeSunset-800 ){ //jaune
+	noStroke();
+	fill(255, 255, 102);
+	ellipse(sunX2, sunY2, 80,80);
+	}
+	if(Realtime >= TimeSunset-800 && Realtime < TimeSunset-500){ //orangé-jaune pétant
+	noStroke();
+	fill(255, 128, 0);
+	ellipse(sunX2, sunY2, 80,80);
+	}
+	if(Realtime >= TimeSunset-500 && Realtime < TimeSunset-300){ //rouge pétant plus soft
+	noStroke();
+	fill(238, 96, 51);
+	ellipse(sunX2, sunY2, 80,80);
+	}
+	if(Realtime >= TimeSunset-300 && Realtime < TimeSunset+600){ //rouge pétant
+	noStroke();
+	fill(255, 60, 51);
+	ellipse(sunX2, sunY2, 80,80);
+	}
+	
 
 	/////////////////////// couleur fenetre
-	/*fenetrer = 35;
-	fenetreg = 35;
-	fenetreb = 65;*/
+
 	
 	fenetrer = map(Realtime, TimeSunset-1800,86400,35,10);
 	fenetreg = map(Realtime, TimeSunset-1800,86400,35,10);
