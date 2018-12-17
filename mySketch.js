@@ -44,7 +44,7 @@ var Nightb = 0;
 var meteo = 0;
 var drops = [];
 var drops2 = [];
-
+var trandom = random();
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
 $const.tlong = -71.10; // longitude
@@ -387,7 +387,7 @@ function setup(){
 	function Star() {
 	strokeWeight(1);
   	stroke(230, 230, 250);
-  	point(r(width), r(-20, 500));
+  	point(trandom(width), trandom(-20, 500));
  	}
 
 function draw() {
@@ -481,7 +481,7 @@ function draw() {
 	background(230,235,250);  
 	}
 	
-	r = random();
+	trandom = random();
         Star();Star(); Star(); Star(); Star(); Star(); Star(); Star(); 
 	Star();Star();Star(); Star(); Star(); Star(); Star(); Star(); 
 	Star(); Star(); Star(); Star(); Star(); Star(); Star(); Star(); 
