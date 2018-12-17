@@ -496,9 +496,12 @@ function draw() {
 	alphasoleil = map(Realtime,TimeSunrise-1800,TimeSunrise,5,120);
 	}
 	
-	if(Realtime > TimeSunrise && Realtime < TimeSunrise+1000){
+	if(Realtime > TimeSunrise && Realtime <= TimeSunrise+1000){
 	alphasoleil = map(Realtime,TimeSunrise, TimeSunrise+1000,120,5);
-	}	
+	}
+	if(Realtime > TimeSunrise+1000 && Realtime < 86400){
+	alphasoleil = 0;
+	}
 		noStroke();
 	fill(210,200,255,alphasoleil);// ciel
 	rect(0,0,2950,100);
