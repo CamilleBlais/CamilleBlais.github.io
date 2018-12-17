@@ -445,7 +445,7 @@ function draw() {
 	
 	var TimeMidi = TimeSunset - TimeSunrise;
 	
-	Realtime = TimeSunrise+500;
+	Realtime = TimeSunset - 500;
 	///////////////////////////////////////////// LE BACKGROUND 
 	
 	
@@ -481,7 +481,7 @@ function draw() {
 
 
 	sunX = map(Realtime,TimeSunrise-1800,TimeMidi,2500,1500);
-	sunY = map(Realtime,TimeSunrise-1800, TimeMidi, 800,200);
+	sunY = map(Realtime,TimeSunrise-1800, TimeMidi, 900,200);
 	
 	
 	if(Realtime < TimeMidi && Realtime >= TimeSunrise-1800){
