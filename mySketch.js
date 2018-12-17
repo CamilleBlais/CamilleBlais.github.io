@@ -29,6 +29,7 @@ var shadowb = 0;
 var shadowa = 0;
 var lumiereX = 0;
 var lumiereY = 0;
+var r = random();
 var sunX = 0;
 var sunY = 0;
 var sunX2 =  0;
@@ -383,10 +384,11 @@ function setup(){
 	fill(250,250,170,10);
 	ellipse(lumiereX,lumiereY,180,180);
 	}
+	
 	function Star() {
 	strokeWeight(1);
   	stroke(230, 230, 250);
-  	point(random(width), random(-20, 500));
+  	point(r(width), r(-20, 500));
  	}
 
 function draw() {
@@ -480,7 +482,7 @@ function draw() {
 	background(230,235,250);  
 	}
 	
-	
+	r = random();
         Star();Star(); Star(); Star(); Star(); Star(); Star(); Star(); 
 	Star();Star();Star(); Star(); Star(); Star(); Star(); Star(); 
 	Star(); Star(); Star(); Star(); Star(); Star(); Star(); Star(); 
