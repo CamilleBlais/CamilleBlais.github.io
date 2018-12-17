@@ -97,7 +97,9 @@ function setup(){
 	for (var j = 0; j < 200; j++) {
     	drops2[j] = new Drop2();
   	}
-	
+	for (var t = 0; t < 300; t++){
+	stars = [t] = new Star();
+	}
 }
 
 
@@ -385,6 +387,10 @@ function setup(){
 	fill(250,250,170,10);
 	ellipse(lumiereX,lumiereY,180,180);
 	}
+	function Star() {
+  	stroke(230, 230, 250);
+  	point(random(width), random(-20, 500));
+ 	}
 
 function draw() {
 	///////////////////////////////////////////// calcule du lever du soleil
@@ -477,9 +483,9 @@ function draw() {
 	background(230,235,250);  
 	}
 	
-	for (var t = 0; t < 300; t++){
-	stars = [t] = new Star();
-	}
+	for (var t = 0; t < 300; t++) {
+         stars[t] = new Star();
+  	}
 	
 	/////////////////////////// LE PREMIER SOLEIL 
 
