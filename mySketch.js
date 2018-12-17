@@ -50,6 +50,7 @@ var snow = [];
 var gravity = 0;
 var snow2 = [];
 var gravity2 = 0;
+var clouds = [];
 var date = {year: 1986, month: 1, day: 1, hours: 1, minutes: 52, seconds: 0};
 
 $const.tlong = -71.10; // longitude
@@ -90,28 +91,35 @@ function setup(){
 	    meteo = data.weather[0].description;
       
       console.log(meteo);
-	    meteo = "moderate rain";
+	   meteo = "few clouds";
     }
   }); 
 
-  	for (var i = 0; i < 1000; i++) {
+  	for (var i = 0; i < 1000; i++) {    //light rain
     	drops[i] = new Drop();
   	}
 	
-	for (var j = 0; j < 200; j++) {
+	for (var j = 0; j < 200; j++) {    // moderate rain
     	drops2[j] = new Drop2();
   	}
 	
-	////////////////// SNOWFLAKE
+	////////////////// SNOWFLAKE             // light snow
 	gravity = createVector(0, 0.02);
 	
-	gravity2 = createVector(0, 0.06);
+	gravity2 = createVector(0, 0.06);         // snow
 	for(var i = 0; i < 600; i ++){
 		var x = random(width);
 		var y = random(height);
 		snow2.push(new Snowflake2(x, y));
 		}
+	
+	//////////////// clouds 1 ////few clouds 
 		
+	for (var i = 0; i < 10; i++) {
+    	clouds =[i]; = new Cloud();
+  	}
+	
+	
 }
 
 
@@ -3434,6 +3442,12 @@ function draw() {
 		lumiere(2465,1406);
 	}
 	
+	if(meteo == "few clouds"){
+	for (var i = 0; i < clouds.length; i++) {
+    	clouds[i].move();
+	clouds[i].show();
+  	}
+	}
 	
 	
 	if(meteo == "moderate rain"){
