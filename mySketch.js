@@ -3458,6 +3458,8 @@ function draw() {
   	}
 	}
 	
+	/////
+	
 	if(meteo == "light snow"){
 	for (var j = 0; j < clouds2.length; j++) {
     	clouds2[j].move();
@@ -3474,6 +3476,8 @@ function draw() {
 	snow.splice,(i,1);
 	}
 	}}
+	
+	/////
 	if(meteo == "light rain"){
 	for (var j = 0; j < clouds2.length; j++) {
     	clouds2[j].move();
@@ -3482,16 +3486,17 @@ function draw() {
 	for (var j = 0; j < drops2.length; j++) {
     	drops2[j].fall();
    	drops2[j].show();
-  	}
-	}
+  	}}
+	//////////////
 	
-	/*if(meteo == "broken clouds" || "overcast clouds"){
+
+	if(meteo == "broken clouds" || "overcast clouds"){
 	for (var i = 0; i < bigclouds.length; i++) {
     	bigclouds[i].move();
 	bigclouds[i].show();
   	}
 	}
-	
+	/*
 	if(meteo == "mist" || meteo == "fog"){
 	for (var j = 0; j < clouds2.length; j++) {
     	clouds2[j].move();
