@@ -95,7 +95,7 @@ function setup(){
 	    meteo2 = data.weather[1].description;
       
       console.log(meteo2);
-	  // meteo = "snow";
+	  meteo = "snow";
     }
   }); 
 
