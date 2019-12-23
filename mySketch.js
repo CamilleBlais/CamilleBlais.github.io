@@ -91,7 +91,8 @@ function setup(){
 	    temperature = data.main.temp;
 	    lever = data.sys.sunrise;
 	    coucher = data.sys.sunset;
-	    meteo = data.weather[0].description;
+	    meteo = "snow";
+	   // meteo = data.weather[0].description;
 	    meteo2 = data.weather[1].description;
       
       console.log(meteo2);
